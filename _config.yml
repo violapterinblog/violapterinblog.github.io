@@ -2,3 +2,4 @@ theme: jekyll-theme-hacker
 name: Violapterin Blog
 title: New Memory Allocated
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
