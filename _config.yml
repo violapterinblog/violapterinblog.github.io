@@ -1,3 +1,4 @@
 theme: jekyll-theme-hacker
+name: Violapterin Blog
 title: New Memory Allocated
-description: delete [] ptr; void *ptr = 0;
+markdown: kramdown
