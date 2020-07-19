@@ -3,14 +3,12 @@ layout: default
 title: New Memory Allocated
 ---
 <div class="blurb">
-	<h1>New Memory Allocated</h1>
+	<h1>{{ page.title }}</h1>
 	<p>delete [] ptr; void *ptr = 0;</p>
 </div><!-- /.blurb -->
 
-<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
+<ul class="posts">
+	{% for post in site.posts %}
 		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+	{% endfor %}
+</ul>
