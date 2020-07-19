@@ -1,15 +1,18 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/example" # the subpath of your site, e.g. /blog/
-url: "http://jekyll.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: New Memory Allocated
+email: violapterin@gmail.com
+description: > # (this ignores newlines)
+  A science student, an amateur author, a curious composer, a luckless lad.
+baseurl: "" # the subpath of the site
+url: "http://violapterin.github.io" # the base hostname & protocol for your site
+author: Violapterin
+twitter_username: violapterin
+github_username:  violapterin
 
-# Build settings
 markdown: kramdown
 permalink: /:year/:title:output_ext
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
