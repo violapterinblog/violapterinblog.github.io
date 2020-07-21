@@ -10,9 +10,11 @@ github_username:  violapterin
 
 markdown: kramdown
 permalink: /:year/:title:output_ext
+kramdown:
+  parse_block_html: false
 
 defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
+  scope:
+    path: "assets/img"
+  values:
+    image: true
