@@ -13,7 +13,6 @@
     href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
   />
 
-  <!-- text fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic"
     rel="stylesheet"
@@ -35,34 +34,16 @@
     type="text/css"
   />
 
-  <!-- math fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:900"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Alegreya:900"
-    rel="stylesheet"
-    type="text/css"
-  />
-
-  <!-- to call Mathjax -->
-
-  <!-- https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html -->
+  <!-- Mathjax -->
+  <script src="../scripts/mathjax-config.js" defer></script>
 
   <script
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     type="text/javascript"
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
   ></script>
+
+
+
 </head>

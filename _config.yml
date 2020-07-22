@@ -11,7 +11,9 @@ github_username:  violapterin
 markdown: kramdown
 permalink: /:year/:title:output_ext
 kramdown:
+  math_engine: mathjax
   parse_block_html: false
+use_math: true
 
 defaults:
   scope:
