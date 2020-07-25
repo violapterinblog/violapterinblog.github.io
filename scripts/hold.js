@@ -1,34 +1,10 @@
+
+
+
+
+
 <!--
-      a: "+", <!--  add -->
-      s: "-", <!--  subtract -->
-      m: "\\cdot", <!--  multiply -->
-      d: "/", <!--  divide -->
-      e: "=", <!--  equal -->
-      g: ">", <!--  greater -->
-      l: "<", <!--  less -->
-      c: ",", <!--  comma -->
-      p: ".", <!--  period -->
 
-      PCl: ":", <!--  colon -->
-      PSm: ";", <!--  semicolon -->
-      PEx: "!", <!--  colon -->
-      PQs: "?", <!--  question -->
-
-      PDC: "\\cdots",
-      PDL: "\\ldots",
-      PDV: "\\vdots",
-      PDD: "\\ddots",
-
-      RGE: "\\geq",
-      RLE: "\\leq",
-      RD: ":=", <!--  definition -->
-      RS: "\\sim",
-      RA: "\\approx",
-      RV: "\\mid", <!--  vertical -->
-
-<!--  letter-like symbols (L) -->
-      LPt: "\\partial",
-      LT: "\\intercal",
 
 <!--  Greek (G) -->
       Ga: "\\alpha",
@@ -66,14 +42,30 @@
       GW: "\\Omega",
       Gw: "\\omega",
 
-      SpXS: "",
-      SpS: "",
-      SpM: "",
-      SpL: "",
-      SpXL: "",
--->
+      SU: "\\.",
+      SD: "\\:",
+      ST: "\\;",
+      SQ: "\\quad",
 
 
+<!-- while-like -->
+\define [1] {\WIU} {\int {#1}}
+\define [2] {\WID} {\int {#1} \Ld #2}
+\define [3] {\WIT} {\int _{#1} {#2} \Ld #3}
+\define [4] {\WIQ} {\int _{#1} ^{#2} #3 \Ld #4}
+\define [1] {\WSU} {\sum {#1}}
+\define [2] {\WSD} {\sum _{#1} {#2}}
+\define [3] {\WST} {\sum _{#1} ^{#2} {#3}}
+\define [1] {\WPU} {\prod {#1}}
+\define [2] {\WPD} {\prod _{#1} {#2}}
+\define [3] {\WPT} {\prod _{#1} ^{#2} {#3}}
+
+<!--  superscript, subscript -->
+\define [2] {\X} {{#1} _{#2}}
+\define [2] {\Y} {{#1} ^{#2}}
+\define [3] {\Z} {{#1} _{#2} ^{#3}}
+\define [2] {\U} {\underset {#2} {#1}}
+\define [2] {\V} {\overset {#2} {#1}}
 
 
 

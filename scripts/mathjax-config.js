@@ -1,5 +1,12 @@
-MathJax = {
+/* Mathjax has difficulty recognizing `$$`, which Kramdown takes for granted.
+Selected references:
+`http://docs.mathjax.org/en/latest/upgrading/v2.html#changes-in-the-mathjax-api`
+`https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages`
+`https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html`
+`https://chrisyeh96.github.io/2020/03/29/mathjax3.html`
+*/
 
+MathJax = {
   options: {
     renderActions: {
       find: [
@@ -26,87 +33,69 @@ MathJax = {
     },
   },
 
+  /* Define LaTeX macros. Recall that `\` has to be escaped. */
   tex: {
     macros: {
-      XX: "abcd",
+      // Test
+      ZFC: "\\textsf {ZFC}",
+      Eq: ["\\begin{equation} #1 \\end{equation}", 1],
 
-      a: "+", <!--  add -->
-      s: "-", <!--  subtract -->
-      m: "\\cdot", <!--  multiply -->
-      d: "/", <!--  divide -->
-      e: "=", <!--  equal -->
-      g: ">", <!--  greater -->
-      l: "<", <!--  less -->
-      c: ",", <!--  comma -->
-      p: ".", <!--  period -->
+      P puctuation
+      R relation
+      S symbol
 
+      LF frak
+      LB blackboard
+      LH handwriting
+      LS script
+      G greek
+      C cyrillic
+      
+      D diacritics
+      U under
+      T text
+
+      W while
+
+      O over
+
+      X
+      Y
+      Z
+      
+
+      OA: "+", <!--  add -->
+      OS: "-", <!--  subtract -->
+      OM: "\\cdot", <!--  multiply -->
+      OD: "/", <!--  divide -->
+
+      PC: ",", <!--  comma -->
+      PP: ".", <!--  period -->
       PCl: ":", <!--  colon -->
       PSm: ";", <!--  semicolon -->
-      PEx: "!", <!--  colon -->
-      PQs: "?", <!--  question -->
-
+      PEc: "!", <!--  exclamation -->
+      PQt: "?", <!--  question -->
       PDC: "\\cdots",
       PDL: "\\ldots",
       PDV: "\\vdots",
       PDD: "\\ddots",
 
+      RE: "=", <!--  equal -->
+      RG: ">", <!--  greater -->
+      RL: "<", <!--  less -->
       RGE: "\\geq",
       RLE: "\\leq",
       RD: ":=", <!--  definition -->
       RS: "\\sim",
       RA: "\\approx",
-      RV: "\\mid", <!--  vertical -->
+      RM: "\\mid", <!--  vertical -->
 
-<!--  letter-like symbols (L) -->
-      LPt: "\\partial",
+      <!--  letter-like (L) -->
+      Ld: "\\mathfrak {d}",
+      LP: "\\partial",
       LT: "\\intercal",
-
-<!--  Greek (G) -->
-      Ga: "\\alpha",
-      Gb: "\\beta",
-      GG: "\\Gamma",
-      Gg: "\\gamma",
-      GD: "\\Delta",
-      Gd: "\\delta",
-      Ge: "\\varepsilon",
-      Gz: "\\zeta",
-      Gh: "\\eta",
-      GQ: "\\Theta",
-      Gq: "\\vartheta",
-      Gi: "\\iota",
-      Gk: "\\kappa",
-      GL: "\\Lambda",
-      Gl: "\\lambda",
-      Gm: "\\mu",
-      Gn: "\\nu",
-      Gi: "\\iota",
-      GP: "\\Pi",
-      Gp: "\\pi",
-      Gr: "\\rho",
-      GS: "\\Sigma",
-      Gs: "\\sigma",
-      Gt: "\\tau",
-      GU: "\\Upsilon",
-      Gu: "\\upsilon",
-      GF: "\\Phi",
-      Gf: "\\varphi",
-      GX: "\\Chi",
-      Gx: "\\chi",
-      GY: "\\Psi",
-      Gy: "\\psi",
-      GW: "\\Omega",
-      Gw: "\\omega",
-
-      SpXS: "",
-      SpS: "",
-      SpM: "",
-      SpL: "",
-      SpXL: "",
-
 
 
     },
   },
-
-
 };
