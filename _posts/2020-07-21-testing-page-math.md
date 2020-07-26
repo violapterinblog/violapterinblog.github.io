@@ -5,40 +5,42 @@ date: 2020-07-21
 categories: test
 ---
 
-- Latin alphabets
+- Latin: plain, upper case
 
 $$
   A B C D E F G H I J K L M
   N O P Q R S T U V W X Y Z $$
 
+- Latin: plain, lower case
+
 $$
   a b c d e f g h i j k l m
   n o p q r s t u v w x y z $$
 
-$$ \Eq {ab=cd} $$
+- Latin: blackboard bold
 
-$$ \ZFC $$
+$$
+  \VFA \VFB \VFC \VFD \VFE \VFF \VFG \VFH \VFI \VFJ \VFK \VFL \VFM
+  \VFN \VFO \VFP \VFQ \VFR \VFS \VFT \VFU \VFV \VFW \VFX \VFY \VFZ $$
 
-$$\textsf {ABCDEFGHIJKLMN} \textsf {OPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}$$
+- Latin: script
 
+$$
+  \VSA \VSB \VSC \VSD \VSE \VSF \VSG \VSH \VSI \VSJ \VSK \VSL \VSM
+  \VSN \VSO \VSP \VSQ \VSR \VSS \VST \VSU \VSV \VSW \VSX \VSY \VSZ $$
 
-$${\large \textrm {АБВ}} AB {\Large \textrm {ҐДЂ}} DE \textrm {ЕЁ} {\large \textsf {абвгґд}} \textsf {abc} \textsf {ђеёєжзѕиії}$$
+- Greek: plain, upper case
 
-$$a b c {\large \textrm {БҐДЂЄЖЗИЛЉЊЋЦЧЏШЩЭЮЯ бвгґдђєжзилљмнњптћцчџшщэюя}} d e f$$
+$$
+  \GG \GD \GQ \GL \GP \GS \GU \GF \GY \GW $$
 
-$$\mathbb {ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}$$
+- Greek: plain, lower case
 
-$$\mathfrak {ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}$$
+$$
+  \Ga \Gb \Gg \Gd \Ge \Gz \Gh \Gq \Gi \Gk \Gl \Gm
+  \Gn \Gi \Gp \Gr \Gs \Gt \Gu \Gf \Gx \Gy \Gw $$
 
-$$\mathcal {ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}$$
-
-$$\mathscr {ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}$$
-
-
-
-БДЄЖЗИЛЦЧЏШЩЭЯ
-
-бдєжзилцчџшщэя
+$$ \WIISD {abc} {def} {\star} f dx $$
 
 When $$a \ne 0$$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are
 $$x = \dfrac {-b \pm \sqrt{b^2-4ac}} {2a}.$$

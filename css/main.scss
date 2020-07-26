@@ -4,19 +4,22 @@
 
 @charset "utf-8";
 
-// Our variables
+$body-font-style: normal;
+$small-font-size: 12px;
+$body-line-height: 1.5;
+$small-line-height: 1.0;
+$spacing-unit: 24px;
+$body-text-color: #111;
+
 $base-font-family: "Open Sans", "Noto Sans CJK SC", sans-serif;
 $base-font-size: 16px;
-$base-font-style: normal;
 $base-font-weight: 200;
-$small-font-size: 12px;
-$base-line-height: 1.5;
+$iso-font-family: "Source Serif Pro", "Noto Serif CJK SC", serif;
+$iso-font-size: 16px;
+$iso-font-weight: 200;
 
-$spacing-unit: 30px;
-
-$text-color: #111;
 $background-color: #fdfdfd;
-$brand-color: #2a7ae2;
+$link-color: #2a7ae2;
 
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
