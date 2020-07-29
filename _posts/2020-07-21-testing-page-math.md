@@ -5,74 +5,32 @@ date: 2020-07-21
 categories: test
 ---
 
-$$A \XXXA_1^2$$
-$$A \XXXDAO_1^2$$
-$$A \XXXDAU_1^2$$
-$$A \XXXDAT_1^2$$
+$$\LA_1^2 \DOT{\LA}_1^2 \DUT{\LA}_1^2 \La \DOT{\La} \DUT{\Lg}$$
 
-$$A \XXXA_1^2$$
-$$A \XXXTAO_1^2$$
-$$A {\XXXTAU}_1^2$$
-$$A \XXXTAT_1^2$$
+$$\frac{4\LA}{3\La}$$
 
-$$g \XXXg_1^2$$
-$$g \XXXDgO_1^2$$
-$$g \XXXDgU_1^2$$
-$$g \XXXDgT_1^2$$
+$$\int_{\LA}^{\frac{3}{\La}}$$
 
-$$g \XXXg_1^2$$
-$$g \XXXTgO_1^2$$
-$$g {\XXXTgU}_1^2$$
-$$g \XXXTgT_1^2$$
+True:
 
-<!-- $$ \DD {T} \DD {h} \DD {e} \DD {f} \DD {l} \DD {a} \DD {g} $$ -->
-
-<!--$$ A \dot {A}
-\overset {.} {\Large \unicode[.05,0.05][Source Serif Pro]{65}}
-A \vphantom{a}_1^2 \vphantom{g}_1^2 A \vphantom{f}_1^2 \vphantom{A}_1^2 A
-A \vphantom{\alpha}_1^2 \vphantom{\beta}_1^2 A \vphantom{\eta}_1^2 \vphantom{\Omega}_1^2 A$$-->
-
-<!--$$A \class{testmath}{A} A$$-->
-
-<!--
-$$A \dot {\text{И}} _1^2 A$$
-$$A \dot {\text{и}} _1^2 A$$
-$$A \dot {\text{Ξ}} _1^2 A$$
-$$A \dot {\text{ξ}} _1^2 A$$
--->
-
-<!--
-$$A \dot {И} _1^2 A$$
-$$A \dot {и} _1^2 A$$
-$$A \dot {Ξ} _1^2 A$$
-$$A \dot {ξ} _1^2 A$$
-$$A \dot {\Xi} _1^2 A$$
-$$A \dot {\xi} _1^2 A$$
--->
+$$A_1^2 \dot {A}_1^2 \frac{4A}{3a} \int_A^{\frac{3}{a}}$$
 
 - Latin: plain, upper case
 
+<!--
 $$
-  A B C D E F G H I J K L M
-  N O P Q R S T U V W X Y Z $$
+  \LA \LB \LC \LD \LE \LF \LG \LH \LI \LJ \LK \LL \LM
+  \LN \LO \LP \LQ \LR \LS \LT \LU \LV \LW \LX \LY \LZ $$
+-->
 
 - Latin: plain, lower case
 
+<!--
 $$
-  a b c d e f g h i j k l m
-  n o p q r s t u v w x y z $$
+  \La \Lb \Lc \Ld \Le \Lf \Lg \Lh \Li \Lj \Lk \Ll \Lm
+  \Ln \Lo \Lp \Lq \Lr \Ls \Lt \Lu \Lv \Lw \Lx \Ly \Lz $$
+-->
 
-- Latin: blackboard bold
-
-$$
-  \VFA \VFB \VFC \VFD \VFE \VFF \VFG \VFH \VFI \VFJ \VFK \VFL \VFM
-  \VFN \VFO \VFP \VFQ \VFR \VFS \VFT \VFU \VFV \VFW \VFX \VFY \VFZ $$
-
-- Latin: script
-
-$$
-  \VSA \VSB \VSC \VSD \VSE \VSF \VSG \VSH \VSI \VSJ \VSK \VSL \VSM
-  \VSN \VSO \VSP \VSQ \VSR \VSS \VST \VSU \VSV \VSW \VSX \VSY \VSZ $$
 
 - Greek: plain, upper case
 
