@@ -6,6 +6,7 @@ Selected references:
 `https://chrisyeh96.github.io/2020/03/29/mathjax3.html`
 */
 
+
 MathJax = {
   options: {
     renderActions: {
@@ -33,12 +34,29 @@ MathJax = {
     },
   },
 
+
   /* Define LaTeX macros. Recall that `\` has to be escaped. */
   tex: {
     macros: {
       // Test
-      ZFC: "\\textsf {ZFC}",
-      Eq: ["\\begin{equation} #1 \\end{equation}", 1],
+      //XXXA: "{\\large \\unicode[.10,.05][Source Serif Pro]{65}}",
+      //XXXD: "\\overset {\\cdot} {\\raise{1ex}{\\XXXA}}",
+      XXXA: "\\smash {\\large \\unicode [Source Serif Pro] {65}} \\vphantom {\\small A}",
+      XXXDAO: "\\smash {\\overset {\\raise {-2mu} {\\scriptsize \\bullet}} {\\XXXA}} \\vphantom {\\XXXA}",
+      XXXDAU: "\\smash {\\underset {\\raise {8mu} {\\small \\bullet}} {\\XXXA}} \\vphantom {\\XXXA}",
+      XXXDAT: "\\dot {A}",
+      XXXTAO: "\\smash {\\overset {\\raise {-2mu} {\\small \\thicksim}} {\\XXXA}} \\vphantom {\\XXXA}",
+      XXXTAU: "\\smash {\\underset {\\raise {8mu} {\\small \\thicksim}} {\\XXXA}} \\vphantom {\\XXXA}",
+      XXXTAT: "\\tilde {A}",
+
+      XXXg: "\\smash {\\large \\unicode [Source Serif Pro] {103}} \\vphantom {\\small g}",
+      XXXDgO: "\\smash {\\overset {\\raise {-2mu} {\\scriptsize \\bullet}} {\\XXXg}} \\vphantom {\\XXXg}",
+      XXXDgU: "\\smash {\\underset {\\raise {8mu} {\\scriptsize \\bullet}} {\\XXXg}} \\vphantom {\\XXXg}",
+      XXXDgT: "\\dot {g}",
+      XXXTgO: "\\smash {\\overset {\\raise {-2mu} {\\small \\thicksim}} {\\XXXg}} \\vphantom {\\XXXg}",
+      XXXTgU: "\\smash {\\underset {\\raise {8mu} {\\small \\thicksim}} {\\XXXg}} \\vphantom {\\XXXg}",
+      XXXTgT: "\\tilde {g}",
+
 
       I: ["{#1} _{#2}", 2],
       S: ["{#1} _{#2}", 2],
@@ -75,10 +93,12 @@ MathJax = {
       BCP: ["\\Bigg\\{ #1 \\Bigg\\}", 1],
 
 
-      OA: "+", // add
-      OS: "-", // subtract
-      OM: "\\cdot", // multiply
-      OD: "/", // divide
+      DD: ["\\underset {#1} {\\cdot}", 1],
+
+      AA: "+", // add
+      AS: "-", // subtract
+      AM: "\\cdot", // multiply
+      AD: "/", // divide
 
       PC: ",", // comma
       PP: ".", // period
@@ -225,61 +245,38 @@ MathJax = {
       /*
       P puctuation
       R relation
-      O operation
+      A arithmetic
       W while
 
+      N number
+      L Latin
       VF frak
       VB blackboard
       VH handwriting
       G greek
       C cyrillic
-      L letter-like
-      A arrow
-      E empty
-      X other symbols
-      
-      DS, DI diacritics
 
+      E empty
+      DS, DI diacritics
       T text
       M matrix
       B bracket
 
       S supra
       I infra
+      O over
+      U under
       F fraction
+      Q quadratic
 
-      // ABCDE FGILM OPRST VWX
+      X letter-like symbols
+      Y non-letter symbols
+      Z geometric symbols
+
+
+      // PRAWNLVGCEDTMBSIOUFQXYZ
+      // ABCDE FGILM NOPQR STUVW XYZ
+      // (HJK)
       // ...... ...... ...... ......
-
-      P puctuation
-      R relation
-      O operation
-      S symbol
-      W while
-
-      LF frak
-      LB blackboard
-      LH handwriting
-      LS script
-      G greek
-      C cyrillic
-      
-      M mark
-
-      T text
-      V vector
-
-      A above
-      B below
-      U up
-      D down
-      F fraction
-
-      
-      //ABCDFGLMOPRSTUVWX
-      //EHIJKNQYZ
-      //Latin: (U, D, T, Q, Q, S, S, O, N)
-      //Greek: (M, D, T, T, P, H, H, O, N)
-      //Mine:  (M, D, T, Q, P, H, S, O, N)
-      parenthsis, brace, bracket
+      //number:  (M, D, T, Q, P, H, S, O, N)
       */

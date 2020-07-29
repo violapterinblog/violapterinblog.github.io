@@ -23,3 +23,27 @@ We hold these truths to be self-evident, that all men are created equal, that th
 |=================+============+=================+================|
 | Footer row      |            |                 |                |
 |-----------------+------------+-----------------+----------------|
+
+Below are the Old Chinese initial consonants recognized by Li Fang-Kuei and William Baxter.
+[wiki](https://en.wikipedia.org/wiki/Old_Chinese_phonology)
+
+
+| -- + -- +-- + -- + -- + -- + -- + -- + -- |
+| | | Labial | Dental | Palatal | Velar | Laryngeal |
+| -- + -- +-- + -- + -- + -- + -- + -- + -- |
+| | | | plain | sibilant | | plain | labialized | plain | labialized |
+| -- + -- +-- + -- + -- + -- + -- + -- + -- |
+| Stop or affricate | voiceless | \*p | \*t | \*ts | \*k | \*kʷ | \*ʔ | \*ʔʷ |
+| -- + -- +-- + -- + -- + -- + -- + -- + -- |
+
+<!--
+aspirate 	*pʰ 	*tʰ 	*tsʰ 		*kʰ 	*kʷʰ 		
+voiced 	*b 	*d 	*dz 		*ɡ 	*ɡʷ 		
+Nasal 	voiceless 	*m̥ 	*n̥ 			*ŋ̊ 	*ŋ̊ʷ 		
+voiced 	*m 	*n 			*ŋ 	*ŋʷ 		
+Lateral 	voiceless 		*l̥ 						
+voiced 		*l 						
+Fricative or
+approximant 	voiceless 		(*r̥) 	*s 	(*j̊) 			*h 	*hʷ
+voiced 		*r 	(*z) 	(*j) 			(*ɦ) 	(*w)
+-->

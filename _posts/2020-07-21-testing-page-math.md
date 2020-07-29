@@ -5,6 +5,51 @@ date: 2020-07-21
 categories: test
 ---
 
+$$A \XXXA_1^2$$
+$$A \XXXDAO_1^2$$
+$$A \XXXDAU_1^2$$
+$$A \XXXDAT_1^2$$
+
+$$A \XXXA_1^2$$
+$$A \XXXTAO_1^2$$
+$$A {\XXXTAU}_1^2$$
+$$A \XXXTAT_1^2$$
+
+$$g \XXXg_1^2$$
+$$g \XXXDgO_1^2$$
+$$g \XXXDgU_1^2$$
+$$g \XXXDgT_1^2$$
+
+$$g \XXXg_1^2$$
+$$g \XXXTgO_1^2$$
+$$g {\XXXTgU}_1^2$$
+$$g \XXXTgT_1^2$$
+
+<!-- $$ \DD {T} \DD {h} \DD {e} \DD {f} \DD {l} \DD {a} \DD {g} $$ -->
+
+<!--$$ A \dot {A}
+\overset {.} {\Large \unicode[.05,0.05][Source Serif Pro]{65}}
+A \vphantom{a}_1^2 \vphantom{g}_1^2 A \vphantom{f}_1^2 \vphantom{A}_1^2 A
+A \vphantom{\alpha}_1^2 \vphantom{\beta}_1^2 A \vphantom{\eta}_1^2 \vphantom{\Omega}_1^2 A$$-->
+
+<!--$$A \class{testmath}{A} A$$-->
+
+<!--
+$$A \dot {\text{И}} _1^2 A$$
+$$A \dot {\text{и}} _1^2 A$$
+$$A \dot {\text{Ξ}} _1^2 A$$
+$$A \dot {\text{ξ}} _1^2 A$$
+-->
+
+<!--
+$$A \dot {И} _1^2 A$$
+$$A \dot {и} _1^2 A$$
+$$A \dot {Ξ} _1^2 A$$
+$$A \dot {ξ} _1^2 A$$
+$$A \dot {\Xi} _1^2 A$$
+$$A \dot {\xi} _1^2 A$$
+-->
+
 - Latin: plain, upper case
 
 $$
