@@ -26,42 +26,14 @@ MathJax = {
     },
   },
 
-
-  /* Define LaTeX macros. Recall that `\` has to be escaped. */
+  /* * * * * * * * * * * * * * * * * * * * * * * */
+  /* Define LaTeX macros, which will be expanded before TeX
+  is called. Beware that `\` has to be escaped in JS. */
   tex: {
     macros: {
       // Test
-      XXXA: "\\smash {\\large \\unicode [Source Serif Pro] {65}} \\vphantom {\\small A}",
-      XXXDAO: "\\smash {\\overset {\\raise {-2mu} {\\scriptsize \\bullet}} {\\XXXA}} \\vphantom {\\XXXA}",
-      XXXDAU: "\\smash {\\underset {\\raise {8mu} {\\small \\bullet}} {\\XXXA}} \\vphantom {\\XXXA}",
-      XXXDAT: "\\dot {A}",
-      XXXTAO: "\\smash {\\overset {\\raise {-2mu} {\\small \\thicksim}} {\\XXXA}} \\vphantom {\\XXXA}",
-      XXXTAU: "\\smash {\\underset {\\raise {8mu} {\\small \\thicksim}} {\\XXXA}} \\vphantom {\\XXXA}",
-      XXXTAT: "\\tilde {A}",
-
-      XXXg: "\\smash {\\large \\unicode [Source Serif Pro] {103}} \\vphantom {\\small g}",
-      XXXDgO: "\\smash {\\overset {\\raise {-2mu} {\\scriptsize \\bullet}} {\\XXXg}} \\vphantom {\\XXXg}",
-      XXXDgU: "\\smash {\\underset {\\raise {8mu} {\\scriptsize \\bullet}} {\\XXXg}} \\vphantom {\\XXXg}",
-      XXXDgT: "\\dot {g}",
-      XXXTgO: "\\smash {\\overset {\\raise {-2mu} {\\small \\thicksim}} {\\XXXg}} \\vphantom {\\XXXg}",
-      XXXTgU: "\\smash {\\underset {\\raise {8mu} {\\small \\thicksim}} {\\XXXg}} \\vphantom {\\XXXg}",
-      XXXTgT: "\\tilde {g}",
 
 
-      I: ["{#1} _{#2}", 2],
-      S: ["{#1} _{#2}", 2],
-      IS: ["{#1} _{#2} ^{#3}", 3],
-
-      F: ["\\frac {#1} {#2}", 2], // fraction
-      Q: ["\\sqrt {#1}", 1], // quadratic
-
-      // while-like constructions (W)
-      WI: "\\int",
-      WID: ["\\int \\!\\! {\\vphantom {\\int}}^{#1}", 1],
-      WII: ["\\int\\limits_{#1}", 1],
-      WIID: ["\\int\\limits_{#1} \\!\\! {\\vphantom {\\int}}^{#2}", 2],
-      WIIS: ["\\int\\limits_{#1}^{#2}", 2],
-      WIISD: ["\\int\\limits_{#1}^{#2} \\!\\! {\\vphantom {\\int}}^{#3}", 3],
 
 
       /* Group 1: N, L, T, G, C, A, R, P, E */
@@ -101,7 +73,7 @@ MathJax = {
       Lc: "\\smash {\\large \\unicode [Source Serif Pro] {99}} \\vphantom {\\small c}",
       Ld: "\\smash {\\large \\unicode [Source Serif Pro] {100}} \\vphantom {\\small d}",
       Le: "\\smash {\\large \\unicode [Source Serif Pro] {101}} \\vphantom {\\small e}",
-      Lf: "\\smash {\\large \\unicode [Source Serif Pro] {102}} \\vphantom {\\small f}",
+      Lf: "\\smash {\\large \\unicode [Source Serif Pro] {102}} \\vphantom {\\small h}", // !
       Lg: "\\smash {\\large \\unicode [Source Serif Pro] {103}} \\vphantom {\\small g}",
       Lh: "\\smash {\\large \\unicode [Source Serif Pro] {104}} \\vphantom {\\small h}",
       Li: "\\smash {\\large \\unicode [Source Serif Pro] {105}} \\vphantom {\\small i}",
@@ -152,32 +124,32 @@ MathJax = {
       TY: "\\smash {\\large \\unicode [Source Serif Pro] {89}} \\vphantom {\\small Y}",
       TZ: "\\smash {\\large \\unicode [Source Serif Pro] {90}} \\vphantom {\\small Z}",
 
-      La: "\\smash {\\large \\unicode [Source Serif Pro] {97}} \\vphantom {\\small a}",
-      Lb: "\\smash {\\large \\unicode [Source Serif Pro] {98}} \\vphantom {\\small b}",
-      Lc: "\\smash {\\large \\unicode [Source Serif Pro] {99}} \\vphantom {\\small c}",
-      Ld: "\\smash {\\large \\unicode [Source Serif Pro] {100}} \\vphantom {\\small d}",
-      Le: "\\smash {\\large \\unicode [Source Serif Pro] {101}} \\vphantom {\\small e}",
-      Lf: "\\smash {\\large \\unicode [Source Serif Pro] {102}} \\vphantom {\\small f}",
-      Lg: "\\smash {\\large \\unicode [Source Serif Pro] {103}} \\vphantom {\\small g}",
-      Lh: "\\smash {\\large \\unicode [Source Serif Pro] {104}} \\vphantom {\\small h}",
-      Li: "\\smash {\\large \\unicode [Source Serif Pro] {105}} \\vphantom {\\small i}",
-      Lj: "\\smash {\\large \\unicode [Source Serif Pro] {106}} \\vphantom {\\small j}",
-      Lk: "\\smash {\\large \\unicode [Source Serif Pro] {107}} \\vphantom {\\small k}",
-      Ll: "\\smash {\\large \\unicode [Source Serif Pro] {108}} \\vphantom {\\small l}",
-      Lm: "\\smash {\\large \\unicode [Source Serif Pro] {109}} \\vphantom {\\small m}",
-      Ln: "\\smash {\\large \\unicode [Source Serif Pro] {110}} \\vphantom {\\small n}",
-      Lo: "\\smash {\\large \\unicode [Source Serif Pro] {111}} \\vphantom {\\small o}",
-      Lp: "\\smash {\\large \\unicode [Source Serif Pro] {112}} \\vphantom {\\small p}",
-      Lq: "\\smash {\\large \\unicode [Source Serif Pro] {113}} \\vphantom {\\small q}",
-      Lr: "\\smash {\\large \\unicode [Source Serif Pro] {114}} \\vphantom {\\small r}",
-      Ls: "\\smash {\\large \\unicode [Source Serif Pro] {115}} \\vphantom {\\small s}",
-      Lt: "\\smash {\\large \\unicode [Source Serif Pro] {116}} \\vphantom {\\small t}",
-      Lu: "\\smash {\\large \\unicode [Source Serif Pro] {117}} \\vphantom {\\small u}",
-      Lv: "\\smash {\\large \\unicode [Source Serif Pro] {118}} \\vphantom {\\small v}",
-      Lw: "\\smash {\\large \\unicode [Source Serif Pro] {119}} \\vphantom {\\small w}",
-      Lx: "\\smash {\\large \\unicode [Source Serif Pro] {120}} \\vphantom {\\small x}",
-      Ly: "\\smash {\\large \\unicode [Source Serif Pro] {121}} \\vphantom {\\small y}",
-      Lz: "\\smash {\\large \\unicode [Source Serif Pro] {122}} \\vphantom {\\small z}",
+      Ta: "\\smash {\\large \\unicode [Source Serif Pro] {97}} \\vphantom {\\small a}",
+      Tb: "\\smash {\\large \\unicode [Source Serif Pro] {98}} \\vphantom {\\small b}",
+      Tc: "\\smash {\\large \\unicode [Source Serif Pro] {99}} \\vphantom {\\small c}",
+      Td: "\\smash {\\large \\unicode [Source Serif Pro] {100}} \\vphantom {\\small d}",
+      Te: "\\smash {\\large \\unicode [Source Serif Pro] {101}} \\vphantom {\\small e}",
+      Tf: "\\smash {\\large \\unicode [Source Serif Pro] {102}} \\vphantom {\\small f}",
+      Tg: "\\smash {\\large \\unicode [Source Serif Pro] {103}} \\vphantom {\\small g}",
+      Th: "\\smash {\\large \\unicode [Source Serif Pro] {104}} \\vphantom {\\small h}",
+      Ti: "\\smash {\\large \\unicode [Source Serif Pro] {105}} \\vphantom {\\small i}",
+      Tj: "\\smash {\\large \\unicode [Source Serif Pro] {106}} \\vphantom {\\small j}",
+      Tk: "\\smash {\\large \\unicode [Source Serif Pro] {107}} \\vphantom {\\small k}",
+      Tl: "\\smash {\\large \\unicode [Source Serif Pro] {108}} \\vphantom {\\small l}",
+      Tm: "\\smash {\\large \\unicode [Source Serif Pro] {109}} \\vphantom {\\small m}",
+      Tn: "\\smash {\\large \\unicode [Source Serif Pro] {110}} \\vphantom {\\small n}",
+      To: "\\smash {\\large \\unicode [Source Serif Pro] {111}} \\vphantom {\\small o}",
+      Tp: "\\smash {\\large \\unicode [Source Serif Pro] {112}} \\vphantom {\\small p}",
+      Tq: "\\smash {\\large \\unicode [Source Serif Pro] {113}} \\vphantom {\\small q}",
+      Tr: "\\smash {\\large \\unicode [Source Serif Pro] {114}} \\vphantom {\\small r}",
+      Ts: "\\smash {\\large \\unicode [Source Serif Pro] {115}} \\vphantom {\\small s}",
+      Tt: "\\smash {\\large \\unicode [Source Serif Pro] {116}} \\vphantom {\\small t}",
+      Tu: "\\smash {\\large \\unicode [Source Serif Pro] {117}} \\vphantom {\\small u}",
+      Tv: "\\smash {\\large \\unicode [Source Serif Pro] {118}} \\vphantom {\\small v}",
+      Tw: "\\smash {\\large \\unicode [Source Serif Pro] {119}} \\vphantom {\\small w}",
+      Tx: "\\smash {\\large \\unicode [Source Serif Pro] {120}} \\vphantom {\\small x}",
+      Ty: "\\smash {\\large \\unicode [Source Serif Pro] {121}} \\vphantom {\\small y}",
+      Tz: "\\smash {\\large \\unicode [Source Serif Pro] {122}} \\vphantom {\\small z}",
       // G
       // C
 
@@ -219,10 +191,42 @@ MathJax = {
       EN: "\\hspace {1.80em}",
 
       /* Group 3: D, I, S, U, O, B */
-      DOD: ["\\smash {\\overset {\\raise {-2mu} {\\small \\cdot}} {#1}} \\vphantom {#1}", 1],
-      DUD: ["\\smash {\\underset {\\raise {8mu} {\\small \\cdot}} {#1}} \\vphantom {#1}", 1],
-      DOT: ["\\smash {\\overset {\\raise {-2mu} {\\small \\thicksim}} {#1}} \\vphantom {#1}", 1],
-      DUT: ["\\smash {\\underset {\\raise {8mu} {\\small \\thicksim}} {#1}} \\vphantom {#1}", 1],
+      DOD: ["\\smash {\\overset {\\raise {0ex} {\\tiny \\bullet}} {#1}} \\vphantom {#1}", 1], // dot
+      DUD: ["\\smash {\\underset {\\raise {1ex} {\\tiny \\bullet}} {#1}} \\vphantom {#1}", 1],
+      DOT: ["\\smash {\\overset {\\raise {0ex} {\\small \\thicksim}} {#1}} \\vphantom {#1}", 1], // tilde
+      DUT: ["\\smash {\\underset {\\raise {1ex} {\\small \\thicksim}} {#1}} \\vphantom {#1}", 1],
+      DOM: ["\\smash {\\overset {\\raise {0ex} {\\textbf{-}}} {#1}} \\vphantom {#1}", 1], // macron
+      DUM: ["\\smash {\\underset {\\raise {1ex} {\\textbf{-}}} {#1}} \\vphantom {#1}", 1],
+      DOB: ["\\smash {\\overset {\\raise {0ex} {\\scriptsize \\smallsmile}} {#1}} \\vphantom {#1}", 1], // breve
+      DUB: ["\\smash {\\underset {\\raise {1ex} {\\scriptsize \\smallsmile}} {#1}} \\vphantom {#1}", 1],
+      DOC: ["\\smash {\\overset {\\raise {0ex} {\\scriptsize \\smallfrown}} {#1}} \\vphantom {#1}", 1], // check
+      DUC: ["\\smash {\\underset {\\raise {1ex} {\\scriptsize \\smallfrown}} {#1}} \\vphantom {#1}", 1],
+      DOR: ["\\smash {\\overset {\\raise {0ex} {\\scriptsize \\circ}} {#1}} \\vphantom {#1}", 1], // ring
+      DUR: ["\\smash {\\underset {\\raise {1ex} {\\scriptsize \\circ}} {#1}} \\vphantom {#1}", 1],
+
+      /*
+      DOD: ["\\smash {\\overset {\\raise {-1mu} {\\scriptsize \\bullet}} {#1}} \\vphantom {#1}", 1], // dot
+      DUD: ["\\smash {\\underset {\\raise {7mu} {\\scriptsize \\bullet}} {#1}} \\vphantom {#1}", 1],
+      DOT: ["\\smash {\\overset {\\raise {-1mu} {\\scriptsize \\thicksim}} {#1}} \\vphantom {#1}", 1], // tilde
+      DUT: ["\\smash {\\underset {\\raise {7mu} {\\scriptsize \\thicksim}} {#1}} \\vphantom {#1}", 1],
+      DOM: ["\\smash {\\overset {\\raise {-3mu} {\\scriptsize -}} {#1}} \\vphantom {#1}", 1], // macron
+      DUM: ["\\smash {\\underset {\\raise {18mu} {\\scriptsize -}} {#1}} \\vphantom {#1}", 1],
+      DOB: ["\\smash {\\overset {\\raise {-1mu} {\\scriptsize \\smallsmile}} {#1}} \\vphantom {#1}", 1], // breve
+      DUB: ["\\smash {\\underset {\\raise {7mu} {\\scriptsize \\smallsmile}} {#1}} \\vphantom {#1}", 1],
+      DOC: ["\\smash {\\overset {\\raise {-1mu} {\\scriptsize \\smallfrown}} {#1}} \\vphantom {#1}", 1], // check
+      DUC: ["\\smash {\\underset {\\raise {7mu} {\\scriptsize \\smallfrown}} {#1}} \\vphantom {#1}", 1],
+      DOR: ["\\smash {\\overset {\\raise {-3mu} {\\scriptsize \\circ}} {#1}} \\vphantom {#1}", 1], // ring
+      DUR: ["\\smash {\\underset {\\raise {10mu} {\\scriptsize \\circ}} {#1}} \\vphantom {#1}", 1],
+      */
+
+      I: ["{#1} _{#2}", 2],
+      S: ["{#1} _{#2}", 2],
+      IS: ["{#1} _{#2} ^{#3}", 3],
+
+      F: ["\\frac {#1} {#2}", 2], // fraction
+      Q: ["\\sqrt {#1}", 1], // quadratic
+
+
 
       BR: ["\\left( #1 \\right)", 1],
       BRM: ["( #1 )", 1],
@@ -245,6 +249,16 @@ MathJax = {
 
       /* Group 4: Q, F, W, M */
 
+      // while-like constructions (W)
+      WI: "\\int",
+      WID: ["\\int \\!\\! {\\vphantom {\\int}}^{#1}", 1],
+      WII: ["\\int\\limits_{#1}", 1],
+      WIID: ["\\int\\limits_{#1} \\!\\! {\\vphantom {\\int}}^{#2}", 2],
+      WIIS: ["\\int\\limits_{#1}^{#2}", 2],
+      WIISD: ["\\int\\limits_{#1}^{#2} \\!\\! {\\vphantom {\\int}}^{#3}", 3],
+
+/* Deprecated
+
       // letter-like (Y, Z)
       Ld: "\\textbf {d}",
       LdP: "\\partial",
@@ -253,7 +267,6 @@ MathJax = {
       Lj: "\\mathring {\\mathj}",
       LT: "\\intercal",
       Lp: "\\pi",
-
 
       VSA: "\\mathcal {A}",
       VSB: "\\mathcal {B}",
@@ -281,7 +294,6 @@ MathJax = {
       VSX: "\\mathcal {X}",
       VSY: "\\mathcal {Y}",
       VSZ: "\\mathcal {Z}",
-
 
       // Greek (G)
       Ga: "\\alpha",
@@ -317,7 +329,7 @@ MathJax = {
       Gy: "\\psi",
       GW: "\\Omega",
       Gw: "\\omega",
-
+*/
 
 //M, D, T, Q, P, H, S, O, N
     },
