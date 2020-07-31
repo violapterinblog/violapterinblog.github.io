@@ -5,21 +5,6 @@ date: 2020-07-21
 categories: test
 ---
 
-$$\LA_1^2 \DOT{\LA}_1^2 \DUT{\LA}_1^2 \La \DOT{\La} \DUT{\La}$$
-$$\LA_1^2 \DOD{\LA}_1^2 \DUD{\LA}_1^2 \La \DOD{\La} \DUD{\La}$$
-$$\LA_1^2 \DOM{\LA}_1^2 \DUM{\LA}_1^2 \La \DOM{\La} \DUM{\La}$$
-
-$$\LA_1^2 \DOB{\LA}_1^2 \DUB{\LA}_1^2 \La \DOB{\La} \DUB{\La}$$
-$$\LA_1^2 \DOC{\LA}_1^2 \DUC{\LA}_1^2 \La \DOC{\La} \DUC{\La}$$
-$$\LA_1^2 \DOR{\LA}_1^2 \DUR{\LA}_1^2 \La \DOR{\La} \DUR{\La}$$
-
-$$\Lg_1^2 \DOT{\Lg}_1^2 \DUT{\Lg}_1^2 \Lf \DOT{\Lf} \DUT{\Lf}$$
-$$\Lg_1^2 \DOD{\Lg}_1^2 \DUD{\Lg}_1^2 \Lf \DOD{\Lf} \DUD{\Lf}$$
-$$\Lg_1^2 \DOM{\Lg}_1^2 \DUM{\Lg}_1^2 \Lf \DOM{\Lf} \DUM{\Lf}$$
-
-$$\Lg_1^2 \DOB{\Lg}_1^2 \DUB{\Lg}_1^2 \Lf \DOB{\Lf} \DUB{\Lf}$$
-$$\Lg_1^2 \DOC{\Lg}_1^2 \DUC{\Lg}_1^2 \Lf \DOC{\Lf} \DUC{\Lf}$$
-$$\Lg_1^2 \DOR{\Lg}_1^2 \DUR{\Lg}_1^2 \Lf \DOR{\Lf} \DUR{\Lf}$$
 
 
 - Latin: plain, upper case
@@ -34,9 +19,15 @@ $$
   \La \Lb \Lc \Ld \Le \Lf \Lg \Lh \Li \Lj \Lk \Ll \Lm
   \Ln \Lo \Lp \Lq \Lr \Ls \Lt \Lu \Lv \Lw \Lx \Ly \Lz $$
 
+- Diacritics
+
+$$
+  \DOT{\LA} \DUM{\Lb} \DOH{\LC} \DOC{\Ld} \DUR{\LE} \DOD{\Lf} \DUP{\LG}
+  \DUT{\Lh} \DOM{\LI} \DUH{\Lj} \DUC{\LK} \DOR{\Ll} \DUD{\LM} \DOP{\Ln} $$
 
 - Greek: plain, upper case
 
+<!--
 $$
   \GG \GD \GQ \GL \GP \GS \GU \GF \GY \GW $$
 
@@ -45,6 +36,11 @@ $$
 $$
   \Ga \Gb \Gg \Gd \Ge \Gz \Gh \Gq \Gi \Gk \Gl \Gm
   \Gn \Gi \Gp \Gr \Gs \Gt \Gu \Gf \Gx \Gy \Gw $$
+-->
+
+$$\boldsymbol{\vee} \vee$$
+$$\boldsymbol{\wedge} \wedge$$
+$$\boldsymbol{\circ} \circ$$
 
 $$ \WIISD {abc} {def} {\star} f dx $$
 
@@ -58,4 +54,24 @@ $$\frac{4\LA}{3\La}$$
 $$\int_{\LA}^{\frac{3}{\La}}$$
 
 $$A_1^2 \dot {A}_1^2 \frac{4A}{3a} \int_A^{\frac{3}{a}}$$
+-->
+
+<!--
+$$\LA_1^2 \DOD{\LA}_1^2 \DUD{\LA}_1^2 \La \DOD{\La} \DUD{\La}$$
+$$\LA_1^2 \DOT{\LA}_1^2 \DUT{\LA}_1^2 \La \DOT{\La} \DUT{\La}$$
+$$\LA_1^2 \DOM{\LA}_1^2 \DUM{\LA}_1^2 \La \DOM{\La} \DUM{\La}$$
+$$\LA_1^2 \DOR{\LA}_1^2 \DUR{\LA}_1^2 \La \DOR{\La} \DUR{\La}$$
+
+$$\LA_1^2 \DOC{\LA}_1^2 \DUC{\LA}_1^2 \La \DOC{\La} \DUC{\La}$$
+$$\LA_1^2 \DOH{\LA}_1^2 \DUH{\LA}_1^2 \La \DOH{\La} \DUH{\La}$$
+$$\LA_1^2 \DOP{\LA}_1^2 \DUP{\LA}_1^2 \La \DOP{\La} \DUP{\La}$$
+
+$$\Lg_1^2 \DOD{\Lg}_1^2 \DUD{\Lg}_1^2 \Lf \DOD{\Lf} \DUD{\Lf}$$
+$$\Lg_1^2 \DOT{\Lg}_1^2 \DUT{\Lg}_1^2 \Lf \DOT{\Lf} \DUT{\Lf}$$
+$$\Lg_1^2 \DOM{\Lg}_1^2 \DUM{\Lg}_1^2 \Lf \DOM{\Lf} \DUM{\Lf}$$
+$$\Lg_1^2 \DOR{\Lg}_1^2 \DUR{\Lg}_1^2 \Lf \DOR{\Lf} \DUR{\Lf}$$
+
+$$\Lg_1^2 \DOC{\Lg}_1^2 \DUC{\Lg}_1^2 \Lf \DOC{\Lf} \DUC{\Lf}$$
+$$\Lg_1^2 \DOH{\Lg}_1^2 \DUH{\Lg}_1^2 \Lf \DOH{\Lf} \DUH{\Lf}$$
+$$\Lg_1^2 \DOP{\Lg}_1^2 \DUP{\Lg}_1^2 \Lf \DOP{\Lf} \DUP{\Lf}$$
 -->
