@@ -27,6 +27,9 @@ MathJax = {
   },
 
   /* * * * * * * * * * * * * * * * * * * * * * * */
+  /* * * * * * * * * * * * * * * * * * * * * * * */
+  /* * * * * * * * * * * * * * * * * * * * * * * */
+
   /* Define LaTeX macros, which will be expanded before TeX
   is called. Beware that `\` has to be escaped in JS. */
   tex: {
@@ -36,122 +39,169 @@ MathJax = {
 
 
 
+      /* * * * * * * * * * * * * * * * * * * * * * * */
       /* Group 1: N, L, T, G, C, A, R, P, E */
-      /* Group 2: X, Y, Z */
 
       // N
 
-      LA: "\\smash {\\large \\unicode [Source Serif Pro] {65}} \\vphantom {\\small A}",
-      LB: "\\smash {\\large \\unicode [Source Serif Pro] {66}} \\vphantom {\\small B}",
-      LC: "\\smash {\\large \\unicode [Source Serif Pro] {67}} \\vphantom {\\small C}",
-      LD: "\\smash {\\large \\unicode [Source Serif Pro] {68}} \\vphantom {\\small D}",
-      LE: "\\smash {\\large \\unicode [Source Serif Pro] {69}} \\vphantom {\\small E}",
-      LF: "\\smash {\\large \\unicode [Source Serif Pro] {70}} \\vphantom {\\small F}",
-      LG: "\\smash {\\large \\unicode [Source Serif Pro] {71}} \\vphantom {\\small G}",
-      LH: "\\smash {\\large \\unicode [Source Serif Pro] {72}} \\vphantom {\\small H}",
-      LI: "\\smash {\\large \\unicode [Source Serif Pro] {73}} \\vphantom {\\small I}",
-      LJ: "\\smash {\\large \\unicode [Source Serif Pro] {74}} \\vphantom {\\small J}",
-      LK: "\\smash {\\large \\unicode [Source Serif Pro] {75}} \\vphantom {\\small K}",
-      LL: "\\smash {\\large \\unicode [Source Serif Pro] {76}} \\vphantom {\\small L}",
-      LM: "\\smash {\\large \\unicode [Source Serif Pro] {77}} \\vphantom {\\small M}",
-      LN: "\\smash {\\large \\unicode [Source Serif Pro] {78}} \\vphantom {\\small N}",
-      LO: "\\smash {\\large \\unicode [Source Serif Pro] {79}} \\vphantom {\\small O}",
-      LP: "\\smash {\\large \\unicode [Source Serif Pro] {80}} \\vphantom {\\small P}",
-      LQ: "\\smash {\\large \\unicode [Source Serif Pro] {81}} \\vphantom {\\small Q}",
-      LR: "\\smash {\\large \\unicode [Source Serif Pro] {82}} \\vphantom {\\small R}",
-      LS: "\\smash {\\large \\unicode [Source Serif Pro] {83}} \\vphantom {\\small S}",
-      LT: "\\smash {\\large \\unicode [Source Serif Pro] {84}} \\vphantom {\\small T}",
-      LU: "\\smash {\\large \\unicode [Source Serif Pro] {85}} \\vphantom {\\small U}",
-      LV: "\\smash {\\large \\unicode [Source Serif Pro] {86}} \\vphantom {\\small V}",
-      LW: "\\smash {\\large \\unicode [Source Serif Pro] {87}} \\vphantom {\\small W}",
-      LX: "\\smash {\\large \\unicode [Source Serif Pro] {88}} \\vphantom {\\small X}",
-      LY: "\\smash {\\large \\unicode [Source Serif Pro] {89}} \\vphantom {\\small Y}",
-      LZ: "\\smash {\\large \\unicode [Source Serif Pro] {90}} \\vphantom {\\small Z}",
+      LA: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0041}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LB: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0042}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LC: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0043}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LD: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0044}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LE: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0045}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LF: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0046}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LG: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0047}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LH: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0048}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LI: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0049}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LK: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x004B}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LL: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x004C}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LM: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x004D}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LN: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x004E}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LO: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x004F}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LP: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0050}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LR: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0052}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LS: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0053}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LT: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0054}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LU: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0055}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LV: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0056}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LW: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0057}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LX: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0058}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LY: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0059}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      LZ: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x005A}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
 
-      La: "\\smash {\\large \\unicode [Source Serif Pro] {97}} \\vphantom {\\small a}",
-      Lb: "\\smash {\\large \\unicode [Source Serif Pro] {98}} \\vphantom {\\small b}",
-      Lc: "\\smash {\\large \\unicode [Source Serif Pro] {99}} \\vphantom {\\small c}",
-      Ld: "\\smash {\\large \\unicode [Source Serif Pro] {100}} \\vphantom {\\small d}",
-      Le: "\\smash {\\large \\unicode [Source Serif Pro] {101}} \\vphantom {\\small e}",
-      Lf: "\\smash {\\large \\unicode [Source Serif Pro] {102}} \\vphantom {\\small h}", // !
-      Lg: "\\smash {\\large \\unicode [Source Serif Pro] {103}} \\vphantom {\\small g}",
-      Lh: "\\smash {\\large \\unicode [Source Serif Pro] {104}} \\vphantom {\\small h}",
-      Li: "\\smash {\\large \\unicode [Source Serif Pro] {x0131}} \\vphantom {\\small r}", // !
-      Lj: "\\smash {\\large \\unicode [Source Serif Pro] {x0237}} \\vphantom {\\small y}", // !
-      Lk: "\\smash {\\large \\unicode [Source Serif Pro] {107}} \\vphantom {\\small k}",
-      Ll: "\\smash {\\large \\unicode [Source Serif Pro] {108}} \\vphantom {\\small l}",
-      Lm: "\\smash {\\large \\unicode [Source Serif Pro] {109}} \\vphantom {\\small m}",
-      Ln: "\\smash {\\large \\unicode [Source Serif Pro] {110}} \\vphantom {\\small n}",
-      Lo: "\\smash {\\large \\unicode [Source Serif Pro] {111}} \\vphantom {\\small o}",
-      Lp: "\\smash {\\large \\unicode [Source Serif Pro] {112}} \\vphantom {\\small p}",
-      Lq: "\\smash {\\large \\unicode [Source Serif Pro] {113}} \\vphantom {\\small q}",
-      Lr: "\\smash {\\large \\unicode [Source Serif Pro] {114}} \\vphantom {\\small r}",
-      Ls: "\\smash {\\large \\unicode [Source Serif Pro] {115}} \\vphantom {\\small s}",
-      Lt: "\\smash {\\large \\unicode [Source Serif Pro] {116}} \\vphantom {\\small t}",
-      Lu: "\\smash {\\large \\unicode [Source Serif Pro] {117}} \\vphantom {\\small u}",
-      Lv: "\\smash {\\large \\unicode [Source Serif Pro] {118}} \\vphantom {\\small v}",
-      Lw: "\\smash {\\large \\unicode [Source Serif Pro] {119}} \\vphantom {\\small w}",
-      Lx: "\\smash {\\large \\unicode [Source Serif Pro] {120}} \\vphantom {\\small x}",
-      Ly: "\\smash {\\large \\unicode [Source Serif Pro] {121}} \\vphantom {\\small y}",
-      Lz: "\\smash {\\large \\unicode [Source Serif Pro] {122}} \\vphantom {\\small z}",
+      LQ: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0051}} \\phantom {\\rule[-2mu]{0mu}{13mu}}",
+
+      LJ: "\\phantom {\\rule[-2mu]{1mu}{13mu}} \\smash {\\large \\unicode [Source Serif Pro] {x004A}} \\phantom {\\rule[-2mu]{0mu}{13mu}}",
+
+      La: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0061}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lc: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0063}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Le: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0065}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Li: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0131}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lm: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x006D}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Ln: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x006E}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lo: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x006F}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lr: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0072}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Ls: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0073}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lu: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0075}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lv: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0076}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lw: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0077}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lx: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0078}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Lz: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x007A}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+
+      Lb: "\\phantom {\\rule[0mu]{1mu}{12mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0062}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Ld: "\\phantom {\\rule[0mu]{1mu}{12mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0064}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Lf: "\\phantom {\\rule[0mu]{1mu}{12mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0066}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Lh: "\\phantom {\\rule[0mu]{1mu}{12mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0068}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Lk: "\\phantom {\\rule[0mu]{1mu}{12mu}} \\smash {\\large \\unicode [Source Serif Pro] {x006B}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Ll: "\\phantom {\\rule[0mu]{1mu}{12mu}} \\smash {\\large \\unicode [Source Serif Pro] {x006C}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+
+      Lt: "\\phantom {\\rule[0mu]{1mu}{8mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0074}} \\phantom {\\rule[0mu]{0mu}{10mu}}",
+
+      Lg: "\\phantom {\\rule[-3mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0067}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+      Lp: "\\phantom {\\rule[-3mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0070}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+      Lq: "\\phantom {\\rule[-3mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0071}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+
+      Lj: "\\phantom {\\rule[-3mu]{2mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0237}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+      Ly: "\\phantom {\\rule[-3mu]{2mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0079}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
 
       // T
+      TA: "\\smash {\\large \\unicode [Source Sans Pro] {x0041}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TB: "\\smash {\\large \\unicode [Source Sans Pro] {x0042}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TC: "\\smash {\\large \\unicode [Source Sans Pro] {x0043}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TD: "\\smash {\\large \\unicode [Source Sans Pro] {x0044}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TE: "\\smash {\\large \\unicode [Source Sans Pro] {x0045}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TF: "\\smash {\\large \\unicode [Source Sans Pro] {x0046}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TG: "\\smash {\\large \\unicode [Source Sans Pro] {x0047}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TH: "\\smash {\\large \\unicode [Source Sans Pro] {x0048}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TI: "\\smash {\\large \\unicode [Source Sans Pro] {x0049}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TK: "\\smash {\\large \\unicode [Source Sans Pro] {x004B}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TL: "\\smash {\\large \\unicode [Source Sans Pro] {x004C}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TM: "\\smash {\\large \\unicode [Source Sans Pro] {x004D}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TN: "\\smash {\\large \\unicode [Source Sans Pro] {x004E}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TO: "\\smash {\\large \\unicode [Source Sans Pro] {x004F}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TP: "\\smash {\\large \\unicode [Source Sans Pro] {x0050}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TR: "\\smash {\\large \\unicode [Source Sans Pro] {x0052}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TS: "\\smash {\\large \\unicode [Source Sans Pro] {x0053}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TT: "\\smash {\\large \\unicode [Source Sans Pro] {x0054}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TU: "\\smash {\\large \\unicode [Source Sans Pro] {x0055}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TV: "\\smash {\\large \\unicode [Source Sans Pro] {x0056}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TW: "\\smash {\\large \\unicode [Source Sans Pro] {x0057}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TX: "\\smash {\\large \\unicode [Source Sans Pro] {x0058}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TY: "\\smash {\\large \\unicode [Source Sans Pro] {x0059}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      TZ: "\\smash {\\large \\unicode [Source Sans Pro] {x005A}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
 
-      TA: "\\smash {\\large \\unicode [Source Sans Pro] {65}} \\vphantom {\\small A}",
-      TB: "\\smash {\\large \\unicode [Source Sans Pro] {66}} \\vphantom {\\small B}",
-      TC: "\\smash {\\large \\unicode [Source Sans Pro] {67}} \\vphantom {\\small C}",
-      TD: "\\smash {\\large \\unicode [Source Sans Pro] {68}} \\vphantom {\\small D}",
-      TE: "\\smash {\\large \\unicode [Source Sans Pro] {69}} \\vphantom {\\small E}",
-      TF: "\\smash {\\large \\unicode [Source Sans Pro] {70}} \\vphantom {\\small F}",
-      TG: "\\smash {\\large \\unicode [Source Sans Pro] {71}} \\vphantom {\\small G}",
-      TH: "\\smash {\\large \\unicode [Source Sans Pro] {72}} \\vphantom {\\small H}",
-      TI: "\\smash {\\large \\unicode [Source Sans Pro] {73}} \\vphantom {\\small I}",
-      TJ: "\\smash {\\large \\unicode [Source Sans Pro] {74}} \\vphantom {\\small J}",
-      TK: "\\smash {\\large \\unicode [Source Sans Pro] {75}} \\vphantom {\\small K}",
-      TL: "\\smash {\\large \\unicode [Source Sans Pro] {76}} \\vphantom {\\small L}",
-      TM: "\\smash {\\large \\unicode [Source Sans Pro] {77}} \\vphantom {\\small M}",
-      TN: "\\smash {\\large \\unicode [Source Sans Pro] {78}} \\vphantom {\\small N}",
-      TO: "\\smash {\\large \\unicode [Source Sans Pro] {79}} \\vphantom {\\small O}",
-      TP: "\\smash {\\large \\unicode [Source Sans Pro] {80}} \\vphantom {\\small P}",
-      TQ: "\\smash {\\large \\unicode [Source Sans Pro] {81}} \\vphantom {\\small Q}",
-      TR: "\\smash {\\large \\unicode [Source Sans Pro] {82}} \\vphantom {\\small R}",
-      TS: "\\smash {\\large \\unicode [Source Sans Pro] {83}} \\vphantom {\\small S}",
-      TT: "\\smash {\\large \\unicode [Source Sans Pro] {84}} \\vphantom {\\small T}",
-      TU: "\\smash {\\large \\unicode [Source Sans Pro] {85}} \\vphantom {\\small U}",
-      TV: "\\smash {\\large \\unicode [Source Sans Pro] {86}} \\vphantom {\\small V}",
-      TW: "\\smash {\\large \\unicode [Source Sans Pro] {87}} \\vphantom {\\small W}",
-      TX: "\\smash {\\large \\unicode [Source Sans Pro] {88}} \\vphantom {\\small X}",
-      TY: "\\smash {\\large \\unicode [Source Sans Pro] {89}} \\vphantom {\\small Y}",
-      TZ: "\\smash {\\large \\unicode [Source Sans Pro] {90}} \\vphantom {\\small Z}",
+      TQ: "\\smash {\\large \\unicode [Source Sans Pro] {x0051}} \\phantom {\\rule[-2mu]{0mu}{13mu}}",
+      TJ: "\\smash {\\large \\unicode [Source Sans Pro] {x004A}} \\phantom {\\rule[-2mu]{0mu}{13mu}}",
 
-      Ta: "\\smash {\\large \\unicode [Source Sans Pro] {97}} \\vphantom {\\small a}",
-      Tb: "\\smash {\\large \\unicode [Source Sans Pro] {98}} \\vphantom {\\small b}",
-      Tc: "\\smash {\\large \\unicode [Source Sans Pro] {99}} \\vphantom {\\small c}",
-      Td: "\\smash {\\large \\unicode [Source Sans Pro] {100}} \\vphantom {\\small d}",
-      Te: "\\smash {\\large \\unicode [Source Sans Pro] {101}} \\vphantom {\\small e}",
-      Tf: "\\smash {\\large \\unicode [Source Sans Pro] {102}} \\vphantom {\\small f}",
-      Tg: "\\smash {\\large \\unicode [Source Sans Pro] {103}} \\vphantom {\\small g}",
-      Th: "\\smash {\\large \\unicode [Source Sans Pro] {104}} \\vphantom {\\small h}",
-      Ti: "\\smash {\\large \\unicode [Source Sans Pro] {x0131}} \\vphantom {\\small r}", // !
-      Tj: "\\smash {\\large \\unicode [Source Sans Pro] {x0237}} \\vphantom {\\small y}", // !
-      Tk: "\\smash {\\large \\unicode [Source Sans Pro] {107}} \\vphantom {\\small k}",
-      Tl: "\\smash {\\large \\unicode [Source Sans Pro] {108}} \\vphantom {\\small l}",
-      Tm: "\\smash {\\large \\unicode [Source Sans Pro] {109}} \\vphantom {\\small m}",
-      Tn: "\\smash {\\large \\unicode [Source Sans Pro] {110}} \\vphantom {\\small n}",
-      To: "\\smash {\\large \\unicode [Source Sans Pro] {111}} \\vphantom {\\small o}",
-      Tp: "\\smash {\\large \\unicode [Source Sans Pro] {112}} \\vphantom {\\small p}",
-      Tq: "\\smash {\\large \\unicode [Source Sans Pro] {113}} \\vphantom {\\small q}",
-      Tr: "\\smash {\\large \\unicode [Source Sans Pro] {114}} \\vphantom {\\small r}",
-      Ts: "\\smash {\\large \\unicode [Source Sans Pro] {115}} \\vphantom {\\small s}",
-      Tt: "\\smash {\\large \\unicode [Source Sans Pro] {116}} \\vphantom {\\small t}",
-      Tu: "\\smash {\\large \\unicode [Source Sans Pro] {117}} \\vphantom {\\small u}",
-      Tv: "\\smash {\\large \\unicode [Source Sans Pro] {118}} \\vphantom {\\small v}",
-      Tw: "\\smash {\\large \\unicode [Source Sans Pro] {119}} \\vphantom {\\small w}",
-      Tx: "\\smash {\\large \\unicode [Source Sans Pro] {120}} \\vphantom {\\small x}",
-      Ty: "\\smash {\\large \\unicode [Source Sans Pro] {121}} \\vphantom {\\small y}",
-      Tz: "\\smash {\\large \\unicode [Source Sans Pro] {122}} \\vphantom {\\small z}",
+      Ta: "\\smash {\\large \\unicode [Source Sans Pro] {x0061}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tc: "\\smash {\\large \\unicode [Source Sans Pro] {x0063}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Te: "\\smash {\\large \\unicode [Source Sans Pro] {x0065}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tm: "\\smash {\\large \\unicode [Source Sans Pro] {x006D}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tn: "\\smash {\\large \\unicode [Source Sans Pro] {x006E}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      To: "\\smash {\\large \\unicode [Source Sans Pro] {x006F}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tr: "\\smash {\\large \\unicode [Source Sans Pro] {x0072}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Ts: "\\smash {\\large \\unicode [Source Sans Pro] {x0073}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tu: "\\smash {\\large \\unicode [Source Sans Pro] {x0075}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tv: "\\smash {\\large \\unicode [Source Sans Pro] {x0076}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tw: "\\smash {\\large \\unicode [Source Sans Pro] {x0077}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tx: "\\smash {\\large \\unicode [Source Sans Pro] {x0078}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+      Tz: "\\smash {\\large \\unicode [Source Sans Pro] {x007A}} \\phantom {\\rule[0mu]{0mu}{8mu}}",
+
+      Tb: "\\smash {\\large \\unicode [Source Sans Pro] {x0062}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Td: "\\smash {\\large \\unicode [Source Sans Pro] {x0064}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Tf: "\\smash {\\large \\unicode [Source Sans Pro] {x0066}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Th: "\\smash {\\large \\unicode [Source Sans Pro] {x0068}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Ti: "\\smash {\\large \\unicode [Source Sans Pro] {x0069}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Tk: "\\smash {\\large \\unicode [Source Sans Pro] {x006B}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+      Tl: "\\smash {\\large \\unicode [Source Sans Pro] {x006C}} \\phantom {\\rule[0mu]{0mu}{12mu}}",
+
+      Tt: "\\smash {\\large \\unicode [Source Sans Pro] {x0074}} \\phantom {\\rule[0mu]{0mu}{10mu}}",
+
+      Tg: "\\smash {\\large \\unicode [Source Sans Pro] {x0067}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+      Tp: "\\smash {\\large \\unicode [Source Sans Pro] {x0070}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+      Tq: "\\smash {\\large \\unicode [Source Sans Pro] {x0071}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+      Ty: "\\smash {\\large \\unicode [Source Sans Pro] {x0079}} \\phantom {\\rule[-3mu]{0mu}{11mu}}",
+
+      Tj: "\\smash {\\large \\unicode [Source Sans Pro] {x006A}} \\phantom {\\rule[-3mu]{0mu}{15mu}}",
 
       // G
+
+      GG: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0393}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GD: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0394}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GQ: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x0398}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GL: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x039B}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GC: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x039E}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GP: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03A0}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GS: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03A3}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GU: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03A5}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GF: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03A6}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GY: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03A8}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      GW: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03A9}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+
+      Ga: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B1}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gb: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B2}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gg: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B3}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gd: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B4}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gv: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B5}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gz: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B6}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gh: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B7}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gq: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B8}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gi: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03B9}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gk: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03BA}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gl: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03BB}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gm: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03BC}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gn: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03BD}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gc: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03BE}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gp: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C0}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gr: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C1}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gs: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C2}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gt: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C3}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gu: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C4}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gf: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C5}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gx: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C6}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gy: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C7}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+      Gw: "\\phantom {\\rule[0mu]{1mu}{11mu}} \\smash {\\large \\unicode [Source Serif Pro] {x03C8}} \\phantom {\\rule[0mu]{0mu}{11mu}}",
+
 
       // C
 
@@ -192,17 +242,20 @@ MathJax = {
       EO: "\\hspace {1.60em}",
       EN: "\\hspace {1.80em}",
 
+      /* * * * * * * * * * * * * * * * * * * * * * * */
+      /* Group 2: X, Y, Z */
+
       /* Group 3: D, I, S, U, O, B */
       DOT: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\thicksim}}} {#1}} \\vphantom {#1}", 1], // tilde
-      DOM: ["\\smash {\\overset {\\raise {-2mu} {\\textbf{-}}} {#1}} \\vphantom {#1}", 1], // macron
-      DOH: ["\\smash {\\overset {\\raise {1mu} {\\tiny \\boldsymbol {\\vee}}} {#1}} \\vphantom {#1}", 1], // hachek
-      DOC: ["\\smash {\\overset {\\raise {1mu} {\\tiny \\boldsymbol {\\wedge}}} {#1}} \\vphantom {#1}", 1], // circumflex
-      DOR: ["\\smash {\\overset {\\raise {1mu} {\\tiny \\boldsymbol {\\circ}}} {#1}} \\vphantom {#1}", 1], // ring
+      DOM: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {-}}} {#1}} \\vphantom {#1}", 1], // macron
+      DOH: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\vee}}} {#1}} \\vphantom {#1}", 1], // hachek
+      DOC: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\wedge}}} {#1}} \\vphantom {#1}", 1], // circumflex
+      DOR: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\circ}}} {#1}} \\vphantom {#1}", 1], // ring
       DOD: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\bullet}} {#1}} \\vphantom {#1}", 1], // dot
-      DOP: ["\\smash {\\overset {\\raise {2mu} {\\small \\textbf{,}}} {#1}} \\vphantom {#1}", 1], // psili
+      DOP: ["\\smash {\\overset {\\raise {-1mu} {\\small \\textbf{,}}} {#1}} \\vphantom {#1}", 1], // psili
 
       DUT: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\thicksim}}} {#1}} \\vphantom {#1}", 1],
-      DUM: ["\\smash {\\underset {\\raise {8mu} {\\textbf{-}}} {#1}} \\vphantom {#1}", 1],
+      DUM: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {-}}} {#1}} \\vphantom {#1}", 1],
       DUH: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\vee}}} {#1}} \\vphantom {#1}", 1],
       DUC: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\wedge}}} {#1}} \\vphantom {#1}", 1],
       DUR: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\circ}}} {#1}} \\vphantom {#1}", 1],
