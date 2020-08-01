@@ -5,38 +5,24 @@ date: 2020-07-21
 categories: test
 ---
 
-
-
 - Diacritics
 
 $$
-  \DOT{\LA} \DUM{\Lb} \DOH{\LC} \DOC{\Ld} \DUR{\LE} \DOD{\Lf} \DUP{\LG}
-  \DUT{\Lh} \DOM{\LI} \DUH{\Lj} \DUC{\LK} \DOR{\Ll} \DUD{\LM} \DOP{\Ln} $$
-
-- Greek: plain, upper case
-
-<!--
-$$
-  \GG \GD \GQ \GL \GP \GS \GU \GF \GY \GW $$
-
-- Greek: plain, lower case
+  \DOT{\LA} \DOM{\Lb} \DUH{\LC} \DOC{\Ld} \DOT{\LE} \DUM{\Lf} \DOH{\LG} \DOH{\Lh} \DUC{\LI}
+  \DUT{\Lj} \DOM{\LK} \DUH{\Ll} \DOC{\LM} \DUT{\Ln} \DOM{\LO} \DUH{\Lp} \DOH{\LQ} \DUC{\Lr} $$
 
 $$
-  \Ga \Gb \Gg \Gd \Ge \Gz \Gh \Gq \Gi \Gk \Gl \Gm
-  \Gn \Gi \Gp \Gr \Gs \Gt \Gu \Gf \Gx \Gy \Gw $$
--->
+  \DOR{\La} \DUD{\LB} \DOP{\Lc} \DUR{\LD} \DOD{\Le} \DUP{\LF}
+  \DOR{\Lg} \DUM{\LH} \DOH{\Li} \DUC{\LJ} \DOT{\Lk} \DUM{\LL} $$
 
 
 $$ \WIISD {abc} {def} {\star} f dx $$
-
-<!--
 
 $$\frac{4\LA}{3\La}$$
 
 $$\int_{\LA}^{\frac{3}{\La}}$$
 
 $$A_1^2 \dot {A}_1^2 \frac{4A}{3a} \int_A^{\frac{3}{a}}$$
--->
 
 <!--
 $$\LA_1^2 \DOD{\LA}_1^2 \DUD{\LA}_1^2 \La \DOD{\La} \DUD{\La}$$
