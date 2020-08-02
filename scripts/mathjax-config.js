@@ -76,6 +76,10 @@ MathJax = {
       /* * * * * * * * * * * * * * * * * * * * * * * */
       /* Group 1: N, L, G, C, T, K */
 
+      XAstA: "\\unicode [Noto Serif] {x2648}", // aries
+      XAstT: "\\unicode [Noto Sans] {x2649}", // taurus
+
+
       // number (N)
       NZ: "\\HTR {0} {1} {11} {x0030}", // zerum
       NM: "\\HTR {0} {1} {11} {x0031}", // mónos

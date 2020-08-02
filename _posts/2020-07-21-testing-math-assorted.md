@@ -5,6 +5,8 @@ date: 2020-07-21
 categories: test
 ---
 
+$$\XAstA \XAstT$$
+
 - Diacritics
 
 $$
