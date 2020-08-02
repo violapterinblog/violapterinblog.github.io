@@ -26,194 +26,178 @@ MathJax = {
     },
   },
 
+  loader: {
+    load: ['[tex]/ams'],
+    load: ['[tex]/unicode']
+  },
+
+
   /* * * * * * * * * * * * * * * * * * * * * * * */
   /* * * * * * * * * * * * * * * * * * * * * * * */
   /* * * * * * * * * * * * * * * * * * * * * * * */
 
-  /* Define LaTeX macros, which will be expanded before TeX
-  is called. Beware that `\` has to be escaped in JS. */
   tex: {
+    packages: {
+      '[+]': ['ams'],
+      '[+]': ['unicode']
+    },
+
+    /* Define LaTeX macros, which will be expanded before TeX
+    is called. Beware that `\` has to be escaped in JS. */
     macros: {
+
+      /* * * * * * * * * * * * * * * * * * * * * * * */
+      /* H: helper;
+      N: number, L: Latin, G: Greek, C: Cyrillic
+      T: text, K: keyword, V: variant;
+      A: arithmetic, R: relation, P: puctuation, E: empty;
+      X: letter-like symbols, Y: non-letter symbols, Z: geometric symbols;
+      D: diacritics, I: infra, S: supra, U: under, O: over, B: bracket;
+      Q: quadratic, F: fraction, W: while, M: matrix, J: join */
+
+      /* * * * * * * * * * * * * * * * * * * * * * * */
+      /* Group 0: H */
+
       // helper functions
+      HDU: ["\\smash {\\underset {\\raise {8mu} {#1}} {#2}}", 2], // diacritics under
+      HDO: ["\\smash {\\overset {\\raise {-1mu} {#1}} {#2}}", 2], // diacritics over
+
       HPt: ["\\phantom {\\rule[#1mu]{#2mu}{#3mu}}", 3], // phantom
       HGR: ["{\\large \\unicode [Source Serif Pro] {#1}}", 1], // glyph roman
       HGG: ["{\\large \\unicode [Source Sans Pro] {#1}}", 1], // glyph gothic
       HGRB: ["{\\large \\unicode [Alegreya] {#1}}", 1], // glyph roman, black
       HGGB: ["{\\large \\unicode [Alegreya Sans] {#1}}", 1], // glyph gothic, black
-      HTsR: ["\\HPt {#1} {#2} {#3} \\smash {\\HGR {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset roman
-      HTsG: ["\\HPt {#1} {#2} {#3} \\smash {\\HGG {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset gothic
-      HTsRB: ["\\HPt {#1} {#2} {#3} \\smash {\\HGRB {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset roman, black
-      HTsGB: ["\\HPt {#1} {#2} {#3} \\smash {\\HGGB {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset gothic, black
+      HTR: ["\\HPt {#1} {#2} {#3} \\smash {\\HGR {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset roman
+      HTG: ["\\HPt {#1} {#2} {#3} \\smash {\\HGG {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset gothic
+      HTRB: ["\\HPt {#1} {#2} {#3} \\smash {\\HGRB {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset roman, black
+      HTGB: ["\\HPt {#1} {#2} {#3} \\smash {\\HGGB {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset gothic, black
+      HTK: ["\\hspace{2mu} #1 \\hspace{2mu}", 1], //typeset keyword
 
       /* * * * * * * * * * * * * * * * * * * * * * * */
-      /* Group 1: N, L, T, G, C, A, R, P, E */
+      /* Group 1: N, L, G, C, T, K */
 
-      // N
+      // number (N)
+      NZ: "\\HTR {0} {1} {11} {x0030}", // zerum
+      NM: "\\HTR {0} {1} {11} {x0031}", // mónos
+      ND: "\\HTR {0} {1} {11} {x0032}", // duo
+      NT: "\\HTR {0} {1} {11} {x0033}", // trēs
+      NQ: "\\HTR {0} {1} {11} {x0034}", // quattour
+      NP: "\\HTR {0} {1} {11} {x0035}", // pénte
+      NH: "\\HTR {0} {1} {11} {x0036}", // héx
+      NS: "\\HTR {0} {1} {11} {x0037}", // septem
+      NO: "\\HTR {0} {1} {11} {x0038}", // octō
+      NN: "\\HTR {0} {1} {11} {x0039}", // novem
 
-      LA: "\\HTsR {0} {1} {11} {x0041}",
-      LB: "\\HTsR {0} {1} {11} {x0042}",
-      LC: "\\HTsR {0} {1} {11} {x0043}",
-      LD: "\\HTsR {0} {1} {11} {x0044}",
-      LE: "\\HTsR {0} {1} {11} {x0045}",
-      LF: "\\HTsR {0} {1} {11} {x0046}",
-      LG: "\\HTsR {0} {1} {11} {x0047}",
-      LH: "\\HTsR {0} {1} {11} {x0048}",
-      LI: "\\HTsR {0} {1} {11} {x0049}",
-      LK: "\\HTsR {0} {1} {11} {x004B}",
-      LL: "\\HTsR {0} {1} {11} {x004C}",
-      LM: "\\HTsR {0} {1} {11} {x004D}",
-      LN: "\\HTsR {0} {1} {11} {x004E}",
-      LO: "\\HTsR {0} {1} {11} {x004F}",
-      LP: "\\HTsR {0} {1} {11} {x0050}",
-      LR: "\\HTsR {0} {1} {11} {x0052}",
-      LS: "\\HTsR {0} {1} {11} {x0053}",
-      LT: "\\HTsR {0} {1} {11} {x0054}",
-      LU: "\\HTsR {0} {1} {11} {x0055}",
-      LV: "\\HTsR {0} {1} {11} {x0056}",
-      LW: "\\HTsR {0} {1} {11} {x0057}",
-      LX: "\\HTsR {0} {1} {11} {x0058}",
-      LY: "\\HTsR {0} {1} {11} {x0059}",
-      LZ: "\\HTsR {0} {1} {11} {x005A}",
+      // Latin (L)
+      LA: "\\HTR {0} {1} {11} {x0041}",
+      LB: "\\HTR {0} {1} {11} {x0042}",
+      LC: "\\HTR {0} {1} {11} {x0043}",
+      LD: "\\HTR {0} {1} {11} {x0044}",
+      LE: "\\HTR {0} {1} {11} {x0045}",
+      LF: "\\HTR {0} {1} {11} {x0046}",
+      LG: "\\HTR {0} {1} {11} {x0047}",
+      LH: "\\HTR {0} {1} {11} {x0048}",
+      LI: "\\HTR {0} {1} {11} {x0049}",
+      LK: "\\HTR {0} {1} {11} {x004B}",
+      LL: "\\HTR {0} {1} {11} {x004C}",
+      LM: "\\HTR {0} {1} {11} {x004D}",
+      LN: "\\HTR {0} {1} {11} {x004E}",
+      LO: "\\HTR {0} {1} {11} {x004F}",
+      LP: "\\HTR {0} {1} {11} {x0050}",
+      LR: "\\HTR {0} {1} {11} {x0052}",
+      LS: "\\HTR {0} {1} {11} {x0053}",
+      LT: "\\HTR {0} {1} {11} {x0054}",
+      LU: "\\HTR {0} {1} {11} {x0055}",
+      LV: "\\HTR {0} {1} {11} {x0056}",
+      LW: "\\HTR {0} {1} {11} {x0057}",
+      LX: "\\HTR {0} {1} {11} {x0058}",
+      LY: "\\HTR {0} {1} {11} {x0059}",
+      LZ: "\\HTR {0} {1} {11} {x005A}",
 
-      LQ: "\\HTsR {-2} {1} {13} {x0051}",
-      LJ: "\\HTsR {-2} {1} {13} {x004A}",
+      LQ: "\\HTR {-2} {1} {13} {x0051}",
+      LJ: "\\HTR {-2} {1} {13} {x004A}",
 
-      La: "\\HTsR {0} {1} {8} {x0061}",
-      Lc: "\\HTsR {0} {1} {8} {x0063}",
-      Le: "\\HTsR {0} {1} {8} {x0065}",
-      Li: "\\HTsR {0} {1} {8} {x0131}",
-      Lm: "\\HTsR {0} {1} {8} {x006D}",
-      Ln: "\\HTsR {0} {1} {8} {x006E}",
-      Lo: "\\HTsR {0} {1} {8} {x006F}",
-      Lr: "\\HTsR {0} {1} {8} {x0072}",
-      Ls: "\\HTsR {0} {1} {8} {x0073}",
-      Lu: "\\HTsR {0} {1} {8} {x0075}",
-      Lv: "\\HTsR {0} {1} {8} {x0076}",
-      Lw: "\\HTsR {0} {1} {8} {x0077}",
-      Lx: "\\HTsR {0} {1} {8} {x0078}",
-      Lz: "\\HTsR {0} {1} {8} {x007A}",
+      La: "\\HTR {0} {1} {8} {x0061}",
+      Lc: "\\HTR {0} {1} {8} {x0063}",
+      Le: "\\HTR {0} {1} {8} {x0065}",
+      Li: "\\HTR {0} {1} {8} {x0131}",
+      Lm: "\\HTR {0} {1} {8} {x006D}",
+      Ln: "\\HTR {0} {1} {8} {x006E}",
+      Lo: "\\HTR {0} {1} {8} {x006F}",
+      Lr: "\\HTR {0} {1} {8} {x0072}",
+      Ls: "\\HTR {0} {1} {8} {x0073}",
+      Lu: "\\HTR {0} {1} {8} {x0075}",
+      Lv: "\\HTR {0} {1} {8} {x0076}",
+      Lw: "\\HTR {0} {1} {8} {x0077}",
+      Lx: "\\HTR {0} {1} {8} {x0078}",
+      Lz: "\\HTR {0} {1} {8} {x007A}",
 
-      Lb: "\\HTsR {0} {1} {12} {x0062}",
-      Ld: "\\HTsR {0} {1} {12} {x0064}",
-      Lf: "\\HTsR {0} {1} {12} {x0066}",
-      Lh: "\\HTsR {0} {1} {12} {x0068}",
-      Lk: "\\HTsR {0} {1} {12} {x006B}",
-      Ll: "\\HTsR {0} {1} {12} {x006C}",
+      Lb: "\\HTR {0} {1} {12} {x0062}",
+      Ld: "\\HTR {0} {1} {12} {x0064}",
+      Lf: "\\HTR {0} {1} {12} {x0066}",
+      Lh: "\\HTR {0} {1} {12} {x0068}",
+      Lk: "\\HTR {0} {1} {12} {x006B}",
+      Ll: "\\HTR {0} {1} {12} {x006C}",
 
-      Lt: "\\HTsR {0} {1} {10} {x0074}",
+      Lt: "\\HTR {0} {1} {10} {x0074}",
 
-      Lg: "\\HTsR {-3} {1} {11} {x0067}",
-      Lp: "\\HTsR {-3} {1} {11} {x0070}",
-      Lq: "\\HTsR {-3} {1} {11} {x0071}",
-      Lj: "\\HTsR {-3} {1} {11} {x0237}",
-      Ly: "\\HTsR {-3} {1} {11} {x0079}",
-
-      // text (T)
-      TA: "\\HTsR {0} {0} {11} {x0041}",
-      TB: "\\HTsR {0} {0} {11} {x0042}",
-      TC: "\\HTsR {0} {0} {11} {x0043}",
-      TD: "\\HTsR {0} {0} {11} {x0044}",
-      TE: "\\HTsR {0} {0} {11} {x0045}",
-      TF: "\\HTsR {0} {0} {11} {x0046}",
-      TG: "\\HTsR {0} {0} {11} {x0047}",
-      TH: "\\HTsR {0} {0} {11} {x0048}",
-      TI: "\\HTsR {0} {0} {11} {x0049}",
-      TJ: "\\HTsR {0} {0} {11} {x004A}",
-      TK: "\\HTsR {0} {0} {11} {x004B}",
-      TL: "\\HTsR {0} {0} {11} {x004C}",
-      TM: "\\HTsR {0} {0} {11} {x004D}",
-      TN: "\\HTsR {0} {0} {11} {x004E}",
-      TO: "\\HTsR {0} {0} {11} {x004F}",
-      TP: "\\HTsR {0} {0} {11} {x0050}",
-      TR: "\\HTsR {0} {0} {11} {x0052}",
-      TS: "\\HTsR {0} {0} {11} {x0053}",
-      TT: "\\HTsR {0} {0} {11} {x0054}",
-      TU: "\\HTsR {0} {0} {11} {x0055}",
-      TV: "\\HTsR {0} {0} {11} {x0056}",
-      TW: "\\HTsR {0} {0} {11} {x0057}",
-      TX: "\\HTsR {0} {0} {11} {x0058}",
-      TY: "\\HTsR {0} {0} {11} {x0059}",
-      TZ: "\\HTsR {0} {0} {11} {x005A}",
-
-      TQ: "\\HTsR {-2} {0} {13} {x0051}",
-
-      Ta: "\\HTsR {0} {0} {8} {x0061}",
-      Tc: "\\HTsR {0} {0} {8} {x0063}",
-      Te: "\\HTsR {0} {0} {8} {x0065}",
-      Tm: "\\HTsR {0} {0} {8} {x006D}",
-      Tn: "\\HTsR {0} {0} {8} {x006E}",
-      To: "\\HTsR {0} {0} {8} {x006F}",
-      Tr: "\\HTsR {0} {0} {8} {x0072}",
-      Ts: "\\HTsR {0} {0} {8} {x0073}",
-      Tu: "\\HTsR {0} {0} {8} {x0075}",
-      Tv: "\\HTsR {0} {0} {8} {x0076}",
-      Tw: "\\HTsR {0} {0} {8} {x0077}",
-      Tx: "\\HTsR {0} {0} {8} {x0078}",
-      Tz: "\\HTsR {0} {0} {8} {x007A}",
-
-      Tb: "\\HTsR {0} {0} {12} {x0062}",
-      Td: "\\HTsR {0} {0} {12} {x0064}",
-      Tf: "\\HTsR {0} {0} {12} {x0066}",
-      Th: "\\HTsR {0} {0} {12} {x0068}",
-      Ti: "\\HTsR {0} {0} {12} {x0131}",
-      Tk: "\\HTsR {0} {0} {12} {x006B}",
-      Tl: "\\HTsR {0} {0} {12} {x006C}",
-
-      Tt: "\\HTsR {0} {0} {10} {x0074}",
-
-      Tg: "\\HTsR {-3} {0} {11} {x0067}",
-      Tp: "\\HTsR {-3} {0} {11} {x0070}",
-      Tq: "\\HTsR {-3} {0} {11} {x0071}",
-      Ty: "\\HTsR {-3} {0} {11} {x0079}",
-
-      Tj: "\\HTsR {-3} {0} {15} {x0237}",
+      Lg: "\\HTR {-3} {1} {11} {x0067}",
+      Lp: "\\HTR {-3} {1} {11} {x0070}",
+      Lq: "\\HTR {-3} {1} {11} {x0071}",
+      Lj: "\\HTR {-3} {1} {11} {x0237}",
+      Ly: "\\HTR {-3} {1} {11} {x0079}",
       
-      // G
+      // Greek (G)
 
-      GG: "\\HTsR {0} {1} {11} {x0393}",
-      GD: "\\HTsR {0} {1} {11} {x0394}",
-      GQ: "\\HTsR {0} {1} {11} {x0398}",
-      GL: "\\HTsR {0} {1} {11} {x039B}",
-      GC: "\\HTsR {0} {1} {11} {x039E}",
-      GP: "\\HTsR {0} {1} {11} {x03A0}",
-      GS: "\\HTsR {0} {1} {11} {x03A3}",
-      GU: "\\HTsR {0} {1} {11} {x03A5}",
-      GF: "\\HTsR {0} {1} {11} {x03A6}",
-      GY: "\\HTsR {0} {1} {11} {x03A8}",
-      GW: "\\HTsR {0} {1} {11} {x03A9}",
+      GG: "\\HTR {0} {1} {11} {x0393}",
+      GD: "\\HTR {0} {1} {11} {x0394}",
+      GQ: "\\HTR {0} {1} {11} {x0398}",
+      GL: "\\HTR {0} {1} {11} {x039B}",
+      GC: "\\HTR {0} {1} {11} {x039E}",
+      GP: "\\HTR {0} {1} {11} {x03A0}",
+      GS: "\\HTR {0} {1} {11} {x03A3}",
+      GU: "\\HTR {0} {1} {11} {x03A5}",
+      GF: "\\HTR {0} {1} {11} {x03A6}",
+      GY: "\\HTR {0} {1} {11} {x03A8}",
+      GW: "\\HTR {0} {1} {11} {x03A9}",
 
-      Ga: "\\HTsR {0} {1} {11} {x03B1}",
-      Gb: "\\HTsR {0} {1} {11} {x03B2}",
-      Gg: "\\HTsR {0} {1} {11} {x03B3}",
-      Gd: "\\HTsR {0} {1} {11} {x03B4}",
-      Gv: "\\HTsR {0} {1} {11} {x03B5}",
-      Gz: "\\HTsR {0} {1} {11} {x03B6}",
-      Gh: "\\HTsR {0} {1} {11} {x03B7}",
-      Gq: "\\HTsR {0} {1} {11} {x03B8}",
-      Gi: "\\HTsR {0} {1} {11} {x03B9}",
-      Gk: "\\HTsR {0} {1} {11} {x03BA}",
-      Gl: "\\HTsR {0} {1} {11} {x03BB}",
-      Gm: "\\HTsR {0} {1} {11} {x03BC}",
-      Gn: "\\HTsR {0} {1} {11} {x03BD}",
-      Gc: "\\HTsR {0} {1} {11} {x03BE}",
-      Gp: "\\HTsR {0} {1} {11} {x03C0}",
-      Gr: "\\HTsR {0} {1} {11} {x03C1}",
-      Gs: "\\HTsR {0} {1} {11} {x03C2}",
-      Gt: "\\HTsR {0} {1} {11} {x03C3}",
-      Gu: "\\HTsR {0} {1} {11} {x03C4}",
-      Gf: "\\HTsR {0} {1} {11} {x03C5}",
-      Gx: "\\HTsR {0} {1} {11} {x03C6}",
-      Gy: "\\HTsR {0} {1} {11} {x03C7}",
-      Gw: "\\HTsR {0} {1} {11} {x03C8}",
+      Ga: "\\HTR {0} {1} {8} {x03B1}",
+      Gv: "\\HTR {0} {1} {8} {x03B5}",
+      Gi: "\\HTR {0} {1} {8} {x03B9}",
+      Gk: "\\HTR {0} {1} {8} {x03BA}",
+      Gm: "\\HTR {0} {1} {8} {x03BC}",
+      Gn: "\\HTR {0} {1} {8} {x03BD}",
+      Gp: "\\HTR {0} {1} {8} {x03C0}",
+      Gs: "\\HTR {0} {1} {8} {x03C3}",
+      Gt: "\\HTR {0} {1} {8} {x03C4}",
+      Gu: "\\HTR {0} {1} {8} {x03C5}",
+      Gw: "\\HTR {0} {1} {8} {x03C9}",
 
+      Gb: "\\HTR {-3} {1} {15} {x03B2}",
+      Gz: "\\HTR {-3} {1} {15} {x03B6}",
+      Gc: "\\HTR {-3} {1} {15} {x03BE}",
 
+      Gf: "\\HTR {-3} {1} {13} {x03C6}",
+      Gy: "\\HTR {-3} {1} {13} {x03C8}",
+
+      Gd: "\\HTR {0} {1} {12} {x03B4}",
+      Gq: "\\HTR {0} {1} {12} {x03B8}",
+      Gl: "\\HTR {0} {1} {12} {x03BB}",
+
+      Gg: "\\HTR {-3} {1} {11} {x03B3}",
+      Gh: "\\HTR {-3} {1} {11} {x03B7}",
+      Gr: "\\HTR {-3} {1} {11} {x03C1}",
+      Gx: "\\HTR {-3} {1} {11} {x03C7}",
 
       // C
+      /* * * * * * * * * * * * * * * * * * * * * * * */
+      /* Group 2: A, R, P, E */
 
-      AA: "+", // add
-      AS: "-", // subtract
-      AM: "\\cdot", // multiply
-      AD: "/", // divide
+      // arithmatic (A)
+      AA: "+", // addition
+      AS: "-", // subtraction
+      AM: "\\cdot", // multiplication
+      AD: "/", // division
 
       RE: "=", //  equal
       RG: ">", // greater
@@ -228,10 +212,10 @@ MathJax = {
 
       PC: ",", // comma
       PP: ".", // period
-      PCl: ":", // colon
-      PSm: ";", // semicolon
-      PEc: "!", // exclamation
-      PQt: "?", // question
+      PR: ":", // ratio
+      PS: ";", // semicolon
+      PE: "!", // exclamation
+      PQ: "?", // question
       PDC: "\\cdots",
       PDL: "\\ldots",
       PDV: "\\vdots",
@@ -247,26 +231,114 @@ MathJax = {
       EO: "\\hspace {1.60em}",
       EN: "\\hspace {1.80em}",
 
+      // text (T)
+      TA: "\\HTG {0} {0} {11} {x0041}",
+      TB: "\\HTG {0} {0} {11} {x0042}",
+      TC: "\\HTG {0} {0} {11} {x0043}",
+      TD: "\\HTG {0} {0} {11} {x0044}",
+      TE: "\\HTG {0} {0} {11} {x0045}",
+      TF: "\\HTG {0} {0} {11} {x0046}",
+      TG: "\\HTG {0} {0} {11} {x0047}",
+      TH: "\\HTG {0} {0} {11} {x0048}",
+      TI: "\\HTG {0} {0} {11} {x0049}",
+      TJ: "\\HTG {0} {0} {11} {x004A}",
+      TK: "\\HTG {0} {0} {11} {x004B}",
+      TL: "\\HTG {0} {0} {11} {x004C}",
+      TM: "\\HTG {0} {0} {11} {x004D}",
+      TN: "\\HTG {0} {0} {11} {x004E}",
+      TO: "\\HTG {0} {0} {11} {x004F}",
+      TP: "\\HTG {0} {0} {11} {x0050}",
+      TR: "\\HTG {0} {0} {11} {x0052}",
+      TS: "\\HTG {0} {0} {11} {x0053}",
+      TT: "\\HTG {0} {0} {11} {x0054}",
+      TU: "\\HTG {0} {0} {11} {x0055}",
+      TV: "\\HTG {0} {0} {11} {x0056}",
+      TW: "\\HTG {0} {0} {11} {x0057}",
+      TX: "\\HTG {0} {0} {11} {x0058}",
+      TY: "\\HTG {0} {0} {11} {x0059}",
+      TZ: "\\HTG {0} {0} {11} {x005A}",
+
+      TQ: "\\HTG {-2} {0} {13} {x0051}",
+
+      Ta: "\\HTG {0} {0} {8} {x0061}",
+      Tc: "\\HTG {0} {0} {8} {x0063}",
+      Te: "\\HTG {0} {0} {8} {x0065}",
+      Tm: "\\HTG {0} {0} {8} {x006D}",
+      Tn: "\\HTG {0} {0} {8} {x006E}",
+      To: "\\HTG {0} {0} {8} {x006F}",
+      Tr: "\\HTG {0} {0} {8} {x0072}",
+      Ts: "\\HTG {0} {0} {8} {x0073}",
+      Tu: "\\HTG {0} {0} {8} {x0075}",
+      Tv: "\\HTG {0} {0} {8} {x0076}",
+      Tw: "\\HTG {0} {0} {8} {x0077}",
+      Tx: "\\HTG {0} {0} {8} {x0078}",
+      Tz: "\\HTG {0} {0} {8} {x007A}",
+ 
+      Tb: "\\HTG {0} {0} {12} {x0062}",
+      Td: "\\HTG {0} {0} {12} {x0064}",
+      Tf: "\\HTG {0} {0} {12} {x0066}",
+      Th: "\\HTG {0} {0} {12} {x0068}",
+      Ti: "\\HTG {0} {0} {12} {x0069}",
+      Tk: "\\HTG {0} {0} {12} {x006B}",
+      Tl: "\\HTG {0} {0} {12} {x006C}",
+
+      Tt: "\\HTG {0} {0} {10} {x0074}",
+
+      Tg: "\\HTG {-3} {0} {11} {x0067}",
+      Tp: "\\HTG {-3} {0} {11} {x0070}",
+      Tq: "\\HTG {-3} {0} {11} {x0071}",
+      Ty: "\\HTG {-3} {0} {11} {x0079}",
+
+      Tj: "\\HTG {-3} {0} {15} {x006A}",
+
+      // keywords (K)
+      KSin: "\\HTK {\\Ts \\Ti \\Tn}",
+      KCos: "\\HTK {\\Tc \\To \\Ts}",
+      KTan: "\\HTK {\\Tt \\Ta \\Tn}",
+      KSinh: "\\HTK {\\Ts \\Ti \\Tn \\Th}",
+      KCosh: "\\HTK {\\Tc \\To \\Ts \\Th}",
+      KTanh: "\\HTK {\\Tt \\Ta \\Tn \\Th}",
+      KLog: "\\HTK {\\Tl \\To \\Tg}",
+      KExp: "\\HTK {\\Te \\Tx \\Tp}",
+      KRe: "\\HTK {\\Tr \\Te}",
+      KIm: "\\HTK {\\Ti \\Tm}",
+      KSupp: "\\HTK {\\Ts \\Tu \\Tp \\Tp}",
+
+      KMax: "\\HTK {\\Tm \\Ta \\Tx}",
+      KMin: "\\HTK {\\Tm \\Ti \\Tn}",
+      KSup: "\\HTK {\\Ts \\Tu \\Tp}",
+      KInf: "\\HTK {\\Ti \\Tn \\Tf}",
+      KLim: "\\HTK {\\Tl \\Ti \\Tm}",
+      KLimsup: "\\HTK {\\Tl \\Ti \\Tm \\Ts \\Tu \\Tp}",
+      KLiminf: "\\HTK {\\Tl \\Ti \\Tm \\Ti \\Tn \\Tf}",
+
+      KKer: "\\HTK {\\Tk \\Te \\Tr}",
+      KImg: "\\HTK {\\Ti \\Tm \\Tg}",
+      KHom: "\\HTK {\\Th \\To \\Tm}",
+      KDim: "\\HTK {\\Td \\Ti \\Tm}",
+      KDet: "\\HTK {\\Td \\Te \\Tt}",
+      KMod: "\\HTK {\\Tm \\To \\Td}",
+      KGcd: "\\HTK {\\Tg \\Tc \\Td}",
+
       /* * * * * * * * * * * * * * * * * * * * * * * */
       /* Group 2: X, Y, Z */
 
       /* Group 3: D, I, S, U, O, B */
-      DOT: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\thicksim}}} {#1}} \\vphantom {#1}", 1], // tilde
-      DOM: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {-}}} {#1}} \\vphantom {#1}", 1], // macron
-      DOH: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\vee}}} {#1}} \\vphantom {#1}", 1], // hachek
-      DOC: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\wedge}}} {#1}} \\vphantom {#1}", 1], // circumflex
-      DOR: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\boldsymbol {\\circ}}} {#1}} \\vphantom {#1}", 1], // ring
-      DOD: ["\\smash {\\overset {\\raise {-1mu} {\\tiny \\bullet}} {#1}} \\vphantom {#1}", 1], // dot
-      DOP: ["\\smash {\\overset {\\raise {-1mu} {\\small \\textbf{,}}} {#1}} \\vphantom {#1}", 1], // psili
+      DUT: ["\\HDU {\\tiny \\boldsymbol {\\thicksim}} {#1} \\vphantom {#1}", 1], // tilde,
+      DUM: ["\\HDU {\\tiny \\boldsymbol {-}} {#1} \\vphantom {#1}", 1], // macron,
+      DUH: ["\\HDU {\\tiny \\boldsymbol {\\vee}} {#1} \\vphantom {#1}", 1], // hachek,
+      DUC: ["\\HDU {\\tiny \\boldsymbol {\\wedge}} {#1} \\vphantom {#1}", 1], // circumflex,
+      DUR: ["\\HDU {\\tiny \\boldsymbol {\\circ}} {#1} \\vphantom {#1}", 1], // ring,
+      DUD: ["\\HDU {\\tiny \\bullet} {#1} \\vphantom {#1}", 1], // dot
+      DUP: ["\\HDU {\\small \\textbf{,}} {#1} \\vphantom {#1}", 1], // psili,
 
-      DUT: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\thicksim}}} {#1}} \\vphantom {#1}", 1],
-      DUM: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {-}}} {#1}} \\vphantom {#1}", 1],
-      DUH: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\vee}}} {#1}} \\vphantom {#1}", 1],
-      DUC: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\wedge}}} {#1}} \\vphantom {#1}", 1],
-      DUR: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\boldsymbol {\\circ}}} {#1}} \\vphantom {#1}", 1],
-      DUD: ["\\smash {\\underset {\\raise {8mu} {\\tiny \\bullet}} {#1}} \\vphantom {#1}", 1],
-      DUP: ["\\smash {\\underset {\\raise {8mu} {\\small \\textbf{,}}} {#1}} \\vphantom {#1}", 1],
-
+      DOT: ["\\HDO {\\tiny \\boldsymbol {\\thicksim}} {#1} \\vphantom {#1}", 1],
+      DOM: ["\\HDO {\\tiny \\boldsymbol {-}} {#1} \\vphantom {#1}", 1],
+      DOH: ["\\HDO {\\tiny \\boldsymbol {\\vee}} {#1} \\vphantom {#1}", 1],
+      DOC: ["\\HDO {\\tiny \\boldsymbol {\\wedge}} {#1} \\vphantom {#1}", 1],
+      DOR: ["\\HDO {\\tiny \\boldsymbol {\\circ}} {#1} \\vphantom {#1}", 1],
+      DOD: ["\\HDO {\\tiny \\bullet} {#1} \\vphantom {#1}", 1],
+      DOP: ["\\HDO {\\small \\textbf{,}} {#1} \\vphantom {#1}", 1],
 
       I: ["{#1} _{#2}", 2],
       S: ["{#1} _{#2}", 2],
@@ -274,7 +346,6 @@ MathJax = {
 
       F: ["\\frac {#1} {#2}", 2], // fraction
       Q: ["\\sqrt {#1}", 1], // quadratic
-
 
 
       BR: ["\\left( #1 \\right)", 1],
@@ -306,6 +377,16 @@ MathJax = {
       WIIS: ["\\int\\limits_{#1}^{#2}", 2],
       WIISD: ["\\int\\limits_{#1}^{#2} \\!\\! {\\vphantom {\\int}}^{#3}", 3],
 
+      // matrix (M)
+      MM: ["\\begin {bmatrix} #1 \\end {bmatrix}", 1],
+      MD: ["\\begin {bmatrix} #1 \\\\ #2 \\end {bmatrix}", 2],
+      MT: ["\\begin {bmatrix} #1 \\\\ #2 \\\\ #3  \\end {bmatrix}", 3],
+
+      // join (J)
+      JM: ["#1", 1],
+      JD: ["#1 & #2", 2],
+      JT: ["#1 & #2 & #3", 3],
+
 /* Deprecated
 
       // letter-like (Y, Z)
@@ -317,67 +398,7 @@ MathJax = {
       LT: "\\intercal",
       Lp: "\\pi",
 
-      VSA: "\\mathcal {A}",
-      VSB: "\\mathcal {B}",
-      VSC: "\\mathcal {C}",
-      VSD: "\\mathcal {D}",
-      VSE: "\\mathcal {E}",
-      VSF: "\\mathcal {F}",
-      VSG: "\\mathcal {G}",
-      VSH: "\\mathcal {H}",
-      VSI: "\\mathcal {I}",
-      VSJ: "\\mathcal {J}",
-      VSK: "\\mathcal {K}",
-      VSL: "\\mathcal {L}",
-      VSM: "\\mathcal {M}",
-      VSN: "\\mathcal {N}",
-      VSO: "\\mathcal {O}",
-      VSP: "\\mathcal {P}",
-      VSQ: "\\mathcal {Q}",
-      VSR: "\\mathcal {R}",
-      VSS: "\\mathcal {S}",
-      VST: "\\mathcal {T}",
-      VSU: "\\mathcal {U}",
-      VSV: "\\mathcal {V}",
-      VSW: "\\mathcal {W}",
-      VSX: "\\mathcal {X}",
-      VSY: "\\mathcal {Y}",
-      VSZ: "\\mathcal {Z}",
 
-      // Greek (G)
-      Ga: "\\alpha",
-      Gb: "\\beta",
-      GG: "\\Gamma",
-      Gg: "\\gamma",
-      GD: "\\Delta",
-      Gd: "\\delta",
-      Ge: "\\varepsilon",
-      Gz: "\\zeta",
-      Gh: "\\eta",
-      GQ: "\\Theta",
-      Gq: "\\vartheta",
-      Gi: "\\iota",
-      Gk: "\\kappa",
-      GL: "\\Lambda",
-      Gl: "\\lambda",
-      Gm: "\\mu",
-      Gn: "\\nu",
-      Gi: "\\iota",
-      GP: "\\Pi",
-      Gp: "\\varpi",
-      Gr: "\\rho",
-      GS: "\\Sigma",
-      Gs: "\\sigma",
-      Gt: "\\tau",
-      GU: "\\Upsilon",
-      Gu: "\\upsilon",
-      GF: "\\Phi",
-      Gf: "\\varphi",
-      Gx: "\\chi",
-      GY: "\\Psi",
-      Gy: "\\psi",
-      GW: "\\Omega",
-      Gw: "\\omega",
 */
 
 //M, D, T, Q, P, H, S, O, N
@@ -390,36 +411,4 @@ MathJax = {
 //бдєжзилцчџшщэя
 
 
-      /*
-      N number
-      L Latin
-      G greek
-      C cyrillic
-      A arithmetic
-      R relation
-      P puctuation
-      E empty
 
-      X letter-like symbols
-      Y non-letter symbols
-      Z geometric symbols
-
-      D diacritics
-      I infra
-      S supra
-      U under
-      O over
-      B bracket
-      T text
-
-      Q quadratic
-      F fraction
-      W while
-      M matrix
-
-      // PRAWNLVGCEDTMBSIOUFQXYZ
-      // ABCDE FGILM NOPQR STUVW XYZ
-      // (HJK)
-      // ...... ...... ...... ......
-      //number:  (M, D, T, Q, P, H, S, O, N)
-      */
