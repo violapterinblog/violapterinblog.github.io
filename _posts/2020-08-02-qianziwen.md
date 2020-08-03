@@ -2,8 +2,12 @@
 layout: post
 title: "Qianziwen"
 date: 2020-08-02
-categories: useful info
+categories: "useful info"
 ---
+
+This is a backup of the version of *Qianziwen* (千字文) by Zhōu Xìngsì (周興嗣) as listed on Japanese Wikisource.
+This version seems to solely use JIS Kanji,
+but prefer the character form closest to source whenever possible, a principle I wholeheartedly agree.
 
 | 000 | 天 | 地 | 玄 | 黃 | 宇 | 宙 | 洪 | 荒 |
 | 001 | 日 | 月 | 盈 | 昃 | 辰 | 宿 | 列 | 張 |
@@ -129,4 +133,4 @@ categories: useful info
 | 121 | 矩 | 步 | 引 | 領 | 俯 | 仰 | 廊 | 廟 |
 | 122 | 束 | 帶 | 矜 | 莊 | 徘 | 徊 | 瞻 | 眺 |
 | 123 | 孤 | 陋 | 寡 | 聞 | 愚 | 蒙 | 等 | 誚 |
-| 124 | 謂 | 語 | 助 | 者 | 焉 | 哉 | 乎 | 也 |　
+| 124 | 謂 | 語 | 助 | 者 | 焉 | 哉 | 乎 | 也 |
