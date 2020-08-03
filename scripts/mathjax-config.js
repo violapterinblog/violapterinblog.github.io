@@ -31,6 +31,10 @@ MathJax = {
     load: ['[tex]/unicode']
   },
 
+  svg: {
+    displayAlign: "left",
+    displayIndent: "3em"
+  },
 
   /* * * * * * * * * * * * * * * * * * * * * * * */
   /* * * * * * * * * * * * * * * * * * * * * * * */
@@ -41,6 +45,9 @@ MathJax = {
       '[+]': ['ams'],
       '[+]': ['unicode']
     },
+
+    inlineMath: ['$$', '$$'],
+    displayMath: ['\\[', '\\]'],
 
     /* Define LaTeX macros, which will be expanded before TeX
     is called. Beware that `\` has to be escaped in JS. */
@@ -67,17 +74,16 @@ MathJax = {
       HGG: ["{\\large \\unicode [Source Sans Pro] {#1}}", 1], // glyph gothic
       HGRB: ["{\\large \\unicode [Alegreya] {#1}}", 1], // glyph roman, black
       HGGB: ["{\\large \\unicode [Alegreya Sans] {#1}}", 1], // glyph gothic, black
+      HGJ: ["{\\large \\unicode [Noto Serif KR] {#1}}", 1], // glyph gothic, black
       HTR: ["\\HPt {#1} {#2} {#3} \\smash {\\HGR {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset roman
       HTG: ["\\HPt {#1} {#2} {#3} \\smash {\\HGG {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset gothic
       HTRB: ["\\HPt {#1} {#2} {#3} \\smash {\\HGRB {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset roman, black
       HTGB: ["\\HPt {#1} {#2} {#3} \\smash {\\HGGB {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset gothic, black
+      HTJ: ["\\HPt {#1} {#2} {#3} \\smash {\\HGJ {#4}} \\HPt {#1} {#2} {#3}", 4], // typeset gothic, black
       HTK: ["\\hspace{2mu} #1 \\hspace{2mu}", 1], //typeset keyword
 
       /* * * * * * * * * * * * * * * * * * * * * * * */
       /* Group 1: N, L, G, C, T, K */
-
-      XAstA: "\\unicode [Noto Serif] {x2648}", // aries
-      XAstT: "\\unicode [Noto Sans] {x2649}", // taurus
 
 
       // number (N)
@@ -194,6 +200,12 @@ MathJax = {
       Gx: "\\HTR {-3} {1} {11} {x03C7}",
 
       // C
+
+      // \\large
+      //БДЄЖЗИЛЦЧЏШЩЭЯ
+      //бдєжзилцчџшщэя
+
+
       /* * * * * * * * * * * * * * * * * * * * * * * */
       /* Group 2: A, R, P, E */
 
@@ -204,15 +216,39 @@ MathJax = {
       AD: "/", // division
 
       RE: "=", //  equal
+      REN: "\\neq", //  equal
       RG: ">", // greater
       RL: "<", //  less
-      RGE: "\\geq",
-      RLE: "\\leq",
-      RD: ":=", // definition
+      REG: "\\geq",
+      REL: "\\leq",
       RS: "\\sim",
-      RA: "\\approx",
+      RSE: "\\simeq",
+      RSS: "\\approx",
+      RS: "\\succ",
+      RP: "\\prec",
+      RES: "\\succeq",
+      REP: "\\preceq",
+      RSN: "\\nsucc",
+      RPN: "\\nprec",
       RM: "\\mid",
+      RMN: "\\nmid",
+      RD: ":=", // definition
 
+      RAL: "\\leftarrow",
+      RAR: "\\rightarrow",
+      RALR: "\\leftrightarrow",
+      RALT: "\\Leftarrow", // thick
+      RART: "\\Rightarrow",
+      RALRT: "\\Leftrightarrow",
+      RAD: "\\downarrow",
+      RAU: "\\uparrow",
+      RADU: "\\updownarrow",
+      RADT: "\\Downarrow",
+      RAUT: "\\Uparrow",
+      RADUT: "\\Updownarrow",
+      RALH: "\\leftharpoonup", // harpoon
+      RARH: "\\rightharpoonup",
+      RALRH: "\\leftrightharpoonup",
 
       PC: ",", // comma
       PP: ".", // period
@@ -225,15 +261,15 @@ MathJax = {
       PDV: "\\vdots",
       PDD: "\\ddots",
 
-      EM: "\\hspace {0.20em}",
-      ED: "\\hspace {0.40em}",
-      ET: "\\hspace {0.60em}",
-      EQ: "\\hspace {0.80em}",
-      EP: "\\hspace {1.00em}",
-      EH: "\\hspace {1.20em}",
-      ES: "\\hspace {1.40em}",
-      EO: "\\hspace {1.60em}",
-      EN: "\\hspace {1.80em}",
+      EA: "\\hspace {0.20em}",
+      EB: "\\hspace {0.40em}",
+      EC: "\\hspace {0.60em}",
+      ED: "\\hspace {0.80em}",
+      EE: "\\hspace {1.00em}",
+      EF: "\\hspace {1.20em}",
+      EG: "\\hspace {1.40em}",
+      EH: "\\hspace {1.60em}",
+      EI: "\\hspace {1.80em}",
 
       // text (T)
       TA: "\\HTG {0} {0} {11} {x0041}",
@@ -327,9 +363,33 @@ MathJax = {
       /* * * * * * * * * * * * * * * * * * * * * * * */
       /* Group 2: X, Y, Z */
 
+      XLo: "\\varnothing",
+
+      YT: "\\intercal",
+
+
+      ZI: "\\infty", // infinity
+      ZSW: "\\square",
+      ZSB: "\\blacksquare",
+      ZTU: "\\triangle",
+      ZTD: "\\triangledown",
+      ZTL: "\\triangleleft",
+      ZTR: "\\triangleright",
+      ZTBU: "\\blacktriangle",
+      ZTBD: "\\blacktriangledown",
+      ZTBL: "\\blacktriangleleft",
+      ZTBR: "\\blacktriangleright",
+      ZM: "\\bigstar", // mullet
+      ZCD: "\\diamondsuit", // color
+      ZCC: "\\clubsuit",
+      ZCH: "\\heartsuit",
+      ZCS: "\\spadesuit",
+      ZObl: "\\dagger", // obelus
+      ZDes: "\\ddagger", // Diesis
+
       /* Group 3: D, I, S, U, O, B */
       DUT: ["\\HDU {\\tiny \\boldsymbol {\\thicksim}} {#1} \\vphantom {#1}", 1], // tilde,
-      DUM: ["\\HDU {\\tiny \\boldsymbol {-}} {#1} \\vphantom {#1}", 1], // macron,
+      DUM: ["\\HDU {\\small \\textbf {-}} {#1} \\vphantom {#1}", 1], // macron,
       DUH: ["\\HDU {\\tiny \\boldsymbol {\\vee}} {#1} \\vphantom {#1}", 1], // hachek,
       DUC: ["\\HDU {\\tiny \\boldsymbol {\\wedge}} {#1} \\vphantom {#1}", 1], // circumflex,
       DUR: ["\\HDU {\\tiny \\boldsymbol {\\circ}} {#1} \\vphantom {#1}", 1], // ring,
@@ -337,7 +397,7 @@ MathJax = {
       DUP: ["\\HDU {\\small \\textbf{,}} {#1} \\vphantom {#1}", 1], // psili,
 
       DOT: ["\\HDO {\\tiny \\boldsymbol {\\thicksim}} {#1} \\vphantom {#1}", 1],
-      DOM: ["\\HDO {\\tiny \\boldsymbol {-}} {#1} \\vphantom {#1}", 1],
+      DOM: ["\\HDO {\\small \\textbf {-}} {#1} \\vphantom {#1}", 1],
       DOH: ["\\HDO {\\tiny \\boldsymbol {\\vee}} {#1} \\vphantom {#1}", 1],
       DOC: ["\\HDO {\\tiny \\boldsymbol {\\wedge}} {#1} \\vphantom {#1}", 1],
       DOR: ["\\HDO {\\tiny \\boldsymbol {\\circ}} {#1} \\vphantom {#1}", 1],
@@ -353,23 +413,23 @@ MathJax = {
 
 
       BR: ["\\left( #1 \\right)", 1],
-      BRM: ["( #1 )", 1],
-      BRD: ["\\big( #1 \\big)", 1],
-      BRT: ["\\Big( #1 \\Big)", 1],
-      BRQ: ["\\bigg( #1 \\bigg)", 1],
-      BRP: ["\\Bigg( #1 \\Bigg)", 1],
+      BRA: ["( #1 )", 1],
+      BRB: ["\\big( #1 \\big)", 1],
+      BRC: ["\\Big( #1 \\Big)", 1],
+      BRD: ["\\bigg( #1 \\bigg)", 1],
+      BRE: ["\\Bigg( #1 \\Bigg)", 1],
       BS: ["\\left( #1 \\right)", 1],
-      BSM: ["[ #1 ]", 1],
-      BSD: ["\\big[ #1 \\big]", 1],
-      BST: ["\\Big[ #1 \\Big]", 1],
-      BSQ: ["\\bigg[ #1 \\bigg]", 1],
-      BSP: ["\\Bigg[ #1 \\Bigg]", 1],
+      BSA: ["[ #1 ]", 1],
+      BSB: ["\\big[ #1 \\big]", 1],
+      BSC: ["\\Big[ #1 \\Big]", 1],
+      BSD: ["\\bigg[ #1 \\bigg]", 1],
+      BSE: ["\\Bigg[ #1 \\Bigg]", 1],
       BC: ["\\left\\{ #1 \right\\}", 1],
-      BCM: ["\\{ #1 \\}", 1],
-      BCD: ["\\big\\{ #1 \\big\\}", 1],
-      BCT: ["\\Big\\{ #1 \\Big\\}", 1],
-      BCQ: ["\\bigg\\{ #1 \\bigg\\}", 1],
-      BCP: ["\\Bigg\\{ #1 \\Bigg\\}", 1],
+      BCA: ["\\{ #1 \\}", 1],
+      BCB: ["\\big\\{ #1 \\big\\}", 1],
+      BCC: ["\\Big\\{ #1 \\Big\\}", 1],
+      BCD: ["\\bigg\\{ #1 \\bigg\\}", 1],
+      BCE: ["\\Bigg\\{ #1 \\Bigg\\}", 1],
 
       /* Group 4: Q, F, W, M */
 
@@ -381,38 +441,60 @@ MathJax = {
       WIIS: ["\\int\\limits_{#1}^{#2}", 2],
       WIISD: ["\\int\\limits_{#1}^{#2} \\!\\! {\\vphantom {\\int}}^{#3}", 3],
 
-      // matrix (M)
-      MM: ["\\begin {bmatrix} #1 \\end {bmatrix}", 1],
-      MD: ["\\begin {bmatrix} #1 \\\\ #2 \\end {bmatrix}", 2],
-      MT: ["\\begin {bmatrix} #1 \\\\ #2 \\\\ #3  \\end {bmatrix}", 3],
+      WP: "\\bigoplus",
+      WPD: ["\\bigoplus \\!\\! {\\vphantom {\\int}}^{#1}", 1],
+      WPI: ["\\bigoplus\\limits_{#1}", 1],
+      WPID: ["\\bigoplus\\limits_{#1} \\!\\! {\\vphantom {\\int}}^{#2}", 2],
+      WPIS: ["\\bigoplus\\limits_{#1}^{#2}", 2],
+      WPISD: ["\\bigoplus\\limits_{#1}^{#2} \\!\\! {\\vphantom {\\int}}^{#3}", 3],
 
-      // join (J)
-      JM: ["#1", 1],
-      JD: ["#1 & #2", 2],
-      JT: ["#1 & #2 & #3", 3],
+      WM: "\\bigodot",
+      WMD: ["\\bigodot \\!\\! {\\vphantom {\\int}}^{#1}", 1],
+      WMI: ["\\bigodot\\limits_{#1}", 1],
+      WMID: ["\\bigodot\\limits_{#1} \\!\\! {\\vphantom {\\int}}^{#2}", 2],
+      WMIS: ["\\bigodot\\limits_{#1}^{#2}", 2],
+      WMISD: ["\\bigodot\\limits_{#1}^{#2} \\!\\! {\\vphantom {\\int}}^{#3}", 3],
+
+
+      // matrix (M)
+      MCA: ["\\begin {bmatrix} #1 \\end {bmatrix}", 1], // column
+      MCB: ["\\begin {bmatrix} #1 \\\\ #2 \\end {bmatrix}", 2],
+      MCC: ["\\begin {bmatrix} #1 \\\\ #2 \\\\ #3  \\end {bmatrix}", 3],
+
+      MRA: ["#1", 1], // row
+      MRB: ["#1 & #2", 2],
+      MRC: ["#1 & #2 & #3", 3],
+
+      JHA: "\\HTJ {0} {1} {11} {x3042}",
+      JKA: "\\HTJ {0} {1} {11} {x9F20}",
+
+
+      // Japanese (J)
+      //    Hirakana (JH)
+      //    Kanji (JK)
+      //       Zodiac (Z): 鼠牛虎兎龍蛇馬羊猿鶏犬猪
+      //       Stem (S): 甲乙丙丁戊己庚辛壬癸
+      //       Branch (B): 子丑寅卯辰巳午未申酉戌亥 
+      //       Trigramme (T): 乾兌離震巽坎艮坤
+
 
 /* Deprecated
 
       // letter-like (Y, Z)
-      Ld: "\\textbf {d}",
-      LdP: "\\partial",
-      Le: "\\textbf {e}",
-      Li: "\\mathring {\\mathi}",
-      Lj: "\\mathring {\\mathj}",
+      Ld: "\\partial",
       LT: "\\intercal",
       Lp: "\\pi",
 
+      % # @ &
+      Đ Ґ Ђ Є Ћ Џ
+      $ € £ ¥ ¢
 
 */
 
-//M, D, T, Q, P, H, S, O, N
     },
   },
 };
 
-// \\large
-//БДЄЖЗИЛЦЧЏШЩЭЯ
-//бдєжзилцчџшщэя
 
 
 
