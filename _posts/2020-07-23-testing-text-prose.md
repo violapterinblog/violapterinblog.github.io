@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Testing Page: Text"
+title: "Testing Text: Prose"
 date: 2020-07-21
 categories: test
 ---

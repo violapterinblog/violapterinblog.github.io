@@ -5,22 +5,22 @@
 @charset "utf-8";
 
 $body-font-style: normal;
-$small-font-size: 12px;
+$small-font-size: 14px;
 $body-line-height: 1.5;
 $small-line-height: 1.0;
 $spacing-unit: 24px;
 $body-text-color: #111;
 
-$base-font-family: "Open Sans", "Noto Sans KR", sans-serif;
-$base-font-weight: 200;
-$base-font-size: 16px;
-$iso-font-family: "Vollkorn", "Noto Serif KR", serif;
-$iso-font-weight: 200;
-$iso-font-size: 16px;
-$heading-font-family: "Roboto Slab", "Noto Sans KR", monospace;
-$heading-font-weight: 700;
+$base-font-family: "Open Sans", "Noto Sans CJK KR", sans-serif;
+$base-font-weight: 400;
+$base-font-size: 18px;
+$iso-font-family: "Vollkorn", "Noto Serif CJK KR", serif;
+$iso-font-weight: 400;
+$iso-font-size: 18px;
+$heading-font-family: "Roboto Slab", "Noto Sans CJK KR", monospace;
+$heading-font-weight: 400;
 $heading-scale: 8;
-$mono-font-family: "Source Code Pro", "Noto Sans KR", sans-serif;
+$mono-font-family: "Source Code Pro", "Noto Sans CJK KR", sans-serif;
 $mono-font-weight: 400;
 
 $background-color: #fdfdfd;

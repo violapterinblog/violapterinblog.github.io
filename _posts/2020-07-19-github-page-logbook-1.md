@@ -5,7 +5,7 @@ date: 2020-07-19
 categories: "merticulous memory"
 ---
 
-July 18, 2020:
+*July 18, 2020*:
 Today at about 5:30 pm Taiwan time, I registered a 2nd GitHub account, `violapterinblog`, for sake of this GitHub Page (GHP),
 and the new site was born!
 Every account of GitHub was allowed to own 1 GHP, endowed with a unique URL derived from the username.
@@ -41,25 +41,23 @@ Commit records would also better protect my intellectual property,
 or at least that would make me assured.
 
 I tred to follow
-  [Jonathan McGlone's guide on GHP]
-  (http://jmcglone.com/guides/github-pages/),
+  [Jonathan McGlone's guide on GHP](http://jmcglone.com/guides/github-pages/),
   but by now, everything looked rather complicated.
 Maybe it's only me,
 as I have zero experience with web development.
 There was quite a lot to learn,
 and hopefully such effort would turn out to be worthwhile.
 
-July 19:
+*July 19*:
 Found the
-  [Jekyll template]
-  (https://github.com/jekyll/example)
+  [Jekyll template](https://github.com/jekyll/example)
   provided officially by Jekyll group, which was incredibly helpful.
 Copied the code to my repo,
 and for the first time, my site worked on localhost.
 After I committed,
 the default domain `violapterinblog.github.io` was also rendered successfully on the browser, which was exciting!
 
-July 20:
+*July 20*:
 Jekyll called Kramdown, a Markdown standard, by default.
 Realized that Jekyll allowed raw html code protected by tags,
 so I might actually write directly in HTML.
@@ -68,11 +66,10 @@ But it did not harm to try Kramdown first.
 Tried to call Mathjax, which Kramdown was said to call, with no avail.
 It was pointed out that Mathjax seemed to have difficulty recognizing `$$`.
 Therefore, one had to apply the snippet on
-  [official document]
-  (http://docs.mathjax.org/en/latest/upgrading/v2.html#changes-in-the-mathjax-api),
+  [official document](http://docs.mathjax.org/en/latest/upgrading/v2.html#changes-in-the-mathjax-api),
   which solved everything.
 
-July 22:
+*July 22*:
 Though I could typeset mathematics now,
 I wanted more.
 In fact, I had hoped that my favorite Google fonts may be used instead of the default LaTeX fonts.
@@ -84,14 +81,13 @@ and failed.
 Quite disappointed, I give up eventually the thought of using custom fonts in LaTeX.
 
 But at least I learned to call Google fonts, as explained in
-  [Getting Started]
-  (https://developers.google.com/fonts/docs/getting_started).
+  [Getting Started](https://developers.google.com/fonts/docs/getting_started).
 Jekyll characterized CSS in `/css/main.scss`,
 and `$`-prefixed variables were expanded, in order to generated CSS statements.
 I used Roboto Sans for titles and headings, Open Sans for normal text.
 On the other hand, I used Vollkorn for bold text (again a slight abuse of design), which corresponds to Markdown `** ... **` and HTML tag `<strong>`.
 
-July 26:
+*July 26*:
 Last year, I had bought a domain under WP account,
 and today I finally transfered that to the GHP.
 I asked WordPress staff via email,
@@ -100,15 +96,13 @@ They sent link of instruction, which had always been there,
 and I never read carefully.
 To start, I had to renew `violapterin.com` and `violapterin.blog`, like before, which was a matter of one-click.
 Then, to point the two domains, presently managed by WordPress-com, towards my GHP, I had to add a DNS CNAME-records  on WordPress-com, under WP's tutorial
-  [domain management]
-  (https://wordpress.com/domains/manage),
+  [domain management](https://wordpress.com/domains/manage),
 and simply add the alias on the web interface for GitHub repo.
-The tutorial by GitHub,
-  [Managing a custom domain for your github pages site]
-  (https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site)
+The introduction by GitHub itself,
+  [Managing a custom domain for your github pages site](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site),
   explains everything.
 
-July 28:
+*July 28*:
 Discovered `\unicode` extension of MathJax,
 and suddenly there again was hope for changing LaTeX font.
 In doing so, I might extract arbitrary unicode characters,
@@ -121,7 +115,7 @@ While it was not part of TeX,
 still these macros expanded, even recursively, before Mathjax was called!
 I imported and translated the whole big list of custom LaTeX macros I used with ConTeXt,
 
-July 29:
+*July 29*:
 A critical progress!
 This night, I was thinking intensively of an imagined command.
 This command displayed a first glyph onto the document,
@@ -133,9 +127,8 @@ But I was not optimistic,
 as I felt this did not quite agree the spirit of TeX's design.
 
 Meanwhile, I was troubled by the ugliness of the `\unicode` letters manually accented by me.
-When researching Stack Overflow about `\overset` and `\underset`, I saw several posts, like
-  [`barbara beeton` answering about the vertical spacing of `\underset`]
-  (https://tex.stackexchange.com/questions/302830/vertical-spacing-of-underset-and-other-tweaks)
+When researching Stack Overflow about `\overset` and `\underset`, I saw several posts, like `barbara beeton`'s answer in
+  [this thread on vertical spacing of `\underset`](https://tex.stackexchange.com/questions/302830/vertical-spacing-of-underset-and-other-tweaks)
   used the plain-TeX control sequence `\smash`.
 Its name alone sounded just like what I was after!
 I was excited and nervous, and looked up Knuth's *TeXbook*, quoted below (p.178)
@@ -154,7 +147,7 @@ I really should learn TeX at least in a cursory manner,
 since many of my original solutions might very well be simplified greatly by plain TeX sequences which I did not yet know (or would never know).
 
 
-Aug 2:
+*Aug 2*:
 Turned out Most miscellaneous symbols were not in Noto Sans nor Noto Serif,
 as one can test on Google Font's demonstration page of these font families.
 This was a bit disappointing,
@@ -162,11 +155,11 @@ but a moment's reflection assured me that those LaTeX- and AMS-provided symbols 
 Besides, with Mathjax's `\unicode` extension, it might be possible to display Japanese Hiragana and Kanji.
 *Qianziwen* (千字文), it suddenly occured to me, was a good choice, since a variety of things from gambling tickets to military division had been numbered with it.
 
-Aug 3:
+*Aug 3*:
 Confirmed that `\unicode` could display Hiragana and Kanji.
 If I was not mistaken, the code points of Hiragana and Kanji (Basic Multilingual Plane) were indeed same as their UTF-16 encodings.
-While it was said that Noto Sans and Serif JP were better-designed than other versions,
-it might be nice to convert *Qianziwen* solely in terms of Japanese Kanji (defined in JIS-X-0208, 0212, 0213), and preferrably completely within the realm of basic CJK Unified Ideographs (`U+4E00` to `U+9FFF`).
+Because it was said that Noto Sans and Serif JP were better-designed than other versions,
+I chose a *Qianziwen* version that preferred Japanese-Kanji characters defined in JIS-X-0208, 0212, and 0213.
 
 At this point, I decided to take a break to learn a good deal of HTML, CSS, and JS, as well as Jekyll, Liquid, SASS, and Kramdown.
 Afterwards the solution of some problems will hopefully come naturally,
