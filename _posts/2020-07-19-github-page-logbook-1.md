@@ -153,13 +153,16 @@ as one can test on Google Font's demonstration page of these font families.
 This was a bit disappointing,
 but a moment's reflection assured me that those LaTeX- and AMS-provided symbols should actually suffice, considering moreover there were underset and oversets to combine symbols with geometric shapes for instance.
 Besides, with Mathjax's `\unicode` extension, it might be possible to display Japanese Hiragana and Kanji.
-*Qianziwen* (千字文), it suddenly occured to me, was a good choice, since a variety of things from gambling tickets to military division had been numbered with it.
+*Qianziwen* (千字文), it occured to me, was a good choice, since a variety of things from gambling tickets to military division had been numbered with it.
 
 *Aug 3*:
 Confirmed that `\unicode` could display Hiragana and Kanji.
 If I was not mistaken, the code points of Hiragana and Kanji (Basic Multilingual Plane) were indeed same as their UTF-16 encodings.
-Because it was said that Noto Sans and Serif JP were better-designed than other versions,
-I chose a *Qianziwen* version that preferred Japanese-Kanji characters defined in JIS-X-0208, 0212, and 0213.
+
+I examined textual differences of *Qianziwen*, and revised in favor of Japanese-Kanji characters defined in standards JIS-X-0208, 0212, and 0213.
+Originally, I thought I had to write a Python script to check the encodings,
+but unexpectedly, I could just check this out on Windows Notepad,
+since those not in JIS were in different fonts and visually different.
 
 At this point, I decided to take a break to learn a good deal of HTML, CSS, and JS, as well as Jekyll, Liquid, SASS, and Kramdown.
 Afterwards the solution of some problems will hopefully come naturally,

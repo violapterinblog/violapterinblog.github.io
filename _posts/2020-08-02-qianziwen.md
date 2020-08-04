@@ -5,14 +5,15 @@ date: 2020-08-02
 categories: "useful info"
 ---
 
-This is a backup of the version of *Qianziwen* (千字文) by Zhōu Xìngsì (周興嗣) as listed on Japanese Wikisource.
-This version seems to solely use JIS Kanji,
-but prefer the character form closest to source whenever possible, a principle I wholeheartedly agree.
+This version of *Qianziwen* (千字文), purportedly by Zhōu Xìngsì (周興嗣), is based on the one as listed on Japanese Wikisource.
+I replaced several characters not in JIS (a standard list of Japanese Kanji) with their equivalent in JIS, as far as I notice such a scenario.
+One can check it up in [this Kanji dictionary](https://kanji.jitenon.jp/kanjiu/10214.html).
+However, if a character and its textual variant are both in JIS, I choose the more old-fashioned form, using my judgement.
 
 | 000 | 天 | 地 | 玄 | 黃 | 宇 | 宙 | 洪 | 荒 |
 | 001 | 日 | 月 | 盈 | 昃 | 辰 | 宿 | 列 | 張 |
 | 002 | 寒 | 來 | 暑 | 往 | 秋 | 收 | 冬 | 藏 |
-| 003 | 閏 | 餘 | 成 | 歲 | 律 | 呂 | 調 | 陽 |
+| 003 | 閏 | 餘 | 成 | 歳 | 律 | 呂 | 調 | 陽 |
 | 004 | 雲 | 騰 | 致 | 雨 | 露 | 結 | 為 | 霜 |
 | 005 | 金 | 生 | 麗 | 水 | 玉 | 出 | 崑 | 岡 |
 | 006 | 劍 | 號 | 巨 | 闕 | 珠 | 稱 | 夜 | 光 |
@@ -64,21 +65,21 @@ but prefer the character form closest to source whenever possible, a principle I
 | 052 | 背 | 邙 | 面 | 洛 | 浮 | 渭 | 據 | 涇 |
 | 053 | 宮 | 殿 | 盤 | 鬱 | 樓 | 觀 | 飛 | 驚 |
 | 054 | 圖 | 寫 | 禽 | 獸 | 畫 | 綵 | 仙 | 靈 |
-| 055 | 丙 | 舍 | 傍 | 啟 | 甲 | 帳 | 對 | 楹 |
+| 055 | 丙 | 舍 | 傍 | 啓 | 甲 | 帳 | 對 | 楹 |
 | 056 | 肆 | 筵 | 設 | 席 | 鼓 | 瑟 | 吹 | 笙 |
 | 057 | 升 | 階 | 納 | 陛 | 弁 | 轉 | 疑 | 星 |
-| 058 | 右 | 通 | 廣 | 內 | 左 | 達 | 承 | 明 |
+| 058 | 右 | 通 | 廣 | 内 | 左 | 達 | 承 | 明 |
 | 059 | 既 | 集 | 墳 | 典 | 亦 | 聚 | 羣 | 英 |
 | 060 | 杜 | 稾 | 鍾 | 隸 | 漆 | 書 | 壁 | 經 |
 | 061 | 府 | 羅 | 將 | 相 | 路 | 俠 | 槐 | 卿 |
-| 062 | 戶 | 封 | 八 | 縣 | 家 | 給 | 千 | 兵 |
+| 062 | 戸 | 封 | 八 | 縣 | 家 | 給 | 千 | 兵 |
 | 063 | 高 | 冠 | 陪 | 輦 | 驅 | 轂 | 振 | 纓 |
 | 064 | 世 | 祿 | 侈 | 富 | 車 | 駕 | 肥 | 輕 |
 | 065 | 策 | 功 | 茂 | 實 | 勒 | 碑 | 刻 | 銘 |
 | 066 | 磻 | 溪 | 伊 | 尹 | 佐 | 時 | 阿 | 衡 |
 | 067 | 奄 | 宅 | 曲 | 阜 | 微 | 旦 | 孰 | 營 |
 | 068 | 桓 | 公 | 匡 | 合 | 濟 | 弱 | 扶 | 傾 |
-| 069 | 綺 | 迴 | 漢 | 惠 | 說 | 感 | 武 | 丁 |
+| 069 | 綺 | 迴 | 漢 | 惠 | 説 | 感 | 武 | 丁 |
 | 070 | 俊 | 乂 | 密 | 勿 | 多 | 士 | 寔 | 寧 |
 | 071 | 晉 | 楚 | 更 | 霸 | 趙 | 魏 | 困 | 橫 |
 | 072 | 假 | 途 | 滅 | 虢 | 踐 | 土 | 會 | 盟 |
@@ -92,7 +93,7 @@ but prefer the character form closest to source whenever possible, a principle I
 | 080 | 曠 | 遠 | 緜 | 邈 | 巖 | 岫 | 杳 | 冥 |
 | 081 | 治 | 本 | 於 | 農 | 務 | 茲 | 稼 | 穡 |
 | 082 | 俶 | 載 | 南 | 畝 | 我 | 藝 | 黍 | 稷 |
-| 083 | 稅 | 熟 | 貢 | 新 | 勸 | 賞 | 黜 | 陟 |
+| 083 | 税 | 熟 | 貢 | 新 | 勸 | 賞 | 黜 | 陟 |
 | 084 | 孟 | 軻 | 敦 | 素 | 史 | 魚 | 秉 | 直 |
 | 085 | 庶 | 幾 | 中 | 庸 | 勞 | 謙 | 謹 | 敕 |
 | 086 | 聆 | 音 | 察 | 理 | 鑑 | 貌 | 辨 | 色 |
@@ -109,12 +110,12 @@ but prefer the character form closest to source whenever possible, a principle I
 | 097 | 遊 | 鵾 | 獨 | 運 | 凌 | 摩 | 絳 | 霄 |
 | 098 | 耽 | 讀 | 翫 | 市 | 寓 | 目 | 囊 | 箱 |
 | 099 | 易 | 輶 | 攸 | 畏 | 屬 | 耳 | 垣 | 墻 |
-| 100 | 具 | 膳 | 飡 | 飯 | 適 | 口 | 充 | 腸 |
+| 100 | 具 | 膳 | 湌 | 飯 | 適 | 口 | 充 | 腸 |
 | 101 | 飽 | 飫 | 烹 | 宰 | 飢 | 厭 | 糟 | 糠 |
 | 102 | 親 | 戚 | 故 | 舊 | 老 | 少 | 異 | 糧 |
 | 103 | 妾 | 御 | 績 | 紡 | 侍 | 巾 | 帷 | 房 |
 | 104 | 紈 | 扇 | 圓 | 潔 | 銀 | 燭 | 煒 | 煌 |
-| 105 | 晝 | 眠 | 夕 | 寐 | 藍 | 笋 | 象 | 床 |
+| 105 | 晝 | 眠 | 夕 | 寐 | 藍 | 筍 | 象 | 床 |
 | 106 | 絃 | 歌 | 酒 | 讌 | 接 | 盃 | 舉 | 觴 |
 | 107 | 矯 | 手 | 頓 | 足 | 悅 | 豫 | 且 | 康 |
 | 108 | 嫡 | 後 | 嗣 | 續 | 祭 | 祀 | 烝 | 嘗 |
