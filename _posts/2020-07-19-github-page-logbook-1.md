@@ -148,7 +148,9 @@ since many of my original solutions might very well be simplified greatly by pla
 
 
 *Aug 2*:
-Turned out Most miscellaneous symbols were not in Noto Sans nor Noto Serif,
+Turned out most
+  [miscellaneous symbols](https://en.wikipedia.org/wiki/Miscellaneous_Symbols)
+  were not in Noto Sans nor Noto Serif,
 as one can test on Google Font's demonstration page of these font families.
 This was a bit disappointing,
 but a moment's reflection assured me that those LaTeX- and AMS-provided symbols should actually suffice, considering moreover there were underset and oversets to combine symbols with geometric shapes for instance.

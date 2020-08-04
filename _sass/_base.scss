@@ -1,19 +1,21 @@
-/* * To reset several elements */
-body, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, hr, dl, dd, ol, ul, figure {
+/* * To reset several elements * */
+body, p, hr figure, blockquote,
+h1, h2, h3, h4, h5, h6,
+pre, dl, dd, ol, ul, {
   margin: 0;
   padding: 0;
+  font-variant-ligatures: none;
 }
 
 /* * default styling * */
-body, p {
+body, p, strong {
   font-style: $body-font-style;
   line-height: $body-line-height;
   color: $body-text-color;
   background-color: $background-color;
 }
 
-body , p {
+body, p {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   font-size: $base-font-size;

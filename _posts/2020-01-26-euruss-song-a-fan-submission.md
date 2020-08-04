@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Eurus's Song, A Fan Version"
+title: "Eurus's Song, A Fan Submission"
 date: 2020-01-26
-categories: ridiculous rhyme
+categories: "ridiculous rhyme"
 ---
 
-[Slight spoilers] Just finished Sherlock Season 4, Episode 3, The Final Problem.
+Just finished Sherlock Season 4, Episode 3, The Final Problem.
+(Slight spoilers below.)
 The characterization of Eurus Holmes is haunting.
-(See Baker Street Wiki: The Musgrave Ritual)
-
+The lyrics can be found on 
+    [Baker Street Wiki: Eurus's Song](https://bakerstreet.fandom.com/wiki/Eurus%27_Song_(The_Musgrave_Ritual)).
 But it seems to me Eurus’s Song is not entirely satisfying.
 As pointed out, the tune is based on Go Tell Aunt Rhody, which I find catchy.
 But the lyrics is not shown in its entirety in the show,
@@ -39,11 +40,10 @@ And siblings too play as they bath? \\
 And does the goose find that for hours \\
 Her babies make room for their death?__
 
-Don't ask me what the poem means.
-I just scrambled the lyrics proper, and those of *Go Tell Aunt Rhody*, and let unleashed my creativity, following what the imagery led me!
-I do intend my 
-Anyway, I do hope the poem is as creepy as possible.
-(Seriously, the *Go Tell Aunt Rhody* already reads creepy enough,
+Don't ask me what the poem means!
+I just scrambled the lyrics proper, and those of *Go Tell Aunt Rhody*, and let unleashed my creativity, following what the imagery led me.
+Anyway, I do hope my poem is creepy enough.
+(By the way, the *Go Tell Aunt Rhody* already reads creepy,
 and so are many Mother Goose tales.
 No wonder Agatha Christie was inspired of *And Then There Were None*.)
 
@@ -56,7 +56,7 @@ Do come and play and find her room.__
 
 This fits the rest of the story, where the plain text reveals to Sherlock that Eurus has been lonely, and indicates him to come to her room (of young Eurus’s).
 
-My poem can fit the tune of Go Tell Aunt Rhody, though one has to read 2nd and 3rd syllables in one beat, and it probably works better when just being read out according to iambic tetrameter.
+My poem can fit the tune of *Go Tell Aunt Rhody*, though one has to read 2nd and 3rd syllables in one beat, and it probably works better when just being read out according to iambic tetrameter.
 
 I posted my poem on Reddit, expecting it to become a hit.
 Nobody replied,
