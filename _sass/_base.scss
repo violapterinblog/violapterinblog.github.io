@@ -10,9 +10,9 @@ pre, dl, dd, ol, ul, {
 /* * default styling * */
 body, p, strong {
   font-style: $body-font-style;
-  line-height: $body-line-height;
   color: $body-text-color;
   background-color: $background-color;
+  line-height: $body-line-height;
 }
 
 body, p {

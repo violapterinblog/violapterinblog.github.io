@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "GitHub Page Logbook 1: Establishment"
+title: "GitHub Page logbook 1: Beginning"
 date: 2020-07-19
 categories: "merticulous memory"
 ---
 
 *July 18, 2020*:
-Today at about 5:30 pm Taiwan time, I registered a 2nd GitHub account, `violapterinblog`, for sake of this GitHub Page (GHP),
+Today, at about 5:30 pm Taiwan time, I registered a 2nd GitHub account, `violapterinblog`, for sake of this GitHub Page (GHP),
 and the new site was born!
 Every account of GitHub was allowed to own 1 GHP, endowed with a unique URL derived from the username.
 I would like to import some past posts and modify the time stamp accordingly,
@@ -53,7 +53,7 @@ Found the
   [Jekyll template](https://github.com/jekyll/example)
   provided officially by Jekyll group, which was incredibly helpful.
 Copied the code to my repo,
-and for the first time, my site worked on localhost.
+and for the first time, my site worked on localhost, with `bundle exec jekyll serve`.
 After I committed,
 the default domain `violapterinblog.github.io` was also rendered successfully on the browser, which was exciting!
 
@@ -166,7 +166,14 @@ Originally, I thought I had to write a Python script to check the encodings,
 but unexpectedly, I could just check this out on Windows Notepad,
 since those not in JIS were in different fonts and visually different.
 
-At this point, I decided to take a break to learn a good deal of HTML, CSS, and JS, as well as Jekyll, Liquid, SASS, and Kramdown.
+At this point, I decided to take a break to learn a good deal of 
+[HTML], 
+[CSS], and 
+[JS], 
+as well as
+[Jekyll],
+[SASS], and 
+[Kramdown].
 Afterwards the solution of some problems will hopefully come naturally,
 and knowing more web programming can only be beneficial to one's career.
 And of course, I had spent too much on these matters which this post explains,

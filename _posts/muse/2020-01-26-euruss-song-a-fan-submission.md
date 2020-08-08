@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Eurus's Song, A Fan Submission"
+title: "Eurus's Song—A Fan Submission"
 date: 2020-01-26
 categories: "ridiculous rhyme"
 ---
@@ -11,12 +11,13 @@ The characterization of Eurus Holmes is haunting.
 The lyrics can be found on 
     [Baker Street Wiki: Eurus's Song](https://bakerstreet.fandom.com/wiki/Eurus%27_Song_(The_Musgrave_Ritual)).
 But it seems to me Eurus’s Song is not entirely satisfying.
-As pointed out, the tune is based on Go Tell Aunt Rhody, which I find catchy.
-But the lyrics is not shown in its entirety in the show,
-and it is not properly rhymed,
+As pointed out, the tune is based on
+    [Go Tell Aunt Rhody](https://www.youtube.com/watch?v=v4vxDJKjoBI),
+but the lyrics is not shown in its entirety.
+Moreover, it is not properly rhymed,
 nor does it fit the meter.
-Moreover, the cypher is purportedly based on the dates on the gravestone of the Holmes graveyard,
-and, though it is not fully spelled out, the deciphering does seem arbitrary.
+As the cypher is purportedly based on the dates on the gravestone of the Holmes graveyard, which is not fully spelled out either,
+the deciphering can seem arbitrary.
 
 Thus, I decided to write my own fan-fiction poem and propose a simple cypher.
 
