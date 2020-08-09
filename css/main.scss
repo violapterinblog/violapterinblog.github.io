@@ -22,8 +22,14 @@ $heading-scale: 2;
 $mono-font-family: "Source Code Pro", "Noto Sans", "Noto Sans CJK KR", "Courier New", monospace;
 $mono-font-weight: 400;
 
-$background-color: #fdfdfd;
+$background-color: transparent;
 $link-color: #2a7ae2;
+$table-header-color: #d8e0d8;
+$table-row-light-color: #f8fcf8;
+$table-row-dark-color: #e8f0e8;
+$table-border-color: #606060;
+
+
 
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);

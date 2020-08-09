@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Testing Math: Latin"
-date: 2020-07-31
-categories: test
+date: 2020-07-30
+categories: "fancy files"
 ---
 
 - Latin, plain, upper case

@@ -48,7 +48,8 @@ This would perhaps suffice for my revolution of notation!
 A while ago, I had considered the name *Melancholia*, meaning black bile, for my format in progress.
 First, it stood for *ink*, which hints writing.
 Second, it suggested depression, agreeing my constant tone.
-And third, something coincidental which I only thought of later, it could have extension `.mlx`, sounding like *XML*!
+And third, something coincidental which I only thought of today, it could have extension `.mlx`, sounding like *XML*!
+This had me made up my mind.
 
 Excited, I was thinking about writing a parser,
 and vaguely recalled one might have to implement a PEG (parsing expression grammar) or a BNF (Backus–Naur form).
@@ -72,6 +73,7 @@ I shall still use Kramdown-with-Mathjax for writing,
 until the design was complete.
 When that day came,
 conversion of Small-Melancholia to Markdown would not sound like a particular difficulty, as long as Melancholia was designed reliable.
+Indeed, mathematical subscripts, superscripts, diactritics, undersets, and supersets will correspond, with injection, to the Melancholia model enunciated solely by dedicated symbols and vertical division of lines.
 Afterwards, I shall disable Jekyll, use Big-Melancholia, and generate HTML myself.
 
 Was it such thing possible?
