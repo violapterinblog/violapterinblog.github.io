@@ -2,12 +2,15 @@
 layout: post
 title: "GitHub Page logbook 1: Beginning"
 date: 2020-07-19
-categories: "merticulous memory"
+tags: "Merticulous membrances"
 ---
 
+![screenshot of the first repo](github.com/violapterinblog/external-raster-images/raw/master/membrances/götterdämmerung.png)
+
+
 *July 18, 2020*:
-Today, at about 5:30 pm Taiwan time, I registered a 2nd GitHub account, `violapterinblog`, for sake of this GitHub Page (GHP),
-and the new site was born!
+Today, at about 5:30 pm Taiwan time, I registered a 2nd GitHub account, `violapterinblog`, to set up this GitHub Page (GHP).
+The new site was born!
 Every account of GitHub was allowed to own 1 GHP, endowed with a unique URL derived from the username.
 I would like to import some past posts and modify the time stamp accordingly,
 so let this notice attest to the moment of what was supposedly a new start.

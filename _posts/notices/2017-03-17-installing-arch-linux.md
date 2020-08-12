@@ -2,39 +2,35 @@
 layout: post
 title: "Installing Arch Linux"
 date: 2017-03-17
-categories: "useful info"
+categories: "needful notices"
 ---
 
 This note summarizes the steps to install Arch Linux.
 I do not intend to explain everything, and the wording is as concise as possible.
 Do tell me if you find anything no longer working now, or any link broken.
 
-# Prepare a bootable USB stick
+# Booting with a USB
 
 Download the
     [Arch Linux ISO](https://www.archlinux.org/download/).
-It is named like `archlinux-yyyy.mm.dd-dual.iso` (according to the date compiled), and is about 470MB.
-
-To make a bootable USB, on a Windows computer for concreteness, you may use
+To make a bootable USB, on a Windows computer (for concreteness) you may use
     [Rufus](https://rufus.akeo.ie/).
-The GUI for Windows should be very straightforward (just drag Arch Linux ISO onto the window).
+The GUI for Windows should be very straightforward.
 On Mac, we have to format the USB first, and copy ISO into it using `dd` utility, which I am not familiar.
 
-# Enter the firmware interface
-
-A firmware interface, stored in the ROM, is a bridge between software and hardware, which helps boot a computer.
+We then enter the firmware interface, which is a bridge between software and hardware.
 While the computer is off, plug in the bootable USB.
-Before the computer boots, there will be a moment the screen is shown with direction like below
+Before the computer starts normally, there will be a notic like
 
     Please press DEL or F2 to enter UEFI BIOS setting
 
-Do that immediately, and you see a temporary `zsh` shell, with prompt
+Do that immediately, and there will be a temporary `zsh` shell, with prompt
 
     root@archiso ~ #
 
 In the below, `#` sign indicates the shell prompt.
 
-# Partition of the Hard Disk
+# Partition and formatting the hard disk
 
 List the disk blocks.
 
@@ -61,11 +57,11 @@ and I will generously allocate 40GB for `/`(the root directory except for the us
 Nowadays computers often have a large RAM (mine has 4GB),
 and 2GB of swap memory shall be more than enough.
 
-First create partition for the root directory except for home.
+Create partition for the root directory except for home.
 
     (parted) mkpart primary ext4 1MiB 40GiB
 
-The boot flag shall be set to be true.
+Set the boot flag to be true.
 
     (parted) set 1 boot on
 
@@ -73,15 +69,15 @@ Create the partition for swap memory.
 
     (parted) mkpart primary linux-swap 40GiB 42GiB
 
-Finally the partition for the home, making up the rest of the hard disk.
+Finally create the partition for the home, making up the rest of the hard disk.
 
     (parted) mkpart primary ext4 42GiB 100%
 
 In the steps above, if the requested partition cannot be made precisely as such,
 an alternative suggestion will be prompted.
 You might also be asked again of the point of start and end, and of the file system.
-I just typed enter to apply default for everything.
-You may also be warned that `The resulting partition is not properly aligned for best performance.` which Arch Linux Wiki suggests that we ignore.
+I just apply default for everything.
+You may also be warned that `The resulting partition is not properly aligned for best performance.` which we may ignore.
 
 Print a summary of each partition to double check.
 
@@ -91,8 +87,6 @@ My report has that `sda1` is the root directory except home, `sda2` the swap mem
 Quit if everything looks fine.
 
     (parted) quit
-
-# Mounting partitions
 
 Format partitions intended for root directory.
 
@@ -109,57 +103,53 @@ To mount the home, create the directory, then mount it.
 
 # Installation of system files
 
-Internet connection is required,
+Now the internet connection is required,
 since we will download packages.
-The best situation is that you are using a PC with ethernet automatically connected.
-If not, you have to set it in command line (which is not covered here).
+It is best that you have ethernet automatically connected.
+Otherwise, you have to set it in command line (which is not covered here).
 Alternatively, you may use a Wifi (not covered here either).
 We may test connection with (say)
 
     # ping -c 3 www.google.com
 
 Edit the list of mirrors,
-so the servers physically closer to you are preferred.
+so that closer servers are preferred.
 (You may use `nano`
 if you are unfamiliar with `vi`, and same hereafter.)
 
     # vi /etc/pacman.d/mirrorlist
 
-Install the base packages.
-This will take quite a while, about twenty minutes in my case.
+Install the base packages, which will take quite a while, about twenty minutes in my case.
 
     # pacstrap -i /mnt base base-devel
 
-Generate the `fstab` file that specifies information about mounted partitions,
+Generate the `fstab` file (which specifies information about mounted partitions),
 and write it to the configuration file.
 
     # genfstab -U /mnt > /mnt/etc/fstab
 
 # Language and location
 
-In completing the remaining tasks, temporarily take `/mnt` to be the root directory (the target partition where Arch Linux is to be installed).
+In completing the remaining tasks, temporarily take `/mnt` to be the root directory (the partition where Arch Linux will be installed).
 
     # arch-chroot /mnt
 
-I would like to work with English interface,
-but have to display and type Chinese.
-I thus choose American English to be the default for system display,
-but further install Chinese input methods.
-To do so, edit the languages we want to enable.
+I shall choose American English to be the default for system display,
+and further install Chinese input methods.
+To do so, edit the languages to be enabled.
 
     # vi /etc/locale.gen
 
 I have to uncomment (delete the `#`) before the line `en_US.UTF-8 UTF-8` and `zh_TW.UTF-8 UTF-8`.
 Then, `locale-gen` generates necessary information for all languages enabled,
-while `locale.conf` specifies only system display.
+while `locale.conf` specifies system display.
 
     # locale-gen
     # echo "LANG=en_US.UTF-8" > /etc/locale.conf
     # export LANG=en_US.UTF-8
 
-Next install the input method framework Ibus (package `ibus`) and the input method Rime (package `ibus-rime`).
+FOr me, I have to install the input method framework Ibus (package `ibus`) and the input method Rime (package `ibus-rime`).
 It supports several Chinese input methods.
-
 To initiate it at startup, add these lines in `~/.xinitrc`:
 
     export GTK_IM_MODULE=ibus
@@ -185,7 +175,7 @@ Set the hardware clock.
 # Setting a boot manager
 
 For MBR users, download a boot manager and an OS-detector, possibly for sake of dual boot.
-They are packages `grub` and `os-prober`.
+They are provided by packages `grub` and `os-prober`.
 
 Set up the `grub` on the booted partition, and generate the configuration file.
 Again, replace `sda` with your partition name.
@@ -195,7 +185,7 @@ Again, replace `sda` with your partition name.
 
 At this point, I encountered the error `Failed to connect to lvmetad`.
 The is due to the `lvmetad` service that improves performance of LVM, the Logical Volume Manager (which manages disk drives and other mass-storage devices).
-We have to disable it by editing `/etc/lvm/lvm.conf`,
+I have to disable it by editing `/etc/lvm/lvm.conf`,
 and write `use_lvmetad = 0`.
 
 # Setting a host name
@@ -216,13 +206,13 @@ and schedule shutdown.
     # umount -R /mnt
     # shutdown
 
-Unplug the USB, which is no longer needed.
-Start the computer now,
+Unplug the USB,
+restart,
 and login as `root`.
 
 # Internet connection
 
-Assuming a wired connection is available, we set up DHCP (Dynamic Host Configuration Protocol) that requests an IP address in the present ethernet.
+Assuming a connection is fine, we set up DHCP (Dynamic Host Configuration Protocol) that requests an IP address in the present ethernet.
 
     # ip link
 
@@ -237,20 +227,16 @@ Start the DHCP service now, and whenever the system boots.
     # systemctl enable dhcpcd@_______.service
 
 Replace the `______` with the name of wired device just seen above.
-In my case, that is `lo`.
-
-The method for obtaining wireless connection is not covered,
-and please refer to references.
+Mine is `lo`.
 
 # Creating the daily user's account
 
 Create a user account intended to be used on a daily basis.
-Add the ID into the wheel group to get sudo privileges.
+Add the ID (mine is `violapterin`) into the wheel group to get sudo privileges,
+and sets its password.
 
     # useradd -m -G wheel,users -s /bin/bash violapterin
     # passwd violapterin
-
-This sets the daily user's password.
 
 Install package `sudo` to get superuser privilege,
 then edit the `sudoers` file.
@@ -258,14 +244,13 @@ Since this file is special, we have to specify the editor.
 
     # EDITOR=vi visudo
 
-Uncomment this line, by deleting the beginning `#`.
+Uncomment this line (by deleting the beginning `#`).
 
 	%wheel ALL=(ALL) ALL
 
-# Downloading all stable packages
+# Basic packages
 
-Make stable repositories available to package manager `pacman`, by opening `/etc/pacman.conf`,
-and uncomment these lines:
+Make stable repositories available to package manager `pacman`, by opening `/etc/pacman.conf`, and uncommenting these lines:
 
     [multilib]
     Include = /etc/pacman.d/mirrorlist
@@ -277,39 +262,39 @@ and install all refreshed packages.
 
 Flags `-Syu` means, respectively, install packages, refresh database for packages, and look for existing outdated packages.
 
-A comprehensive list of packages is provided on Arch Linux Wiki's
-    [List of applications](https://wiki.archlinux.org/index.php/list_of_applications),
-    classified according to usage.
+A
+    [comprehensive list of packages](https://wiki.archlinux.org/index.php/list_of_applications),
+is provided on Arch Linux Wiki's
 Besides the official repository that `pacman` uses, there is another Arch User Repository (AUR) maintained by community.
 We need the so-called pacman helpers to install AUR packages, including `yay`, `pakku`, `pikaur`, and `pacaur`.
 The flag `-S` again means installation.
 
 # Graphical interface
 
-However, it remains to set up a desktop environment.
-To do so we install the X-server (packages `xorg-server` and `xorg-server-utils`).
+It remains to set up a desktop environment.
+We install the X-server (packages `xorg-server` and `xorg-server-utils`).
 To check which graphic card the current system is using, run
 
     # lspci -v
 
-As my computer has an Intel GPU (examine your graphic cards to distinguish), in my case I have to install `xf86-video-intel`.
+As my computer has an Intel GPU (examine your graphic cards to distinguish), I have to install `xf86-video-intel`.
 
 See
     [Desktop environment](https://wiki.archlinux.org/index.php/desktop_environment)
     for a list of available desktops.
 I choose KDE (package `plasma` and `kde-applications`), which took nearly thirty minutes in my case.
 (Package `plasma-meta` seems to be a superset of `plasma`.
-Similar is said of `kde-applications-meta` and `kde-applications`.)
+Similar is true of `kde-applications-meta` and `kde-applications`.)
 
-Configure `.xinitrc` that calls KDE on startup.
-First, log in as the daily user's account, and write
+We configure `.xinitrc` that calls KDE on startup.
+First, log in as the daily user's account, and write these:
 
     # echo "exec startkd>" > ~/.xinitrc
 
-Note that `.xinitrc` must be saved in the daily user's home in order to be found and read.
-But even with this, KDE will only be started after `startx` command is run.
-To start KDE immediately after logged in, we need package `xorg-xinit`.
-And then put in `~/.bashrc`
+Here `.xinitrc` must be saved in the daily user's home in order to be found and read.
+Even so, KDE will only be started after `startx` command is run.
+To start KDE immediately after logged in, install package `xorg-xinit`.
+And then put in `~/.bashrc` these lines:
 
 	if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
         exec startx
@@ -318,7 +303,7 @@ And then put in `~/.bashrc`
 Translated, this means that we start the X server, if the display variable is not a null string, and if the virtual terminal number of the X desktop group is not empty, indicating there is only one terminal instance.
 
 This guide ends here,
-because, in the presence of a beautiful GUI, instead of the scary black-and-white command line, I am sure the readers will surely figure out themselves how to install relevant packages.
+because, in the presence of a beautiful GUI, instead of the scary black-and-white command line, I am sure the readers will figure out how to install relevant applications.
 
 # References
 

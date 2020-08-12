@@ -1,54 +1,32 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-column-1">
-      <ul class="contact-list">
-        <li>{{ site.author }}</li>
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      </ul>
+      <div class="wrapper">
+        <img class="profile" src="/assets/img/profile.png" width="360px">
+      </div>
+      <br>
+
+      <div class="wrapper">
+        <a href="http://twitter.com/violapterin">
+          <span class="twitter-icon"></span>
+        </a>
+
+        <a href="mailto:violapterin@gmail.com">
+          <span class="gmail-icon"></span>
+        </a>
+
+        <a href="http://github.com/violapterin">
+          <span class="github-icon"></span>
+        </a>
+      </div>
     </div>
 
     <div class="footer-column-2">
-      <ul class="social-media-list">
-        {% if site.github_username %}
-        <li>
-          <span class="icon-github">
-            <a
-              class="github-button"
-              href="https://github.com/{{ site.github_username }}"
-              data-size="large"
-            >
-              Follow
-            </a>
-            <script
-              async
-              defer
-              src="https://buttons.github.io/buttons.js"
-            ></script>
-          </span>
-        </li>
-        {% endif %} {% if site.twitter_username %}
-        <li>
-          <span class="icon-twitter">
-            <a
-              href="https://twitter.com/{{ site.twitter_username }}?ref_src=twsrc%5Etfw"
-              class="twitter-follow-button"
-              data-size="large"
-              data-show-screen-name="false"
-              data-show-count="false"
-            >
-            </a>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-            ></script>
-          </span>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-
-    <div class="footer-column-3">
-      <p class="text">{{ site.description }}</p>
+      <p><strong>violapterin</strong></p>
+      <p class="text">
+        A science student, an amateur author, <br />
+        a curious composer, a luckless lad.
+      </p>
     </div>
   </div>
 </footer>

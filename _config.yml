@@ -1,12 +1,6 @@
 title: New Memory Allocated
-email: violapterin@gmail.com
-description: > # (this ignores newlines)
-  A science student, an amateur author, a curious composer, a luckless lad.
-baseurl: "" # the subpath of the site
-url: "http://violapterin.github.io" # the base hostname & protocol for your site
-author: Violapterin
-twitter_username: violapterin
-github_username:  violapterin
+subtitle: delete [] ptr; void *ptr = 0;
+url: "http://violapterin.blog"
 
 markdown: kramdown
 permalink: /:year/:title:output_ext

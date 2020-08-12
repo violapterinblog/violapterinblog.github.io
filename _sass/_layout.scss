@@ -11,9 +11,8 @@
 .site-title {
     font-family: $heading-font-family;
     font-weight: $heading-font-weight;
-    font-size: 26px;
+    font-size: 32px;
     line-height: 56px;
-    letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
 
@@ -117,30 +116,24 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
     width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+.footer-col-2 {
+    width: -webkit-calc(80% - (#{$spacing-unit} / 2));
+    width:         calc(80% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+    .footer-col-1 {
+        width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+        width:         calc(35% - (#{$spacing-unit} / 2));
     }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+    .footer-col-2 {
+        width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+        width:         calc(65% - (#{$spacing-unit} / 2));
     }
 }
 
@@ -151,7 +144,6 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
 
 /* * Page content * */
 .page-content {
@@ -180,8 +172,6 @@
     display: block;
     font-size: 24px;
 }
-
-
 
 /* * Posts * */
 .post-header {
@@ -224,4 +214,25 @@
             font-size: 18px;
         }
     }
+}
+
+span.twitter-icon {
+    background: url('/assets/img/twitter-icon.png') no-repeat;
+    float: left;
+    width: 36px;
+    height: 36px;
+}
+
+span.github-icon {
+    background: url('/assets/img/github-icon.png') no-repeat;
+    float: left;
+    width: 36px;
+    height: 36px;
+}
+
+span.gmail-icon {
+    background: url('/assets/img/gmail-icon.png') no-repeat;
+    float: left;
+    width: 36px;
+    height: 36px;
 }

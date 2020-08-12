@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Götterdämmerung"
+title: "[?] Götterdämmerung"
 date: 2019-10-04
-categories: "reflective reader"
+categories: "reading reflection"
 ---
 
-
-*Abstract: I review a performance of Twilight of the Gods, commenting in roughly such order: on listening experience, music interpretation, staging and design, and Wagner's composition itself as a drama and a piece of music.*
+![poster of the Götterdämmerung performance](github.com/violapterinblog/external-raster-images/raw/master/reflections/götterdämmerung.png)
 
 This production of *Twilight of the Gods* (*Götterdämmerung*) is conducted by Shao-Chia Lü (呂紹嘉), and directed by Carlus Padrissa. Brünnhilde is played by Rachel Nicholls, Siegfried by Lance Ryan, Hagen by Andrea Silvestrelli, Gunter by Lauri Vasar, Gutrune by Sandra Trattnigg. According to the credit, it is originally staged by La Fura Dels Baus.
 
@@ -47,3 +46,8 @@ And Wagner seldom writes heavy contrapuntal lines, nor introduces rhythmic compl
 Wagner's harmony is not progressive, if that can be a factor too. One peculiarity of his is the use of the so-called half-diminished 9th chord (e.g., $latex \{B_3, D_4, F_4, A_4, C_5\}$). Here the minor ninth is unnatural, and does sounds like avant-garde, but apart from that, he retains a generally classical harmony usage.
 
 Generally, though I am sympathetic to Wagner's rationale of introducing leitmotifs, I gather that it does not quite work out. Indeed, what Wagner's idiosyncrasy dismays people (and sometimes me), is precisely what pleases his fans, and what he considered to have been his contribution. And this is probably true to every inventive artist. Wagner is still not my favorite opera composer, but I recognize his effort and praise his ingenuity. Maybe I will grow liking him, maybe not. I do replay other *Ring* albums on Spotify from time to time, and the more I listen to them, they do seem the less daunting and the more enjoyable.
+
+# Abstract
+
+I review a performance of *Twilight of the Gods*, commenting in roughly such order: on listening experience, music interpretation, staging and design, and Wagner's composition itself as a drama and a piece of music.*
+

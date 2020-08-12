@@ -2,7 +2,7 @@
 layout: post
 title: "[?] Blog tags"
 date: 2020-08-08
-categories: "fancy files"
+tags: "Fastidious files"
 ---
 
 # Topic Tags
@@ -29,21 +29,25 @@ categories: "fancy files"
 
 # Genre Tags
 
-- Fancy files
+- Fastidious files
 
-Valuable information, data, or source material.
+Valuable data or source material.
+
+- Novel notices
+
+Useful information.
 
 - Anamolous answers
 
-General response on problems of sciences and humanities.
+Response on problems of sciences and humanities of more general nature.
 
 - Quaint quests
 
-More involved investigations about life, sciences, or humanities, and tentative answers.
+More involved investigations about life, sciences, or humanities.
 
 - Esoteric expositions
 
-Somewhat original presentation or derivation of results of mathematics or sciences.
+Somewhat creative presentation or derivation of results of mathematics or sciences.
 
 - Deep diversions
 
@@ -61,7 +65,7 @@ Shorter remarks on news, history, or personal incidents.
 
 Notes upon reading books, seeing art works, or attending performances.
 
-- Sad satires
+- Sincere satires
 
 Sarcasm pieces and humorous essays.
 
@@ -69,11 +73,11 @@ Sarcasm pieces and humorous essays.
 
 Essays regarding my daily life and recollection.
 
-- Woeful writings
+- Weary writings
 
 Original fictional writings or translations.
 
-- Pathetic pieces
+- Tearful tunes
 
 Original compositions of music or arrangements.
 
