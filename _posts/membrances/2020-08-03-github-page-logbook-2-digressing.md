@@ -81,10 +81,12 @@ I had no idea,
 perhaps until I had a good grasp of the theory of computation.
 Such design and coding will certainly take a long time.
 Therefore, after a great deal of contemplation detailed above, I decided firmly to myself that I should really stick to Kramdown-with-Mathjax for now.
-Enough with dreaming; concentrate on writing, and focus on the content!
+Enough with these nonsense;
+concentrate on writing, and focus on the content!
 
-Aug 12: Test CSS-span-fractions, okay.
+*Aug 12*: Test CSS-span-fractions, okay.
 Suddenly discover CSS grids.
+Came up with the artificial square brackets made of `span`.
 
     .v, .v-b, .v-l, .v-r, .v-l-r {
         display: inline-block;
@@ -106,6 +108,14 @@ Suddenly discover CSS grids.
         </span> <br>
         <span class="v"> x+y+z </span>
     </span>
+
+
+Aug 14: Realize that an expression is really a tree.
+If I choose prefix form always, there is no parsiing problem, like Lisp does.
+Later today, my friend Authur Lin coincidentally posted a link talking about prefix-infix-postfix transformation, because I brought up the topic of obelus sign.
+This helped me further clarify the tree image, and came up with a interpretation of the transformation.
+The design of esoteric language Jelly (inspired by J and APL in turn) is very instructive in its tacit function notation.
+
 
 <!-- problem of greedy parsing of `|` -->
 
