@@ -7,10 +7,70 @@ tags: "Fastidious files"
 
 # Character blocks
 
-| marks | ` `-' `
-| symbols | `[]\;',./`
+| tick | ` ` `
+| primary symbols | ` `~@#$%^&*_=+[{]}\|'"<>/`
+| secondary symbols | `!()-;:,.?`
 | numbers | `123456789`
-| letters | `abc` ... `xyz`
+| letters | `aAbBcC` ... `xXyYzZ`
+
+# Scope types
+
+| scope | literal blocks
+| none | none
+| `{` ... `}` | letters
+| `{{` ... `}}` | secondary symbols, <br> numbers, letters
+| `{{{` ... `}}}` | primary symbols, secondary symbols, <br> numbers, letters
+| `/[` ... `/]`, `//[[` ... `//]]`, <br> `//[[` ... `//]]`, ... | everything
+| `\[` ... `\]`, `\\[[` ... `\\]]`, <br> `\\[[` ... `\\]]`, ... | none
+
+# Glossary
+
+| ` ` ` | to escape
+| `1` | sans-serif, italic
+| `2` | serif
+| `3` | serif, italic
+| `4` | black sans-serif, blue
+| `5` | black serif, blue
+| `6` | monospace
+| `7` | regular slab
+| `8` | medium slab
+| `9` | black slab
+| `0` | sans-serif
+| `-` | to form quantity name
+| `=` | to assign
+
+| `~` | to assert equality
+| `!` | to do once or do while
+| `@` | to apply style (with numbers)
+| `#` | to start paragraph (with numbers)
+| `$` | to start line (with numbers)
+| `%` | to start table (with numbers)
+| `^` | to traverse to previous sister node
+| `&` | to form while clause
+| `*` | to traverse to next sister node
+| `(` | to start function scope
+| `)` | to end function scope
+| `_` | to add a block
+| `+` | to traverse to mother or daughter node (with `^`, `*`)
+
+| `[` | to start verbatim and comment scope
+| `]` | to end verbatim and comment scope
+| `\` | to help form verbatim scope
+| `;` | to end function
+| `'` | to select primary symbols
+| `,` | to separate variables
+| `.` | to use namespace
+| `/` | to help form verbatim scope
+
+| | `{` | to start general scope
+| | `}` | to end general scope
+| | `|` | to separate vertical bracketed box
+| | `:` | to apply function, to assign
+| | `"` | to select secondary symbols
+| | `<` | to start a bracketed box 
+| | `>` | to end a bracketed box
+| | `?` | to form if clause
+
 
 | | `[` | `(`
 | | `]` | `)`
