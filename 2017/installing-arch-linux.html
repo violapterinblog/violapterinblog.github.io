@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <title>
+    Installing Arch Linux
+  </title>
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+  <link
+    rel="canonical"
+    href="http://localhost:4000/2017/installing-arch-linux.html"
+  />
+
+  <!-------- Fonts -------->
+  <!-- text -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic"
+    rel="stylesheet" type="text/css" />
+
+  <!-- strong text -->
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn:500,500italic"
+    rel="stylesheet" type="text/css" />
+
+  <!-- headings -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700"
+    rel="stylesheet" type="text/css" />
+
+  <!-- preformatted -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400"
+    rel="stylesheet" type="text/css" />
+
+  <!-- math variables -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600"
+    rel="stylesheet" type="text/css" />
+
+  <!-- math text -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+    rel="stylesheet" type="text/css" />
+
+  <!-- math variables, iso: Alegreya:900 -->
+  <!-- math variables, neo: Alegreya+Sans:900 -->
+
+  <!-- fallback: Noto series -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400"
+    rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:500"
+    rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400"
+    rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:500"
+    rel="stylesheet" type="text/css" />
+
+  <!-- Mathjax configuration -->
+  <script src="/scripts/mathjax-config.js" defer></script>
+
+  <!-- Mathjax server -->
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"
+  ></script>
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">New Memory Allocated</a> <br>
+    <span class="site-subtitle">delete [] ptr; void *ptr = 0;</span>
+  </div>
+
+  <nav>
+    
+  </nav>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Installing Arch Linux</h1>
+    <p class="post-meta">Mar 17, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <p>This note summarizes the steps to install Arch Linux.
+I do not intend to explain everything, and the wording is as concise as possible.
+Do tell me if you find anything no longer working now, or any link broken.</p>
+
+<h1 id="booting-with-a-usb">Booting with a USB</h1>
+
+<p>Download the
+    <a href="https://www.archlinux.org/download/">Arch Linux ISO</a>.
+To make a bootable USB, on a Windows computer (for concreteness) you may use
+    <a href="https://rufus.akeo.ie/">Rufus</a>.
+The GUI for Windows should be very straightforward.
+On Mac, we have to format the USB first, and copy ISO into it using <code class="language-plaintext highlighter-rouge">dd</code> utility, which I am not familiar.</p>
+
+<p>We then enter the firmware interface, which is a bridge between software and hardware.
+While the computer is off, plug in the bootable USB.
+Before the computer starts normally, there will be a notic like</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Please press DEL or F2 to enter UEFI BIOS setting
+</code></pre></div></div>
+
+<p>Do that immediately, and there will be a temporary <code class="language-plaintext highlighter-rouge">zsh</code> shell, with prompt</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@archiso ~ #
+</code></pre></div></div>
+
+<p>In the below, <code class="language-plaintext highlighter-rouge">#</code> sign indicates the shell prompt.</p>
+
+<h1 id="partition-and-formatting-the-hard-disk">Partition and formatting the hard disk</h1>
+
+<p>List the disk blocks.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># lsblk
+</code></pre></div></div>
+
+<p>The largest block shall be your hard disk, which is likely called <code class="language-plaintext highlighter-rouge">sda</code>.
+A smaller one is the bootable USB we are using.
+A still smaller one is the ROM (read-only memory where firmware is saved).</p>
+
+<p>To partition the hard disk, invoke the command line utility <code class="language-plaintext highlighter-rouge">parted</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># parted /dev/sda
+</code></pre></div></div>
+
+<p>Here, the prompt <code class="language-plaintext highlighter-rouge">(parted)</code> will be shown for clarity.
+Create a partition table with the MSDOS (MBR) standard.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(parted) mklabel msdos
+</code></pre></div></div>
+
+<p>Meanwhile, UEFI/GPT partition is a newer standard, which not every motherboard supports.
+Partitioning commands for UEFI/GPT are similar and covered in references.</p>
+
+<p>My computer currently used has 1TB,
+and I will generously allocate 40GB for <code class="language-plaintext highlighter-rouge">/</code>(the root directory except for the user’s home), 2GB for swap memory, and the rest for <code class="language-plaintext highlighter-rouge">/home/</code>(the user’s home).
+Nowadays computers often have a large RAM (mine has 4GB),
+and 2GB of swap memory shall be more than enough.</p>
+
+<p>Create partition for the root directory except for home.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(parted) mkpart primary ext4 1MiB 40GiB
+</code></pre></div></div>
+
+<p>Set the boot flag to be true.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(parted) set 1 boot on
+</code></pre></div></div>
+
+<p>Create the partition for swap memory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(parted) mkpart primary linux-swap 40GiB 42GiB
+</code></pre></div></div>
+
+<p>Finally create the partition for the home, making up the rest of the hard disk.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(parted) mkpart primary ext4 42GiB 100%
+</code></pre></div></div>
+
+<p>In the steps above, if the requested partition cannot be made precisely as such,
+an alternative suggestion will be prompted.
+You might also be asked again of the point of start and end, and of the file system.
+I just apply default for everything.
+You may also be warned that <code class="language-plaintext highlighter-rouge">The resulting partition is not properly aligned for best performance.</code> which we may ignore.</p>
+
+<p>Print a summary of each partition to double check.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(parted) print
+</code></pre></div></div>
+
+<p>My report has that <code class="language-plaintext highlighter-rouge">sda1</code> is the root directory except home, <code class="language-plaintext highlighter-rouge">sda2</code> the swap memory, <code class="language-plaintext highlighter-rouge">sda3</code> the root’s home.
+Quit if everything looks fine.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(parted) quit
+</code></pre></div></div>
+
+<p>Format partitions intended for root directory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># mkfs.ext4 /dev/sda1
+</code></pre></div></div>
+
+<p>Mount the root directory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># mount /dev/sda1 /mnt
+</code></pre></div></div>
+
+<p>To mount the home, create the directory, then mount it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># mkdir /mnt/home
+# mount /dev/sda3 /mnt/home
+</code></pre></div></div>
+
+<h1 id="installation-of-system-files">Installation of system files</h1>
+
+<p>Now the internet connection is required,
+since we will download packages.
+It is best that you have ethernet automatically connected.
+Otherwise, you have to set it in command line (which is not covered here).
+Alternatively, you may use a Wifi (not covered here either).
+We may test connection with (say)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ping -c 3 www.google.com
+</code></pre></div></div>
+
+<p>Edit the list of mirrors,
+so that closer servers are preferred.
+(You may use <code class="language-plaintext highlighter-rouge">nano</code>
+if you are unfamiliar with <code class="language-plaintext highlighter-rouge">vi</code>, and same hereafter.)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># vi /etc/pacman.d/mirrorlist
+</code></pre></div></div>
+
+<p>Install the base packages, which will take quite a while, about twenty minutes in my case.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># pacstrap -i /mnt base base-devel
+</code></pre></div></div>
+
+<p>Generate the <code class="language-plaintext highlighter-rouge">fstab</code> file (which specifies information about mounted partitions),
+and write it to the configuration file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># genfstab -U /mnt &gt; /mnt/etc/fstab
+</code></pre></div></div>
+
+<h1 id="language-and-location">Language and location</h1>
+
+<p>In completing the remaining tasks, temporarily take <code class="language-plaintext highlighter-rouge">/mnt</code> to be the root directory (the partition where Arch Linux will be installed).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># arch-chroot /mnt
+</code></pre></div></div>
+
+<p>I shall choose American English to be the default for system display,
+and further install Chinese input methods.
+To do so, edit the languages to be enabled.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># vi /etc/locale.gen
+</code></pre></div></div>
+
+<p>I have to uncomment (delete the <code class="language-plaintext highlighter-rouge">#</code>) before the line <code class="language-plaintext highlighter-rouge">en_US.UTF-8 UTF-8</code> and <code class="language-plaintext highlighter-rouge">zh_TW.UTF-8 UTF-8</code>.
+Then, <code class="language-plaintext highlighter-rouge">locale-gen</code> generates necessary information for all languages enabled,
+while <code class="language-plaintext highlighter-rouge">locale.conf</code> specifies system display.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># locale-gen
+# echo "LANG=en_US.UTF-8" &gt; /etc/locale.conf
+# export LANG=en_US.UTF-8
+</code></pre></div></div>
+
+<p>FOr me, I have to install the input method framework Ibus (package <code class="language-plaintext highlighter-rouge">ibus</code>) and the input method Rime (package <code class="language-plaintext highlighter-rouge">ibus-rime</code>).
+It supports several Chinese input methods.
+To initiate it at startup, add these lines in <code class="language-plaintext highlighter-rouge">~/.xinitrc</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+ibus-daemon -drx
+</code></pre></div></div>
+
+<p>Select the time zone.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># tzselect
+</code></pre></div></div>
+
+<p>In my case this is <code class="language-plaintext highlighter-rouge">4) Asia</code>, and <code class="language-plaintext highlighter-rouge">43) Taiwan</code>.
+Its very existence of this item is a reassurance!</p>
+
+<p>Create a symlink from the shared directory to the system configuration directory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ln -s /usr/share/zoneinfo/Asia/Taiwan &gt; /etc/localtime
+</code></pre></div></div>
+
+<p>Set the hardware clock.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># hwclock --systohc --utc
+</code></pre></div></div>
+
+<h1 id="setting-a-boot-manager">Setting a boot manager</h1>
+
+<p>For MBR users, download a boot manager and an OS-detector, possibly for sake of dual boot.
+They are provided by packages <code class="language-plaintext highlighter-rouge">grub</code> and <code class="language-plaintext highlighter-rouge">os-prober</code>.</p>
+
+<p>Set up the <code class="language-plaintext highlighter-rouge">grub</code> on the booted partition, and generate the configuration file.
+Again, replace <code class="language-plaintext highlighter-rouge">sda</code> with your partition name.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># grub-install --recheck --force --target=i386-pc /dev/sda
+# grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre></div></div>
+
+<p>At this point, I encountered the error <code class="language-plaintext highlighter-rouge">Failed to connect to lvmetad</code>.
+The is due to the <code class="language-plaintext highlighter-rouge">lvmetad</code> service that improves performance of LVM, the Logical Volume Manager (which manages disk drives and other mass-storage devices).
+I have to disable it by editing <code class="language-plaintext highlighter-rouge">/etc/lvm/lvm.conf</code>,
+and write <code class="language-plaintext highlighter-rouge">use_lvmetad = 0</code>.</p>
+
+<h1 id="setting-a-host-name">Setting a host name</h1>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">Host-Name</code> with your host name.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># echo "Host-Name" &gt; /etc/hostname
+</code></pre></div></div>
+
+<p>Set the root’s password.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># passwd
+</code></pre></div></div>
+
+<p>We may now leave the <code class="language-plaintext highlighter-rouge">chroot</code>-ed environment,
+unmount the corresponding partition,
+and schedule shutdown.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># exit
+# umount -R /mnt
+# shutdown
+</code></pre></div></div>
+
+<p>Unplug the USB,
+restart,
+and login as <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<h1 id="internet-connection">Internet connection</h1>
+
+<p>Assuming a connection is fine, we set up DHCP (Dynamic Host Configuration Protocol) that requests an IP address in the present ethernet.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ip link
+</code></pre></div></div>
+
+<p>The first item in the output is, in my case,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1: lo:mtu 65536 qdisk noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</code></pre></div></div>
+
+<p>Start the DHCP service now, and whenever the system boots.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># systemctl start dhcpcd@_______.service
+# systemctl enable dhcpcd@_______.service
+</code></pre></div></div>
+
+<p>Replace the <code class="language-plaintext highlighter-rouge">______</code> with the name of wired device just seen above.
+Mine is <code class="language-plaintext highlighter-rouge">lo</code>.</p>
+
+<h1 id="creating-the-daily-users-account">Creating the daily user’s account</h1>
+
+<p>Create a user account intended to be used on a daily basis.
+Add the ID (mine is <code class="language-plaintext highlighter-rouge">violapterin</code>) into the wheel group to get sudo privileges,
+and sets its password.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># useradd -m -G wheel,users -s /bin/bash violapterin
+# passwd violapterin
+</code></pre></div></div>
+
+<p>Install package <code class="language-plaintext highlighter-rouge">sudo</code> to get superuser privilege,
+then edit the <code class="language-plaintext highlighter-rouge">sudoers</code> file.
+Since this file is special, we have to specify the editor.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># EDITOR=vi visudo
+</code></pre></div></div>
+
+<p>Uncomment this line (by deleting the beginning <code class="language-plaintext highlighter-rouge">#</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%wheel ALL=(ALL) ALL
+</code></pre></div></div>
+
+<h1 id="basic-packages">Basic packages</h1>
+
+<p>Make stable repositories available to package manager <code class="language-plaintext highlighter-rouge">pacman</code>, by opening <code class="language-plaintext highlighter-rouge">/etc/pacman.conf</code>, and uncommenting these lines:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[multilib]
+Include = /etc/pacman.d/mirrorlist
+</code></pre></div></div>
+
+<p>Update <code class="language-plaintext highlighter-rouge">pacman</code>,
+and install all refreshed packages.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># sudo pacman –Syu
+</code></pre></div></div>
+
+<p>Flags <code class="language-plaintext highlighter-rouge">-Syu</code> means, respectively, install packages, refresh database for packages, and look for existing outdated packages.</p>
+
+<p>A
+    <a href="https://wiki.archlinux.org/index.php/list_of_applications">comprehensive list of packages</a>,
+is provided on Arch Linux Wiki’s
+Besides the official repository that <code class="language-plaintext highlighter-rouge">pacman</code> uses, there is another Arch User Repository (AUR) maintained by community.
+We need the so-called pacman helpers to install AUR packages, including <code class="language-plaintext highlighter-rouge">yay</code>, <code class="language-plaintext highlighter-rouge">pakku</code>, <code class="language-plaintext highlighter-rouge">pikaur</code>, and <code class="language-plaintext highlighter-rouge">pacaur</code>.
+The flag <code class="language-plaintext highlighter-rouge">-S</code> again means installation.</p>
+
+<h1 id="graphical-interface">Graphical interface</h1>
+
+<p>It remains to set up a desktop environment.
+We install the X-server (packages <code class="language-plaintext highlighter-rouge">xorg-server</code> and <code class="language-plaintext highlighter-rouge">xorg-server-utils</code>).
+To check which graphic card the current system is using, run</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># lspci -v
+</code></pre></div></div>
+
+<p>As my computer has an Intel GPU (examine your graphic cards to distinguish), I have to install <code class="language-plaintext highlighter-rouge">xf86-video-intel</code>.</p>
+
+<p>See
+    <a href="https://wiki.archlinux.org/index.php/desktop_environment">Desktop environment</a>
+    for a list of available desktops.
+I choose KDE (package <code class="language-plaintext highlighter-rouge">plasma</code> and <code class="language-plaintext highlighter-rouge">kde-applications</code>), which took nearly thirty minutes in my case.
+(Package <code class="language-plaintext highlighter-rouge">plasma-meta</code> seems to be a superset of <code class="language-plaintext highlighter-rouge">plasma</code>.
+Similar is true of <code class="language-plaintext highlighter-rouge">kde-applications-meta</code> and <code class="language-plaintext highlighter-rouge">kde-applications</code>.)</p>
+
+<p>We configure <code class="language-plaintext highlighter-rouge">.xinitrc</code> that calls KDE on startup.
+First, log in as the daily user’s account, and write these:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># echo "exec startkd&gt;" &gt; ~/.xinitrc
+</code></pre></div></div>
+
+<p>Here <code class="language-plaintext highlighter-rouge">.xinitrc</code> must be saved in the daily user’s home in order to be found and read.
+Even so, KDE will only be started after <code class="language-plaintext highlighter-rouge">startx</code> command is run.
+To start KDE immediately after logged in, install package <code class="language-plaintext highlighter-rouge">xorg-xinit</code>.
+And then put in <code class="language-plaintext highlighter-rouge">~/.bashrc</code> these lines:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if [ -z "$DISPLAY" ] &amp;&amp; [ -n "$XDG_VTNR" ] &amp;&amp; [ "$XDG_VTNR" -eq 1 ]; then
+    exec startx
+fi
+</code></pre></div></div>
+
+<p>Translated, this means that we start the X server, if the display variable is not a null string, and if the virtual terminal number of the X desktop group is not empty, indicating there is only one terminal instance.</p>
+
+<p>This guide ends here,
+because, in the presence of a beautiful GUI, instead of the scary black-and-white command line, I am sure the readers will figure out how to install relevant applications.</p>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li>
+    <p>Arch Linux Wiki, <a href="https://wiki.archlinux.org/index.php/installation_guide">Installation Guide</a>.
+In addition to this guide, the Wiki is very well written,
+and almost all information you need can be found here.</p>
+  </li>
+  <li>
+    <p>Swapnil Bhartiya, <a href="http://www.bhartiya.io/always-updated-arch-linux-tutorial/30411">Arch Linux Tutorial</a>.
+Which I also relied heavily in preparing this note.</p>
+  </li>
+  <li>
+    <p>Wei-Hsun Lin, <a href="http://www.wlintmp.net">Arch Linux: 安裝系統</a>.
+In Chinese.
+There are some remarks on Chinese input method.</p>
+  </li>
+</ul>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-column-1">
+      <div class="wrapper">
+        <img class="profile" src="/assets/img/profile.png" width="360px">
+      </div>
+      <br>
+
+      <div class="wrapper">
+        <a href="http://twitter.com/violapterin">
+          <span class="twitter-icon"></span>
+        </a>
+
+        <a href="mailto:violapterin@gmail.com">
+          <span class="gmail-icon"></span>
+        </a>
+
+        <a href="http://github.com/violapterin">
+          <span class="github-icon"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-column-2">
+      <p><strong>violapterin</strong></p>
+      <p class="text">
+        A science student, an amateur author, <br />
+        a curious composer, a luckless lad.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>
