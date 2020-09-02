@@ -5,12 +5,98 @@
     <description>Blog under construction</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Aug 2020 03:48:12 +0800</pubDate>
-    <lastBuildDate>Thu, 13 Aug 2020 03:48:12 +0800</lastBuildDate>
+    <pubDate>Thu, 03 Sep 2020 02:59:20 +0800</pubDate>
+    <lastBuildDate>Thu, 03 Sep 2020 02:59:20 +0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
-        <title>[?] Blog tags</title>
+        <title>¿ Quotes</title>
+        <description>&lt;h1 id=&quot;english-fictions&quot;&gt;English fictions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Catherine Feeny sings, &lt;em&gt;Mr Blue&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mr Blue &lt;br /&gt;
+I told you that I love you &lt;br /&gt;
+Please believe me&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;BoJack Horseman&lt;/em&gt;, Season 3, Ep 12&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;BoJack&lt;/em&gt;:
+We’re not doomed.
+In the grand scheme of things, we’re just tiny specks that will one day be forgotten.
+The only thing that matters is right now.
+This one spectacular moment we are sharing together.
+Right, Sarah Lynn?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;BoJack Horseman&lt;/em&gt;, Season 1, Ep 12&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Diane&lt;/em&gt;:
+You either know what you want,
+and you don’t get what you want,
+or you get what you want,
+and you don’t know what you want.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shakespeare, &lt;em&gt;Hamlet&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Polonius&lt;/em&gt;:
+Though this be madness, yet there is method in ’t.&lt;/p&gt;
+
+&lt;h1 id=&quot;english-non-fictions&quot;&gt;English non-fictions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;John Augustus Shedd
+A ship in harbor is safe, but that is not what ships are built for.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;chinese-fictions&quot;&gt;Chinese fictions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;楊萬里，《桂源鋪》&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;萬山不許一溪奔、攔得溪聲日夜喧。&lt;br /&gt;
+到得前頭山腳盡、堂堂溪水出前村。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;王力，《即事》 (excerpt)
+泰山青靄盪胸潔、鄴水朱華耀眼紅。&lt;br /&gt;
+翰墨生涯存至樂、窗明几凈日曈曈。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;chinese-non-fictions&quot;&gt;Chinese non-fictions&lt;/h1&gt;
+
+&lt;h1 id=&quot;other-languages-fictions&quot;&gt;Other languages, fictions&lt;/h1&gt;
+
+&lt;h1 id=&quot;other-languages-non-fictions&quot;&gt;Other languages, non-fictions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ludwig van Beethoven, &lt;em&gt;Heiligenstadt Testament&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O ihr Menschen, die ihr mich für feindselig, störrisch oder misanthropisch haltet oder erkläret, wie unrecht tut ihr mir!&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 20 Aug 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/quotes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/quotes.html</guid>
+        
+        <category>Fastidious</category>
+        
+        <category>files</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>[?] Topic tags</title>
         <description>&lt;h1 id=&quot;topic-tags&quot;&gt;Topic Tags&lt;/h1&gt;
 
 &lt;ul&gt;
@@ -28,10 +114,11 @@
   &lt;/li&gt;
   &lt;li&gt;literature
     &lt;ul&gt;
+      &lt;li&gt;play&lt;/li&gt;
       &lt;li&gt;verse&lt;/li&gt;
-      &lt;li&gt;narration&lt;/li&gt;
-      &lt;li&gt;prose&lt;/li&gt;
-      &lt;li&gt;drama&lt;/li&gt;
+      &lt;li&gt;novel&lt;/li&gt;
+      &lt;li&gt;treatise&lt;/li&gt;
+      &lt;li&gt;essay&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;language
@@ -43,17 +130,438 @@
   &lt;/li&gt;
   &lt;li&gt;translation&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+        <pubDate>Sun, 09 Aug 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/topic-tags.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/topic-tags.html</guid>
+        
+        <category>Fastidious</category>
+        
+        <category>files</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Melancholia: Formula Semantic</title>
+        <description>&lt;h1 id=&quot;math&quot;&gt;Math&lt;/h1&gt;
 
-&lt;h1 id=&quot;genre-tags&quot;&gt;Genre Tags&lt;/h1&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to escape&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!!&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;assertion&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;map of type, imply&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@@&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;namespace&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;type of text&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;type of proposition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;division&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;power&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;multiplication, and&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;universal quantification&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;type of variables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;horizontal list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;((&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;))&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;vertical list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;string delimiter&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;addition, or&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;existential quantification&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; &lt;/code&gt; `&lt;/td&gt;
+      &lt;td&gt;prefix for more symbols&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;subtraction, negation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;equality&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;scope&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;concatenation of list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;type specification&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;less-than relation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;greater-than relation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;absurdity&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;??&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;print&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;function application&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[[&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;]]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;lambda function definition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;end of instruction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;suffix for more symbols&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;redundant delimiter&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;void&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/xanthocholia-keywords.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/xanthocholia-keywords.html</guid>
+        
+        <category>Fastidious</category>
+        
+        <category>files</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Melancholia: Lexicon</title>
+        <description>&lt;h1 id=&quot;character-blocks&quot;&gt;Character blocks&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tick&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; &lt;/code&gt; `&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;primary symbols&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; &lt;/code&gt;~@#$%^&amp;amp;*_=+[{]}|’”&amp;lt;&amp;gt;/`&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;secondary symbols&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!()-;:,.?&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;numbers&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;123456789&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;letters&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aAbBcC&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xXyYzZ&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;summary-of-keywords&quot;&gt;Summary of keywords&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[/&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[[//&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//]]&lt;/code&gt;, &lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[[[//&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;///]]]&lt;/code&gt;, …&lt;/td&gt;
+      &lt;td&gt;string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[\&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[[\\&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\]]&lt;/code&gt;, &lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[[[\\\&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\\]]]&lt;/code&gt;, …&lt;/td&gt;
+      &lt;td&gt;comment&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; &lt;/code&gt; `&lt;/td&gt;
+      &lt;td&gt;to escape&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;subtraction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;assignation&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to assert equality&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to do once&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!!&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to do repeatedly&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@1&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style sans-serif, italic&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@2&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style serif&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@3&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style serif, italic&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@4&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style black sans-serif, blue&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@5&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style black serif, blue&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@6&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style monospace&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@7&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style regular slab&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@8&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style medium slab&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@9&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style black slab&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@0&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;style sans-serif&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to start paragraph&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#*1&lt;/code&gt;, …, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#*9&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to start indented paragraph&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to start line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$*1&lt;/code&gt;, …, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$*9&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to start indented line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to start table (with numbers)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to traverse to previous sister node&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to form while clause&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to traverse to next sister node&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(&lt;/code&gt; … &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to start function scope&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;addition&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to start verbatim and comment scope&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to end verbatim and comment scope&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to help form verbatim scope&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to end function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to select primary symbols&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to separate variables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to use namespace&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;to help form verbatim scope&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+</description>
+        <pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/melancholia-keywords.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/melancholia-keywords.html</guid>
+        
+        <category>Fastidious</category>
+        
+        <category>files</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>¿ Genre tags</title>
+        <description>&lt;h1 id=&quot;genre-tags&quot;&gt;Genre Tags&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Fastidious files&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Valuable data or source material.&lt;/p&gt;
+&lt;p&gt;Collection of data, list, or source text.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Novel notices&lt;/li&gt;
+  &lt;li&gt;Novel notes&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Useful information.&lt;/p&gt;
@@ -62,19 +570,19 @@
   &lt;li&gt;Anamolous answers&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Response on problems of sciences and humanities of more general nature.&lt;/p&gt;
+&lt;p&gt;More general investigations on life, sciences, or humanities.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Quaint quests&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;More involved investigations about life, sciences, or humanities.&lt;/p&gt;
+&lt;p&gt;More involved investigations on life, sciences, or humanities.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Esoteric expositions&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Somewhat creative presentation or derivation of results of mathematics or sciences.&lt;/p&gt;
+&lt;p&gt;Creative presentation of results of mathematics or sciences.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Deep diversions&lt;/li&gt;
@@ -86,19 +594,19 @@
   &lt;li&gt;Incongruous inventions&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Other projects not directed related to mathematics or sciences.&lt;/p&gt;
+&lt;p&gt;Other original projects.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Contentious comments&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Shorter remarks on news, history, or personal incidents.&lt;/p&gt;
+&lt;p&gt;Remarks on news, history, or personal incidents.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Reading reflections&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Notes upon reading books, seeing art works, or attending performances.&lt;/p&gt;
+&lt;p&gt;Reflections upon reading books, seeing art works, or attending performances.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Sincere satires&lt;/li&gt;
@@ -110,10 +618,10 @@
   &lt;li&gt;Meticulous membrances&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Essays regarding my daily life and recollection.&lt;/p&gt;
+&lt;p&gt;Essays of personal recollection.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Weary writings&lt;/li&gt;
+  &lt;li&gt;Weary words&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Original fictional writings or translations.&lt;/p&gt;
@@ -126,8 +634,8 @@
 
 </description>
         <pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/categories.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/categories.html</guid>
+        <link>http://localhost:4000/2020/genre-tags.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/genre-tags.html</guid>
         
         <category>Fastidious</category>
         
@@ -214,10 +722,12 @@ I had no idea,
 perhaps until I had a good grasp of the theory of computation.
 Such design and coding will certainly take a long time.
 Therefore, after a great deal of contemplation detailed above, I decided firmly to myself that I should really stick to Kramdown-with-Mathjax for now.
-Enough with dreaming; concentrate on writing, and focus on the content!&lt;/p&gt;
+Enough with these nonsense;
+concentrate on writing, and focus on the content!&lt;/p&gt;
 
-&lt;p&gt;Aug 12: Test CSS-span-fractions, okay.
-Suddenly discover CSS grids.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Aug 12&lt;/em&gt;: Test CSS-span-fractions, okay.
+Suddenly discover CSS grids.
+Came up with the artificial square brackets made of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;span&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.v, .v-b, .v-l, .v-r, .v-l-r {
     display: inline-block;
@@ -240,6 +750,12 @@ Suddenly discover CSS grids.&lt;/p&gt;
     &amp;lt;span class=&quot;v&quot;&amp;gt; x+y+z &amp;lt;/span&amp;gt;
 &amp;lt;/span&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Aug 14: Realize that an expression is really a tree.
+If I choose prefix form always, there is no parsiing problem, like Lisp does.
+Later today, my friend Authur Lin coincidentally posted a link talking about prefix-infix-postfix transformation, because I brought up the topic of obelus sign.
+This helped me further clarify the tree image, and came up with a interpretation of the transformation.
+The design of esoteric language Jelly (inspired by J and APL in turn) is very instructive in its tacit function notation.&lt;/p&gt;
 
 &lt;!-- problem of greedy parsing of `|` --&gt;
 
@@ -1766,348 +2282,6 @@ However, if a character and its textual variant are both in JIS, I choose the mo
         <category>fancy</category>
         
         <category>files</category>
-        
-      </item>
-    
-      <item>
-        <title>Testing Text: Prose</title>
-        <description>&lt;p&gt;Below are the Old Chinese initial consonants recognized by Li Fang-Kuei and William Baxter.
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Old_Chinese_phonology&quot;&gt;wiki&lt;/a&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;&lt;strong&gt;&lt;em&gt;Labial&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;strong&gt;Dental&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt;Palatal&lt;/th&gt;
-      &lt;th&gt;Velar&lt;/th&gt;
-      &lt;th&gt;Laryngeal&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;plain&lt;/td&gt;
-      &lt;td&gt;sibilant&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;plain&lt;/td&gt;
-      &lt;td&gt;labialized&lt;/td&gt;
-      &lt;td&gt;plain&lt;/td&gt;
-      &lt;td&gt;labialized&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Stop or &lt;br /&gt; affricate&lt;/td&gt;
-      &lt;td&gt;voiceless&lt;/td&gt;
-      &lt;td&gt;*p&lt;/td&gt;
-      &lt;td&gt;*t&lt;/td&gt;
-      &lt;td&gt;*ts&lt;/td&gt;
-      &lt;td&gt;*k&lt;/td&gt;
-      &lt;td&gt;*kʷ&lt;/td&gt;
-      &lt;td&gt;*ʔ&lt;/td&gt;
-      &lt;td&gt;*ʔʷ&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;aspirate&lt;/td&gt;
-      &lt;td&gt;voiced&lt;/td&gt;
-      &lt;td&gt;*pʰ&lt;/td&gt;
-      &lt;td&gt;*tʰ&lt;/td&gt;
-      &lt;td&gt;*tsʰ&lt;/td&gt;
-      &lt;td&gt;*kʰ&lt;/td&gt;
-      &lt;td&gt;*kʷʰ&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;voiceless&lt;/td&gt;
-      &lt;td&gt;*b&lt;/td&gt;
-      &lt;td&gt;*d&lt;/td&gt;
-      &lt;td&gt;*dz&lt;/td&gt;
-      &lt;td&gt;*ɡ&lt;/td&gt;
-      &lt;td&gt;*ɡʷ&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;!--
-Nasal 	voiceless 	*m̥ 	*n̥ 			*ŋ̊ 	*ŋ̊ʷ 		
-voiced 	*m 	*n 			*ŋ 	*ŋʷ 		
-Lateral 	voiceless 		*l̥ 						
-voiced 		*l 						
-Fricative or
-approximant 	voiceless 		(*r̥) 	*s 	(*j̊) 			*h 	*hʷ
-voiced 		*r 	(*z) 	(*j) 			(*ɦ) 	(*w)
---&gt;
-</description>
-        <pubDate>Fri, 24 Jul 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/testing-text-table.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/testing-text-table.html</guid>
-        
-        
-        <category>fancy</category>
-        
-        <category>files</category>
-        
-      </item>
-    
-      <item>
-        <title>Testing Text: Prose</title>
-        <description>&lt;p&gt;In Congress, July 4, 1776.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;The unanimous Declaration of the thirteen united States of America,&lt;/em&gt;&lt;/strong&gt; When in the &lt;strong&gt;Course&lt;/strong&gt; of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the &lt;strong&gt;Laws of Nature&lt;/strong&gt; and of Nature’s God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.&lt;/p&gt;
-
-&lt;p&gt;We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.–That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, \(\displaystyle\int_1^2 xdx\) –That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness. \(\dfrac{3}{4}\) Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security.–Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Jul 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/testing-text-prose.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/testing-text-prose.html</guid>
-        
-        
-        <category>fancy</category>
-        
-        <category>files</category>
-        
-      </item>
-    
-      <item>
-        <title>Testing Math: Assorted</title>
-        <description>&lt;p&gt;The unicode extension implements a (non-standard) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unicode{}&lt;/code&gt; macro that allows arbitrary unicode code points to be entered in your mathematics. \(\JHA \JKA\) You can specify the height and depth of the character (the width is determined by the browser), and the default font from which to take the character.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Diacritics&lt;/li&gt;
-&lt;/ul&gt;
-
-\[\DOT{\LA} \DOM{\Lb} \DUH{\LC} \DOC{\Ld} \DOT{\LE} \DUM{\Lf} \DOH{\LG} \DOH{\Lh} \DUC{\LI}
-  \DOT{\Lj} \DOM{\LK} \DUH{\Ll} \DOC{\LM} \DOT{\Ln} \DUM{\LO} \DOH{\Lp} \DOH{\LQ} \DUC{\Lr}\]
-
-\[\DOR{\La} \DUD{\LB} \DOP{\Lc} \DUR{\LD} \DOD{\Le} \DUP{\LF}
-  \DOR{\Lg} \DUM{\LH} \DOH{\Li} \DUC{\LJ} \DOT{\Lk} \DUM{\LL}\]
-
-&lt;ul&gt;
-  &lt;li&gt;Matrix&lt;/li&gt;
-&lt;/ul&gt;
-
-\[\MCB {\MRC {a} {b} {c}} {\MRC {1} {2} {3}}\]
-
-\[\WIISD {abc} {def} {\star} f dx\]
-
-\[\frac{4\LA}{3\La}\]
-
-\[\int_{\LA}^{\frac{3}{\La}}\]
-
-\[A_1^2 \dot {A}_1^2 \frac{4A}{3a} \int_A^{\frac{3}{a}}\]
-</description>
-        <pubDate>Tue, 21 Jul 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/testing-math-assorted.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/testing-math-assorted.html</guid>
-        
-        
-        <category>test</category>
-        
-      </item>
-    
-      <item>
-        <title>GitHub Page logbook 1: Beginning</title>
-        <description>&lt;p&gt;&lt;img src=&quot;github.com/violapterinblog/external-raster-images/raw/master/membrances/götterdämmerung.png&quot; alt=&quot;screenshot of the first repo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;July 18, 2020&lt;/em&gt;:
-Today, at about 5:30 pm Taiwan time, I registered a 2nd GitHub account, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;violapterinblog&lt;/code&gt;, to set up this GitHub Page (GHP).
-The new site was born!
-Every account of GitHub was allowed to own 1 GHP, endowed with a unique URL derived from the username.
-I would like to import some past posts and modify the time stamp accordingly,
-so let this notice attest to the moment of what was supposedly a new start.&lt;/p&gt;
-
-&lt;p&gt;One reason I want to have a personal site is to write notes containing mathematics, of either popular or research level.
-About just one year ago, I created a WordPress (WP) account,
-mainly because they support LaTeX (to some extent).
-WP’s interface is straighforward,
-their templates modern and elegant,
-their email support prompt and helpful.&lt;/p&gt;
-
-&lt;p&gt;So why move away?
-WP only allowed the user to type in the interface,
-and one could not write and save locally.
-WP was generally restrictive on CSS,
-let alone Javascript except in some expensive plans.
-Most importantly, it required &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$latex ...$&lt;/code&gt; for LaTeX expression, which quickly got verbose,
-and there was no way to compile and preview one’s work.
-Thus I basically stopped writing on the WP site after a while.&lt;/p&gt;
-
-&lt;p&gt;This May, I somehow recalled to have heard something good said about GHP.
-I researched about that,
-and found the description to be close to what I intend.
-It supported Mathjax, a free engine of LaTeX rendition.
-And with GHP the user might write on local device and commit,
-as was the usual GitHub experience.
-Furthermore, no matter what fancy thing I might want to do,
-I imagined, as long as I converted the piece to standard HTML,
-it would be fine.
-Commit records would also better protect my intellectual property,
-or at least that would make me assured.&lt;/p&gt;
-
-&lt;p&gt;I tred to follow
-  &lt;a href=&quot;http://jmcglone.com/guides/github-pages/&quot;&gt;Jonathan McGlone’s guide on GHP&lt;/a&gt;,
-  but by now, everything looked rather complicated.
-Maybe it’s only me,
-as I have zero experience with web development.
-There was quite a lot to learn,
-and hopefully such effort would turn out to be worthwhile.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;July 19&lt;/em&gt;:
-Found the
-  &lt;a href=&quot;https://github.com/jekyll/example&quot;&gt;Jekyll template&lt;/a&gt;
-  provided officially by Jekyll group, which was incredibly helpful.
-Copied the code to my repo,
-and for the first time, my site worked on localhost, with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;.
-After I committed,
-the default domain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;violapterinblog.github.io&lt;/code&gt; was also rendered successfully on the browser, which was exciting!&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;July 20&lt;/em&gt;:
-Jekyll called Kramdown, a Markdown standard, by default.
-Realized that Jekyll allowed raw html code protected by tags,
-so I might actually write directly in HTML.
-But it did not harm to try Kramdown first.&lt;/p&gt;
-
-&lt;p&gt;Tried to call Mathjax, which Kramdown was said to call, with no avail.
-It was pointed out that Mathjax seemed to have difficulty recognizing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$&lt;/code&gt;.
-Therefore, one had to apply the snippet on
-  &lt;a href=&quot;http://docs.mathjax.org/en/latest/upgrading/v2.html#changes-in-the-mathjax-api&quot;&gt;official document&lt;/a&gt;,
-  which solved everything.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;July 22&lt;/em&gt;:
-Though I could typeset mathematics now,
-I wanted more.
-In fact, I had hoped that my favorite Google fonts may be used instead of the default LaTeX fonts.
-Perhaps I might specify, in the CSS, the fonts which &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\textrm&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\textsf&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\texttt&lt;/code&gt; calls, as a slight abuse of system?
-I asked on Stack Exchange and Stack Overflow,
-and it turned out that, although Mathjax 2.7 allowed that, Mathjax 3 didn’t.
-Tried to call Mathjax 2.7 instead of 3,
-and failed.
-Quite disappointed, I give up eventually the thought of using custom fonts in LaTeX.&lt;/p&gt;
-
-&lt;p&gt;But at least I learned to call Google fonts, as explained in
-  &lt;a href=&quot;https://developers.google.com/fonts/docs/getting_started&quot;&gt;Getting Started&lt;/a&gt;.
-Jekyll characterized CSS in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/css/main.scss&lt;/code&gt;,
-and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;-prefixed variables were expanded, in order to generated CSS statements.
-I used Roboto Sans for titles and headings, Open Sans for normal text.
-On the other hand, I used Vollkorn for bold text (again a slight abuse of design), which corresponds to Markdown &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;** ... **&lt;/code&gt; and HTML tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;July 26&lt;/em&gt;:
-Last year, I had bought a domain under WP account,
-and today I finally transfered that to the GHP.
-I asked WordPress staff via email,
-and their response was so kind!
-They sent link of instruction, which had always been there,
-and I never read carefully.
-To start, I had to renew &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;violapterin.com&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;violapterin.blog&lt;/code&gt;, like before, which was a matter of one-click.
-Then, to point the two domains, presently managed by WordPress-com, towards my GHP, I had to add a DNS CNAME-records  on WordPress-com, under WP’s tutorial
-  &lt;a href=&quot;https://wordpress.com/domains/manage&quot;&gt;domain management&lt;/a&gt;,
-and simply add the alias on the web interface for GitHub repo.
-The introduction by GitHub itself,
-  &lt;a href=&quot;https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site&quot;&gt;Managing a custom domain for your github pages site&lt;/a&gt;,
-  explains everything.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;July 28&lt;/em&gt;:
-Discovered &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unicode&lt;/code&gt; extension of MathJax,
-and suddenly there again was hope for changing LaTeX font.
-In doing so, I might extract arbitrary unicode characters,
-as long as the font (known to the browser) supports that.
-It appeared I could not specify the style (normal or italic) and weight (light, regular, or bold etc),
-but obviously this was asking too much.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;macro&lt;/code&gt; extension was tremendously helpful too.
-While it was not part of TeX,
-still these macros expanded, even recursively, before Mathjax was called!
-I imported and translated the whole big list of custom LaTeX macros I used with ConTeXt,&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;July 29&lt;/em&gt;:
-A critical progress!
-This night, I was thinking intensively of an imagined command.
-This command displayed a first glyph onto the document,
-but threw it away from the ``stack’’ (or whatever),
-and displayed a second glyph like usual,
-so that the ensuing, third glyph knew only the second glyph, but not the first one.
-If only there is exactly such TeX command!
-But I was not optimistic,
-as I felt this did not quite agree the spirit of TeX’s design.&lt;/p&gt;
-
-&lt;p&gt;Meanwhile, I was troubled by the ugliness of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unicode&lt;/code&gt; letters manually accented by me.
-When researching Stack Overflow about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\overset&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\underset&lt;/code&gt;, I saw several posts, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;barbara beeton&lt;/code&gt;’s answer in
-  &lt;a href=&quot;https://tex.stackexchange.com/questions/302830/vertical-spacing-of-underset-and-other-tweaks&quot;&gt;this thread on vertical spacing of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\underset&lt;/code&gt;&lt;/a&gt;
-  used the plain-TeX control sequence &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\smash&lt;/code&gt;.
-Its name alone sounded just like what I was after!
-I was excited and nervous, and looked up Knuth’s &lt;em&gt;TeXbook&lt;/em&gt;, quoted below (p.178)&lt;/p&gt;
-
-&lt;p&gt;Plain TeX also provides &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\smash {&amp;lt;subformula&amp;gt;}&lt;/code&gt;, a macro that yields the same result as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;subformula&amp;gt;&lt;/code&gt;, but makes the height and depth zero.
-  By using both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\smash&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\vphantom&lt;/code&gt; you can typeset any subformula and give it any desired nonnegative height and depth.&lt;/p&gt;
-
-&lt;p&gt;Its implementation was shown in Appendix B (p.360),&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\def\smash{\relax % \relax, in case this comes first in \halign
-  \ifmmode\def\next{\mathpalette\mathsm@sh}\else\let\next\makesm@sh
-  \fi \next}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Instantly I applied &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\smash&lt;/code&gt; to my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unicode&lt;/code&gt;-containing macro, and the letters did look normal!
-I really should learn TeX at least in a cursory manner,
-since many of my original solutions might very well be simplified greatly by plain TeX sequences which I did not yet know (or would never know).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Aug 2&lt;/em&gt;:
-Turned out most
-  &lt;a href=&quot;https://en.wikipedia.org/wiki/Miscellaneous_Symbols&quot;&gt;miscellaneous symbols&lt;/a&gt;
-  were not in Noto Sans nor Noto Serif,
-as one can test on Google Font’s demonstration page of these font families.
-This was a bit disappointing,
-but a moment’s reflection assured me that those LaTeX- and AMS-provided symbols should actually suffice, considering moreover there were underset and oversets to combine symbols with geometric shapes for instance.
-Besides, with Mathjax’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unicode&lt;/code&gt; extension, it might be possible to display Japanese Hiragana and Kanji.
-&lt;em&gt;Qianziwen&lt;/em&gt; (千字文), it occured to me, was a good choice, since a variety of things from gambling tickets to military division had been numbered with it.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Aug 3&lt;/em&gt;:
-Confirmed that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\unicode&lt;/code&gt; could display Hiragana and Kanji.
-If I was not mistaken, the code points of Hiragana and Kanji (Basic Multilingual Plane) were indeed same as their UTF-16 encodings.&lt;/p&gt;
-
-&lt;p&gt;I examined textual differences of &lt;em&gt;Qianziwen&lt;/em&gt;, and revised in favor of Japanese-Kanji characters defined in standards JIS-X-0208, 0212, and 0213.
-Originally, I thought I had to write a Python script to check the encodings,
-but unexpectedly, I could just check this out on Windows Notepad,
-since those not in JIS were in different fonts and visually different.&lt;/p&gt;
-
-&lt;p&gt;At this point, I decided to take a break to learn a good deal of 
-[HTML], 
-[CSS], and 
-[JS], 
-as well as
-[Jekyll],
-[SASS], and 
-[Kramdown].
-Afterwards the solution of some problems will hopefully come naturally,
-and knowing more web programming can only be beneficial to one’s career.
-And of course, I had spent too much on these matters which this post explains,
-and for now I had better focus on the very writing which this site was constructed for.
-In case the reader is interested in details,
-check my public repo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;violapterin.github.io&lt;/code&gt;, the source of this blog,&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Jul 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/github-page-logbook-1-beginning.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/github-page-logbook-1-beginning.html</guid>
-        
-        <category>Merticulous</category>
-        
-        <category>membrances</category>
-        
         
       </item>
     
