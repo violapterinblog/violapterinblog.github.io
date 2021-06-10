@@ -1,0 +1,437 @@
+
+/* document graph break */
+/* paragraphs lines rows */
+/* paragraph line row */
+/* phrase verse cell */
+
+/* serif-roman serif-italic serif-bold */
+/* sans-roman sans-bold mono */
+/* math pseudo */
+
+/* math-letter math-sign math-plain */
+/* math-bracket-round math-bracket-square math-bracket-curly */
+/* math-bracket-angle math-bracket-line */
+/* math-pair math-triplet math-tuple */
+/* math-serif math-sans math-mono */
+
+/* pseudo-letter pseudo-sign pseudo-plain */
+/* pseudo-round pseudo-square pseudo-curly */
+/* pseudo-serif pseudo-sans pseudo-mono */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+body { min-width: 750px; }
+.document { font-size: 22px; }
+@media screen and (max-width: 900px) {
+  body { min-width: 600px; }
+  .document { font-size: 20px; }
+}
+@media screen and (max-width: 720px) {
+  body { min-width: 540px; }
+  .document { font-size: 18px; }
+}
+@media screen and (max-width: 600px) {
+  body { min-width: 450px; }
+  .document { font-size: 16px; }
+}
+@media screen and (max-width: 500px) {
+  body { min-width: 400px; }
+  .document { font-size: 14px; }
+}
+@media screen and (max-width: 420px) {
+  body { min-width: 360px; }
+  .document { font-size: 13px; }
+}
+@media screen and (max-width: 360px) {
+  body { min-width: 320px; }
+  .document { font-size: 12px; }
+}
+
+body
+{
+  max-width: 800px;
+  margin: auto;
+}
+
+article,
+.document,
+#header-common, #header-post, #footer-whole
+{
+  max-width: 720px;
+  margin: auto;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.paragraphs, .lines, .rows, .break, .graph
+{
+  margin: 0px;
+}
+
+.lines, .rows
+{
+  padding: 4px 8px;
+  overflow-x: scroll;
+}
+
+.graph
+{
+  padding: 8px;
+  max-width: 80%;
+  vertical-align: middle;
+}
+
+.paragraph, .line, .row
+{
+  margin: 0px;
+  padding: 0px;
+  text-indent: 18px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+div, span
+{
+  font-family: "Alegreya", serif;
+}
+
+h1, p, table, em, b,
+.title-site, .title-post,
+.serif-roman, .serif-italic, .serif-bold
+{
+  font-family: "Alegreya", "Noto Serif", "Noto Serif CJK KR",
+    "Georgia", "Times New Roman", serif;
+  font-weight: 400;
+  color: black;
+  font-variant-ligatures: none;
+}
+
+h1
+{
+  font-family: "Roboto Slab", "Noto Serif",
+    "Noto Serif CJK KR", "Georgia", "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+i,
+.sans-roman, .sans-bold
+{
+  font-family: "Alegreya Sans", "Noto Sans", "Noto Sans CJK KR", 
+    "Verdana", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-variant-ligatures: none;
+}
+
+pre,
+.mono
+{
+  font-family: "Source Code Pro", "Noto Sans", "Noto Sans CJK KR", 
+    "Courier New", monospace;
+}
+
+em,
+.serif-italic, .sans-italic, .site-tagline
+{
+  font-style: italic;
+}
+
+b,
+.serif-bold, .sans-bold, .title-site
+{ 
+  font-weight: 700;
+}
+
+.title-site
+{
+  font-size: 32px;
+}
+
+.site-tagline
+{
+  font-size: 24px;
+}
+
+.menu-button
+{
+  font-size: 16px;
+}
+
+a
+{
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: steelblue;
+}
+
+a:hover
+{
+  color: lightskyblue;
+  text-decoration: underline;
+}
+
+
+/* deprecated? */
+/* * Icons * */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.icon > svg path {
+  fill: #828282;
+}
+
+/* https://gist.github.com/andyferra/2554919 */
+table tr th, table tr td
+{
+  background-color: darkseagreen;
+}
+
+table tr:nth-child(2n)
+{
+  background-color: mediumaquamarine;
+}
+
+table tr th,
+table tr td {
+  border: 1px solid #606060;
+  text-align: left;
+  margin: 0;
+  padding: 9px;
+}
+
+/* * Site header * */
+.site-header {
+  border-top: 8px;
+  border-bottom: 4px;
+  position: relative;
+}
+
+.site-nav {
+  float: right;
+  line-height: 56px;
+}
+.site-nav .menu-icon {
+  display: none;
+}
+.site-nav .page-link {
+  color: #6090c0;
+  line-height: 1.6;
+}
+.site-nav .page-link:not(:first-child) {
+  margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    background-color: transparent;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right;
+  }
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .site-nav .menu-icon > svg {
+    width: 18px;
+    height: 15px;
+  }
+  .site-nav .menu-icon > svg path {
+    fill: #424242;
+  }
+  .site-nav .trigger {
+    clear: both;
+    display: none;
+  }
+  .site-nav:hover .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+  .site-nav .page-link {
+    display: block;
+    padding: 5px 10px;
+  }
+}
+
+#data-meta
+{
+  color: mediumpurple
+}
+
+#title-post
+{
+  color: indigo
+}
+
+#header-post
+{
+  padding: 6px 18px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#footer-signature, #footer-quote
+{
+  margin: auto;
+  padding: 12px;
+  width: 330px;
+  height: auto;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+#footer-left, #footer-right
+{
+  margin: auto;
+  padding: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer-left
+{
+  width: 128px;
+  height: auto;
+}
+
+#footer-right
+{
+  width: 168px;
+  height: auto;
+}
+
+.footer-profile, .footer-icon, .footer-author, .footer-motto
+{
+  margin: 2px;
+  padding: 2px;
+}
+
+.footer-icon
+{
+  width: 108px;
+  height: 36px;
+}
+
+.footer-profile
+{
+  width: 160px;
+  height: auto;
+}
+
+.icon-gmail, .icon-twitter, .icon-github
+{
+  margin: 6px;
+  padding: 0px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-gmail
+{
+  background: url("/asset/icon-gmail.png") no-repeat;
+  background-size: 24px;
+}
+
+.icon-twitter
+{
+  background: url("/asset/icon-twitter.png") no-repeat;
+  background-size: 24px;
+}
+
+.icon-github
+{
+  background: url("/asset/icon-github.png") no-repeat;
+  background-size: 24px;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@font-face
+{
+  font-family: "Pseudo Hiragana";
+  src: local("Noto Serif KR");
+  font-weight: 700;
+  unicode-range: U+3040-309F;
+}
+
+@font-face
+{
+  font-family: "Pseudo Katakana";
+  src: local("Noto Sans KR");
+  font-weight: 700;
+  unicode-range: U+30a0-30FF;
+}
+
+@font-face
+{
+  font-family: "Pseudo Kanji Serif";
+  src: local("Noto Serif KR");
+  font-weight: 700;
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face
+{
+  font-family: "Pseudo Kanji Sans";
+  src: local("Noto Sans KR");
+  font-weight: 700;
+  unicode-range: U+4E00-9FFF;
+}
+
+
+.pseudo-letter-italic
+{
+  font-family: "Alegreya", "Noto Serif", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.pseudo-letter-bold
+{
+  font-family: "Alegreya", "Noto Serif", serif;
+  font-weight: 700;
+}
+
+.pseudo-letter-serif-black
+{
+  font-family: "Pseudo Kanji Serif", "Alegreya", "Noto Serif", serif;
+  font-weight: 700;
+}
+
+.pseudo-letter-sans-black
+{
+  font-family: "Pseudo Kanji Sans", "Alegreya Sans", "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.pseudo-sign
+{
+  font-family: "Pseudo Hiragana", "Pseudo Katakana", "Noto Serif KR", serif;
+  font-weight: 700;
+}
+
+/* pseudo-letter pseudo-sign pseudo-plain */
+/* pseudo-round pseudo-square pseudo-curly */
+/* pseudo-serif pseudo-sans pseudo-mono */
