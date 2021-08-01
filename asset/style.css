@@ -72,11 +72,11 @@ body, header
 
 .graph
 {
-  margin: 16px auto;
-  padding: 0px;
-  width: 90%;
+  margin: 12px auto;
+  padding: 0px 12px;
+  width: 96%;
   display: block;
-  border-left: 12px lightblue solid;
+  border-left: 12px lightcyan solid;
 }
 
 .break
@@ -99,7 +99,7 @@ body, header
 .line
 {
   margin: 2px;
-  padding: 0px;
+  padding: 0px 8px;
   border-left: 12px lemonchiffon solid;
 }
 
