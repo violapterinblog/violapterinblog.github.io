@@ -162,13 +162,10 @@
 </div>
 <div class="section">
 <p class="paragraph">
-<span class="phrase"><span class="serif-roman">For concreteness:</span></span>
+<span class="phrase"><span class="serif-roman">For concreteness:</span></span> <span class="phrase"><span class="serif-roman">Let us say you want to combine the last commits to be one.</span></span> <span class="phrase"><span class="serif-roman">Apply an interactive rebase:</span></span>
 </p>
 <p class="paragraph">
-<span class="phrase"><span class="serif-roman">Let us say you want to combine the last commits to be one.</span></span> <span class="phrase"><span class="serif-roman">Apply an interactive rebase:</span></span>
-</p>
-<p class="paragraph">
-<span class="phrase"><code class="mono">git rebase -i HEAD~3</code></span>
+<span class="phrase"><code class="mono">$ git rebase -i HEAD~3</code></span>
 </p>
 <p class="paragraph">
 <span class="phrase"><span class="serif-roman">An editor should open, showing:</span></span>
@@ -200,7 +197,7 @@
 </div>
 <div class="section">
 <p class="paragraph">
-<span class="phrase"><span class="serif-roman">On the contrary, ++cherry-pick++ allows us to choose one commit of another branch, and replay commits from the branching node, onto the current commit.</span></span>
+<span class="phrase"><span class="serif-roman">On the contrary,</span> <code class="mono">cherry-pick</code> <span class="serif-roman">allows us to choose one commit of another branch, and replay commits from the branching node, onto the current commit.</span></span>
 </p>
 <p class="paragraph">
 <span class="phrase"><code class="mono">$ git cherry-pick &lt;commit_being_picked&gt;</code></span>
