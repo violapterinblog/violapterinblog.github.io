@@ -222,7 +222,7 @@
 <span class="phrase"><span class="serif-roman">To push all consistent commits from the local repo to the remote repo:</span></span>
 </p>
 <p class="paragraph">
-<span class="phrase"><code class="mono">$ git push origin &lt;branch_name&gt;</code></span>
+<span class="phrase"><code class="mono">$ git push origin &lt;branch&gt;</code></span>
 </p>
 <p class="paragraph">
 <span class="phrase"><span class="serif-roman">If flag</span> <code class="mono">-u</code> <span class="serif-roman">or</span> <code class="mono">--set-upstream</code> <span class="serif-roman">is added,</span> <span class="serif-roman">you set up a tracking reference so that you can type only</span> <code class="mono">git push</code> <span class="serif-roman">or</span> <code class="mono">git pull</code> <span class="serif-roman">and so on.</span></span>
@@ -241,7 +241,7 @@
 <span class="phrase"><span class="serif-roman">To clone everything from the remote repo into a new subdirectory of the current working directory (where the repo for the blog is taken for instance):</span></span>
 </p>
 <p class="paragraph">
-<span class="phrase"><code class="mono">$ git clone git@github.com:violapterinblog/violapterinblog.github.io.git</code></span>
+<span class="phrase"><code class="mono">$ git clone &lt;remote_url&gt;</code></span>
 </p>
 </div>
 <div class="section">
@@ -249,7 +249,7 @@
 <span class="phrase"><span class="serif-roman">Fetching creates a local copy of a remote branch in the local repo only, not affecting the working tree nor the head.</span></span> <span class="phrase"><span class="serif-roman">To fetch everything from the remote repo to the working tree:</span></span>
 </p>
 <p class="paragraph">
-<span class="phrase"><code class="mono">$ git fetch origin &lt;branch_name&gt;</code></span>
+<span class="phrase"><code class="mono">$ git fetch origin &lt;branch&gt;</code></span>
 </p>
 </div>
 <div class="section">
@@ -257,7 +257,7 @@
 <span class="phrase"><span class="serif-roman">Meanwhile, pulling not only fetches all remote branches as said, but also merges all conflicts into the specified branch.</span></span> <span class="phrase"><span class="serif-roman">To pull from origin to a branch:</span></span>
 </p>
 <p class="paragraph">
-<span class="phrase"><code class="mono">$ git pull origin &lt;branch_name&gt;</code></span>
+<span class="phrase"><code class="mono">$ git pull origin &lt;branch&gt;</code></span>
 </p>
 <p class="paragraph">
 <span class="phrase"><span class="serif-roman">It is more straightforward, I think, to fetch and merge explicitly, than just to pull.</span></span>
