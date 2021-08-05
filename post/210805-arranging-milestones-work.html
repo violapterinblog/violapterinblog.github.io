@@ -78,7 +78,7 @@
 <main class="document">
 <div class="section">
 <p class="paragraph">
-<span class="phrase"><span class="serif-roman">You are given an ordered set</span> <span class="math"><span class="math-plain">\(M\)</span></span> <span class="serif-roman">of milestones, with size</span> <span class="math"><span class="math-plain">\(N\)</span></span><span class="serif-roman">,</span> <span class="serif-roman">where</span> <span class="math"><span class="math-triplet">\(M _ {i}\)</span></span> <span class="serif-roman">is the number of milestones of project</span> <span class="math"><span class="math-plain">\(i\)</span></span> <span class="serif-roman">.</span></span> <span class="phrase"><span class="serif-roman">Every week, you finish exactly one milestone of one project.</span></span> <span class="phrase"><span class="serif-roman">You must work every week.</span></span> <span class="phrase"><span class="serif-roman">You can’t work on two milestones from the same project for two consecutive weeks.</span></span>
+<span class="phrase"><span class="serif-roman">You are given an ordered set</span> <span class="math"><span class="math-plain">\(M\)</span></span> <span class="serif-roman">of milestones, with size</span> <span class="math"><span class="math-plain">\(N\)</span></span><span class="serif-roman">,</span> <span class="serif-roman">where</span> <span class="math"><span class="math-triplet">\(M _ {\left[ i \right]}\)</span></span> <span class="serif-roman">is the number of milestones of project</span> <span class="math"><span class="math-plain">\(i\)</span></span> <span class="serif-roman">.</span></span> <span class="phrase"><span class="serif-roman">Every week, you finish exactly one milestone of one project.</span></span> <span class="phrase"><span class="serif-roman">You must work every week.</span></span> <span class="phrase"><span class="serif-roman">You can’t work on two milestones from the same project for two consecutive weeks.</span></span>
 </p>
 <p class="paragraph">
 <span class="phrase"><span class="serif-roman">Once all the milestones of all projects are finished, or if it must violate the rules to work on the remaining milestones, you will stop working.</span></span> <span class="phrase"><span class="serif-roman">Return the maximum number of weeks, for which you can work without violating the rules.</span></span>
@@ -91,6 +91,17 @@
 </p>
 <p class="paragraph">
 <span class="phrase"><span class="math"><span class="math-plain">\(1\)</span><span class="math-sign">\(\:\leq\:\)</span><span class="math-triplet">\(M _ {\left[ i \right]}\)</span><span class="math-sign">\(\:\leq\:\)</span><span class="math-triplet">\(1 0 ^ {9}\)</span><span class="math-plain">\(;\,\)</span></span></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><span class="serif-roman">(The story is so bad, I can’t help thinking another one.</span></span> <span class="phrase"><span class="serif-roman">Very simply, we may think there are several piles of pebbles,</span> <span class="serif-roman">and we have to take them, one by one, but not taking two in a row from the same pile.</span></span> <span class="phrase"><span class="serif-roman">How many pebbles can we take consecutively?</span></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><span class="serif-roman">Alternatively, I offer a more interesting one.</span></span> <span class="phrase"><span class="serif-roman">In a human mission to Mars, the main dynamo is out of order.</span></span> <span class="phrase"><span class="serif-roman">There has been smaller, supplementary dynamos on the spaceship.</span></span> <span class="phrase"><span class="serif-roman">We plan to run one every night.</span></span> <span class="phrase"><span class="serif-roman">If a dynamo is run for two night, it will overheat.</span></span> <span class="phrase"><span class="serif-roman">Given limited amount of fuels, how many night can we survive before the rescue team arrive?)</span></span>
+</p>
+</div>
+<div class="section">
+<p class="paragraph">
+<span class="phrase"><span class="serif-roman">The problem appears to be very complicated,</span> <span class="serif-roman">the answer was rather short.</span></span> <span class="phrase"><span class="serif-roman">I saw the complexity of solution, which surprised me,</span> <span class="serif-roman">and then I really thought of it myself.</span></span>
 </p>
 </div>
 <div class="stanza">
@@ -155,10 +166,7 @@
 <span class="verse">&ensp;</span> <span class="verse">&ensp;</span> <span class="verse"><code class="mono">remain = total - big</code></span>
 </p>
 <p class="line">
-<span class="verse">&ensp;</span> <span class="verse">&ensp;</span> <span class="verse"><code class="mono">if (remain &lt; big):</code></span>
-</p>
-<p class="line">
-<span class="verse">&ensp;</span> <span class="verse">&ensp;</span> <span class="verse">&ensp;</span> <span class="verse"><code class="mono">return (total + remain - big + 1)</code></span>
+<span class="verse">&ensp;</span> <span class="verse">&ensp;</span> <span class="verse"><code class="mono">if (remain &lt; big): return (total + remain - big + 1)</code></span>
 </p>
 <p class="line">
 <span class="verse">&ensp;</span> <span class="verse">&ensp;</span> <span class="verse"><code class="mono">return total</code></span>
