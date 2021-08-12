@@ -63,7 +63,7 @@ body, header
 {
    margin: 0px 24px;
    padding: 0px;
-   border-spacing: 4px 8px;
+   border-spacing: 0px 3px;
    width: 96%
 }
 
@@ -127,7 +127,7 @@ p .phrase, p .verse
 tr .cell
 {
    margin: 0px;
-   padding: 8px;
+   padding: 6px;
    border-left: 4px darkseagreen solid;
    border-bottom: 2px darkseagreen solid;
 }
@@ -452,20 +452,20 @@ header #header-post, header #header-page
 {
    margin: 0px;
    padding: 0px;
-   font-size: 26px;
+   font-size: 30px;
    font-weight: 700;
 }
 @media screen and (max-width: 900px) {
    .entry .title-entry .heading
-   { font-size: 24px; }
+   { font-size: 28px; }
 }
 @media screen and (max-width: 600px) {
    .entry .title-entry .heading
-   { font-size: 22px; }
+   { font-size: 26px; }
 }
 @media screen and (max-width: 420px) {
    .entry .title-entry .heading
-   { font-size: 20px; }
+   { font-size: 24px; }
 }
 
 #header-page .heading-page .display
@@ -508,21 +508,21 @@ header #header-post, header #header-page
 {
    margin: 6px 12px;
    padding: 0px;
-   font-size: 20px;
+   font-size: 18px;
    font-weight: 500;
    line-height: 200%;
 }
 @media screen and (max-width: 900px) {
    .data-post, .data-entry
-   { padding: 0px 10px; font-size: 18px; }
+   { padding: 0px 10px; font-size: 16px; }
 }
 @media screen and (max-width: 600px) {
    .data-post, .data-entry
-   { padding: 0px 8px; font-size: 16px; }
+   { padding: 0px 8px; font-size: 14px; }
 }
 @media screen and (max-width: 420px) {
    .data-post, .data-entry
-   { padding: 0px 6px; font-size: 14px; }
+   { padding: 0px 6px; font-size: 12px; }
 }
 
 .data-post .data-stamp, .data-entry .data-stamp,
