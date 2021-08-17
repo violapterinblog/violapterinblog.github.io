@@ -19,20 +19,20 @@
 
 body
 {
-   width: 800px; 
-   font-size: 24px;
+   width: 960px; 
+   font-size: 28px;
 }
-@media screen and (max-width: 1300px) {
-   body { width: 700px; font-size: 22px; }
+@media screen and (max-width: 1500px) {
+   body { width: 750px; font-size: 24px; }
 }
 @media screen and (max-width: 900px) {
    body { width: 600px; font-size: 20px; }
 }
 @media screen and (max-width: 600px) {
-   body { width: 480px; font-size: 18px; }
+   body { width: 450px; font-size: 16px; }
 }
-@media screen and (max-width: 420px) {
-   body { width: 360px; font-size: 16px; }
+@media screen and (max-width: 450px) {
+   body { width: 360px; font-size: 12px; }
 }
 
 body, header
@@ -340,7 +340,6 @@ code, .mono
 {
    margin: 16px 32px;
    padding: 0px;
-   font-size: 36px;
 }
 @media screen and (max-width: 900px) {
    #header-post, #header-page
@@ -403,7 +402,7 @@ code, .mono
 {
    margin: 0px;
    padding: 0px;
-   font-size: 32px;
+   font-size: 34px;
    font-weight: 700;
 }
 @media screen and (max-width: 900px) {
@@ -414,12 +413,12 @@ code, .mono
 @media screen and (max-width: 600px) {
    #header-page .heading-page .display,
    #header-post .heading-post .heading
-   { font-size: 28px; }
+   { font-size: 26px; }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
    #header-page .heading-page .display,
    #header-post .heading-post .heading
-   { font-size: 26px; }
+   { font-size: 22px; }
 }
 
 .title-catalog .display
@@ -437,7 +436,7 @@ code, .mono
    .title-catalog .display
    { margin: 0px 8px; font-size: 24px; }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
    .title-catalog .display
    { margin: 0px 6px; font-size: 22px; }
 }
@@ -457,7 +456,7 @@ code, .mono
    .entry .title-entry .heading
    { font-size: 26px; }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
    .entry .title-entry .heading
    { font-size: 24px; }
 }
@@ -514,7 +513,7 @@ code, .mono
    .data-post, .data-entry
    { padding: 0px 8px; font-size: 14px; }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
    .data-post, .data-entry
    { padding: 0px 6px; font-size: 12px; }
 }
@@ -586,7 +585,7 @@ code, .mono
    #footer-quote, #footer-signature
    { font-size: 15px; }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
    #footer-quote, #footer-signature
    { font-size: 14px; }
 }
