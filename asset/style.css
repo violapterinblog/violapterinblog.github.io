@@ -43,18 +43,6 @@ body, header
    padding: 0px;
 }
 
-#header-banner
-{
-   width: 96%;
-   border-bottom: 3px lightgray solid;
-}
-
-#footer-whole
-{
-   width: 96%;
-   border-top: 3px lightgray solid;
-}
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -290,7 +278,11 @@ code, .mono
    { display: block; }
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#header-banner
+{
+   width: 98%;
+   border-bottom: 3px lightgray solid;
+}
 
 #header-banner #banner
 {
@@ -580,6 +572,8 @@ code, .mono
 {
    margin: 18px auto;
    padding: 0px;
+   width: 98%;
+   border-top: 3px lightgray solid;
 }
 
 #footer-quote, #footer-signature

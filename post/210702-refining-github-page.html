@@ -78,38 +78,7 @@
 <main class="document">
 <div class="section">
 <p class="paragraph">
-<span class="phrase"><em class="serif-italic">June 10, 2021:</em></span>
-</p>
-<p class="paragraph">
-<span class="phrase"><span class="serif-roman">Interpretation of the generation of “Photoluminescence” succeeded!</span></span>
-</p>
-<p class="paragraph">
-<span class="phrase"><span class="serif-roman">Different CSS classes accounted for normal, italic, bold texts.</span></span> <span class="phrase"><span class="serif-roman">I could also set up indentation, alignment, separating line, and colored background for category names.</span></span> <span class="phrase"><span class="serif-roman">As for the font, I use Alegreya and the accompanying Alegreya Sans, since I was rather fascinated by its somewhat old-fashioned but fancy strokes.</span></span>
-</p>
-<p class="paragraph">
-<span class="phrase"><span class="serif-roman">The image links in the footer for social media was more difficult to achieve.</span></span> <span class="phrase"><span class="serif-roman">A solution is the CSS background rule,</span> <span class="serif-roman">and we had to remember to adjust its width and height to avoid unwanted blank space.</span></span>
-</p>
-</div>
-<div class="stanza">
-<p class="line">
-<span class="verse"><code class="mono">.icon-gmail {</code></span>
-</p>
-<p class="line">
-<span class="verse">&ensp;</span> <span class="verse"><code class="mono">background: url(&quot;/asset/icon-gmail.<wbr>png&quot;) no-repeat;</code></span>
-</p>
-<p class="line">
-<span class="verse">&ensp;</span> <span class="verse"><code class="mono">display: inline-block;</code></span>
-</p>
-<p class="line">
-<span class="verse">&ensp;</span> <span class="verse"><code class="mono">background-size: contain;</code></span>
-</p>
-<p class="line">
-<span class="verse"><code class="mono">}</code></span>
-</p>
-</div>
-<div class="section">
-<p class="paragraph">
-<span class="phrase"><em class="serif-italic">June 15:</em></span>
+<span class="phrase"><em class="serif-italic">June 15, 2021:</em></span>
 </p>
 <p class="paragraph">
 <span class="phrase"><span class="serif-roman">As an easter egg, the quote in the footer was to be chosen randomly by a script.</span></span> <span class="phrase"><span class="serif-roman">Suppose the quote element had ID</span> <code class="mono">#quote</code><span class="serif-roman">,</span> <span class="serif-roman">then the following script would do the job.</span></span>
@@ -324,7 +293,7 @@
 <span class="phrase"><span class="serif-roman">I was a bloody underrated, world-class genius!</span></span> <span class="phrase"><span class="serif-roman">I was now able to make a PDF of all blog posts crawled as image.</span></span> <span class="phrase"><span class="serif-roman">Presently there were about 40 posts,</span> <span class="serif-roman">and the PDF was already almost 100 page long.</span></span>
 </p>
 <p class="paragraph">
-<span class="phrase"><span class="serif-roman">First, as said above, I automatically saved images of blog posts by Selenium.</span></span> <span class="phrase"><span class="serif-roman">The text appeared blurry,</span> <span class="serif-roman">but Pillow could enhance its contrast and sharpness.</span></span>
+<span class="phrase"><span class="serif-roman">First, as said above, I automatically saved images of blog posts by Selenium.</span></span> <span class="phrase"><span class="serif-roman">The resulting text appeared blurry,</span> <span class="serif-roman">but Pillow image processing functions, as</span> <code class="mono">PIL.ImageEnhance.Contrast</code> <span class="serif-roman">and</span> <code class="mono">PIL.ImageOps.autocontrast</code><span class="serif-roman">,</span> <span class="serif-roman">were helpful.</span></span>
 </p>
 <p class="paragraph">
 <span class="phrase"><span class="serif-roman">Second, I sliced pictures line by line, saved to dedicated directories named by date.</span></span> <span class="phrase"><span class="serif-roman">To let Pillow recognize the cuts, if you noticed, I even added yellow borders to displayed lines and green borders to table rows, all slightly broken with CSS margin.</span></span>
@@ -336,12 +305,41 @@
 <span class="phrase"><span class="serif-roman">Fourth, I called ImageMagick via Bash, to convert the pages properly numbered in alphabetical order, into a single PDF.</span></span>
 </p>
 </div>
+<div class="section">
+<p class="paragraph">
+<span class="phrase"><em class="serif-italic">August 16:</em></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><span class="serif-roman">Unlike in a book having a fixed width of page, mathematics on a webpage had to adapt a variety of widths.</span></span> <span class="phrase"><span class="serif-roman">Mathjax 3 hadn’t implement the word break feature yet, as in Mathjax 2.</span></span> <span class="phrase"><span class="serif-roman">Not breaking long expressions, could result in a large blank in the right half of some lines, considering the present width of page was already narrower than the usual size of a mathematics textbook.</span></span> <span class="phrase"><span class="serif-roman">I came up a way of greedily fitting a line with mathematics, by splitting each paired bracket to three parts, the left bracket, the content, and the right bracket, while keeping the automatic sizing by phantom objects.</span></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><span class="serif-roman">Suppose we have the LaTeX source:</span></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><code class="mono">\left( \frac {a} {b} \right)</code></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><span class="serif-roman">I propose to convert it as:</span></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><code class="mono">\left( \vphantom {\frac {a} {b}} \right.</code></span>
+</p>
+<p class="paragraph">
+<span class="phrase">&ensp;</span> <span class="phrase"><code class="mono">\frac {a} {b}</code></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><code class="mono">\left. \vphantom {\frac {a} {b}} \right)</code></span>
+</p>
+<p class="paragraph">
+<span class="phrase"><span class="serif-roman">It might be extreme to abuse the functionality of phantom objects,</span> <span class="serif-roman">and LaTeX purists were going to have a heart attack if they see I break up mathematics like this.</span></span> <span class="phrase"><span class="serif-roman">At any rate, since the Porphyrin source was stable, I could always switch back to the older version if I regretted.</span></span>
+</p>
+</div>
 <div class="break">
 <span class="phrase">&emsp;</span> <span class="phrase">❦</span> <span class="phrase">&emsp;</span> <span class="phrase">❦</span> <span class="phrase">&emsp;</span> <span class="phrase">❦</span>
 </div>
 <div class="section">
 <p class="paragraph">
-<span class="phrase"><span class="serif-roman">❧</span> <em class="serif-italic">started July 2, 2021</em></span>
+<span class="phrase"><span class="serif-roman">❧</span> <em class="serif-italic">July 2 to August 17, 2021</em></span>
 </p>
 </div>
 <div class="section">
