@@ -20,19 +20,19 @@
 body
 {
    width: 960px; 
-   font-size: 25px;
+   font-size: 26px;
 }
 @media screen and (max-width: 1500px) {
    body { width: 750px; font-size: 22px; }
 }
 @media screen and (max-width: 900px) {
-   body { width: 600px; font-size: 19px; }
+   body { width: 600px; font-size: 18px; }
 }
 @media screen and (max-width: 600px) {
-   body { width: 450px; font-size: 16px; }
+   body { width: 450px; font-size: 15px; }
 }
 @media screen and (max-width: 450px) {
-   body { width: 360px; font-size: 13px; }
+   body { width: 360px; font-size: 12px; }
 }
 
 body, header
@@ -47,46 +47,22 @@ body, header
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.section
+.section, .stanza, .array
 {
-   margin: 24px 72px;
-   padding: 0px;
-}
-@media screen and (max-width: 1500px) {
-   .section
-   { margin: 20px 54px; }
-}
-@media screen and (max-width: 900px) {
-   .section
-   { margin: 16px 36px; }
-}
-@media screen and (max-width: 600px) {
-   .section
-   { margin: 12px 18px; }
-}
-
-.stanza
-{
-   margin: 24px 48px;
+   margin: 24px 24px;
    padding: 0px;
 }
 @media screen and (max-width: 1500px) {
    .stanza
-   { margin: 20px 36px; }
+   { margin: 16px 18px; }
 }
 @media screen and (max-width: 900px) {
    .stanza
-   { margin: 16px 24px; }
-}
-@media screen and (max-width: 600px) {
-   .stanza
-   { margin: 12px 12px; }
+   { margin: 8px 12px; }
 }
 
 .array
 {
-   margin: 0px 24px;
-   padding: 0px;
    border-spacing: 0px 3px;
    width: 96%
 }
@@ -567,26 +543,26 @@ code, .mono
 {
    margin: 6px 12px;
    padding: 0px;
-   font-size: 20px;
+   font-size: 19px;
    font-weight: 500;
    line-height: 200%;
 }
 @media screen and (max-width: 900px) {
    .data-post, .data-entry { 
       padding: 0px 10px;
-      font-size: 17px;
+      font-size: 16px;
    }
 }
 @media screen and (max-width: 600px) {
    .data-post, .data-entry { 
       padding: 0px 8px;
-      font-size: 14px;
+      font-size: 13px;
    }
 }
 @media screen and (max-width: 450px) {
    .data-post, .data-entry { 
       padding: 0px 6px;
-      font-size: 11px;
+      font-size: 10px;
    }
 }
 
@@ -599,8 +575,8 @@ code, .mono
 .data-post .data-series:visited, .data-entry .data-series:visited,
 .data-post .data-tag:visited, .data-entry .data-tag:visited
 {
-   margin: 6px 6px;
-   padding: 0px 6px;
+   margin: 4px 4px;
+   padding: 0px 4px;
    color: darkslategray;
    text-decoration: none;
 }
