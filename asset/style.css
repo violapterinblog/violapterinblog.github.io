@@ -270,7 +270,7 @@ code, .mono {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #header-banner #name-site, #header-banner #menu {
-   margin: 6px 12px;
+   margin: 3px 12px;
    padding: 0px 60px;
    text-align: center;
 }
@@ -336,7 +336,7 @@ code, .mono {
 }
 
 #header-banner #banner {
-   width: 90%;
+   width: 82%;
    margin: 0px auto;
    display: block;
 }
